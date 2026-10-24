@@ -22,7 +22,7 @@ Dashboard, imports, quality review, issue inbox, fix queue, inventory, suppliers
 ## Publication boundaries
 Build and verify locally first. GitHub destination/account, narration voice, YouTube handoff and external publication require the explicit checkpoints in BUILD_PROMPT.md. Do not invent assets, links, results, or publish anything automatically.
 
-## User updates and local completion
-The user selected George (`bm_george`) for narration; the local video, captions, article, offline preview and source/evidence archive are complete. The user subsequently supplied the real YouTube URL `https://youtu.be/NclbnG0_8d0` and selected GitHub owner `Saifullahakjsnd`, display name Saifullah, reopening GitHub publication after previously excluding it. Confirm repository visibility and authenticated access for this exact account before external repository creation or push. No repository link or hosted screenshot URL may be invented.
+## Completion
+The user selected George (`bm_george`) for the genuine Kokoro narration, supplied https://youtu.be/NclbnG0_8d0, and explicitly selected a public repository under Saifullahakjsnd (Saifullah). Authentication was verified as that exact account, the destination was checked before creation, and the repository was pushed to main at https://github.com/Saifullahakjsnd/QuietOps.
 
-The user confirmed **public** visibility and asked for screenshots embedded in GitHub. Prepare a public QuietOps repository under Saifullahakjsnd, with actual app screenshots in the README, an explicitly labelled local article-preview screenshot, and repository-hosted image URLs for the DEV post. The remaining prerequisite is authenticated access for the selected account; no further visibility approval is needed.
+All eight public screenshots were fetched and hash-checked. The README embeds application screenshots and a labelled article preview; the DEV draft has five commit-pinned images, the real video embed, source links and measured results. Local media, offline review and the source/evidence archive are complete. The remaining step is the user's review and manual DEV publication.

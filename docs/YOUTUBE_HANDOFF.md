@@ -1,6 +1,6 @@
 # Finished video: upload handoff
 
-The user uploaded the video and supplied **https://youtu.be/NclbnG0_8d0**. YouTube oEmbed resolves it to “QuietOps” and the article includes `{% youtube NclbnG0_8d0 %}`. The upload was performed by the user, not automatically. GitHub owner Saifullahakjsnd (Saifullah) is selected; public visibility is confirmed; authenticated publishing access remains pending.
+The user uploaded the video and supplied **https://youtu.be/NclbnG0_8d0**. YouTube oEmbed resolves it to “QuietOps” and the article includes `{% youtube NclbnG0_8d0 %}`. The upload was performed by the user, not automatically. The public repository is https://github.com/Saifullahakjsnd/QuietOps, published under the selected GitHub owner Saifullahakjsnd (Saifullah).
 
 The finished local file used for the handoff is:
 
@@ -35,4 +35,4 @@ Built with Next.js, TypeScript, Tailwind, Radix/shadcn components, FastAPI, Pand
 
 The supplied video ID is `NclbnG0_8d0`. The public embed has been verified and added. No placeholder ID is used.
 
-For the DEV post, upload the five actual screenshots through the editor and replace the local image references with the URLs DEV returns. The complete text is in `docs/DEV_SUBMISSION.md`; the offline article/video review is `docs/DEV_SUBMISSION.html`. Publish only after your review.
+The DEV post already contains five actual screenshots at verified, commit-pinned public GitHub URLs. The complete text is in `docs/DEV_SUBMISSION.md`; the offline article/video review is `docs/DEV_SUBMISSION.html`. Publish only after your review.

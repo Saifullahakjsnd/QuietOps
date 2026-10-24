@@ -1,4 +1,4 @@
-<!-- REVIEW DRAFT. The supplied YouTube URL is verified and embedded. The user selected GitHub owner Saifullahakjsnd (Saifullah); repository public visibility is confirmed; authenticated publishing access is still pending. Screenshot links remain actual local files until public hosting is verified. Do not publish unchanged local image/source-archive links. -->
+<!-- READY FOR USER REVIEW. Public GitHub repository, commit-pinned screenshots and supplied YouTube embed verified. DEV publication remains manual after review. -->
 
 Title: I Built a Local AI to Turn a Shop's Evening Spreadsheet Hunt Into a Fix Queue
 
@@ -18,7 +18,7 @@ There are three checks in the working application: stock cover shorter than supp
 
 The interface has eight working views: overview, issue inbox, fix queue, inventory, suppliers, import and mapping, quality review, and audit history. That sounds like a lot of screens for a quieter evening, so the main path is deliberately short: load or import, inspect a flag, read its explanation, review a draft, export.
 
-![The actual QuietOps dashboard, showing the explicitly fictional shop and its twelve review candidates.](../demo/assets/screenshots/01-dashboard.png)
+![The actual QuietOps dashboard, showing the explicitly fictional shop and its twelve review candidates.](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/01-dashboard.png)
 
 The visual tone matters to that workflow. A shop owner should be able to distinguish a priority from a weak estimate without feeling surrounded by alarms. Stock, delivery, and invoice candidates have separate labels; assumptions remain attached to the issue; the model's availability is visible.
 
@@ -26,19 +26,23 @@ The visual tone matters to that workflow. A shop owner should be able to disting
 
 {% youtube NclbnG0_8d0 %}
 
-The [narrated walkthrough](../demo/assets/video/final_demo.mp4) is a real 1920×1080 browser recording, about two minutes long. It uses a running backend and genuine local inference. Its narration was synthesized locally with Kokoro-82M using the user-selected British voice George, `bm_george`. It includes burned-in English captions and a separate [SRT file](../demo/assets/audio/subtitles.srt).
+The [narrated walkthrough](https://youtu.be/NclbnG0_8d0) is a real 1920×1080 browser recording, about two minutes long. It uses a running backend and genuine local inference. Its narration was synthesized locally with Kokoro-82M using the user-selected British voice George, `bm_george`. It includes burned-in English captions and a separate [SRT file](https://github.com/Saifullahakjsnd/QuietOps/blob/main/demo/assets/audio/subtitles.srt).
 
 Every shop record in the demonstration is synthetic. The fixture has 60 products, 12 suppliers, 90 days of sales, 24 purchase-order lines, and 38 invoice rows. The recording begins with an empty workspace and selects that fictional shop. It then follows an oat-milk flag through its source evidence, real model explanation, purchase-review draft, approval, export, and audit trail.
 
-![The actual import view with retained source files, confirmed mappings, row counts, and file hashes.](../demo/assets/screenshots/06-imports.png)
+![The actual import view with retained source files, confirmed mappings, row counts, and file hashes.](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/06-imports.png)
 
 The originals remain downloadable throughout. A separate browser test exercises manual CSV upload, explicit mapping confirmation, an invalid row, and a proposed correction. The video uses demo selection so the main review story stays readable.
 
-The [public walkthrough on YouTube](https://youtu.be/NclbnG0_8d0) is available above. The file and screenshot links are retained for local review until the screenshots are hosted. GitHub publication is being prepared under the user-selected account, Saifullahakjsnd; no repository link is claimed before the repository actually exists.
+The [public walkthrough on YouTube](https://youtu.be/NclbnG0_8d0) and [public source repository](https://github.com/Saifullahakjsnd/QuietOps) are available. The five screenshots in this article are hosted in that repository at a fixed commit; every image URL was checked against the original file.
 
 ## Code
 
-The [local source-and-demo archive](../dist/quietops-local-bundle.zip) contains the application, setup instructions, tests, synthetic fixtures, evaluation records, screenshots, and finished video. Model weights and private working data are excluded. The application code uses the MIT license; the model licenses are documented separately.
+{% github https://github.com/Saifullahakjsnd/QuietOps %}
+
+Browse the [QuietOps repository](https://github.com/Saifullahakjsnd/QuietOps) for the implementation and reproducible evidence.
+
+The [public source-and-demo archive](https://github.com/Saifullahakjsnd/QuietOps/archive/refs/heads/main.zip) contains the application, setup instructions, tests, synthetic fixtures, evaluation records, screenshots, and finished video. Model weights and private working data are excluded. The application code uses the MIT license; the model licenses are documented separately.
 
 The frontend is Next.js, TypeScript, Tailwind, and Radix-based shadcn components. The backend is FastAPI with Pandas, openpyxl, DuckDB, and SQLite. The explanation model is **Ministral 3 8B**, served through Ollama. There is no paid inference API in the application's review path.
 
@@ -60,7 +64,7 @@ For stock cover, DuckDB aggregates up to 90 trailing days of validated sales. Da
 
 In the recorded oat-milk example, four units remain and 174 units sold over 90 calendar days. That gives about 2.07 days of cover against a five-day supplier lead time. The evidence includes the inventory cells, sales total, date range, units, and membership of every contributing source row.
 
-![The actual issue evidence, including the stock-cover calculation and original source references.](../demo/assets/screenshots/02-evidence.png)
+![The actual issue evidence, including the stock-cover calculation and original source references.](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/02-evidence.png)
 
 The calculation is useful only with its assumptions. Missing sales dates count as zero demand. Fewer than fourteen observed sales dates is marked sparse. Incoming orders are not subtracted from risk. Inventory is treated as current at the selected scan date, so the owner still needs to confirm snapshot freshness. Incompatible sales units suppress the cover calculation rather than producing a confident-looking number.
 
@@ -70,13 +74,13 @@ Only after a deterministic issue exists does the model receive compact facts, as
 
 A real repeat evaluation exposed a useful failure: the model supplied an unknown evidence ID. The post-generation check withheld that response. I retained the rejection in the evaluation records and tightened constrained decoding so the evidence-ID field can select only sources supplied for the issue. A separate numeric-token check rejects numbers outside the available issue data.
 
-![The genuine local Ministral explanation with its suggested next step and visible model details.](../demo/assets/screenshots/03-local-ai.png)
+![The genuine local Ministral explanation with its suggested next step and visible model details.](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/03-local-ai.png)
 
 Those checks are limited. They validate references and numeric tokens, not the meaning of an entire sentence. One genuine stock explanation said “duplicate invoices” where “duplicate orders” would have been more appropriate. The evaluation documents that imperfection. Editing and human judgement remain part of the product because a schema cannot make prose infallible.
 
 The approval boundary is also enforced in the backend. A proposal requires a successful local explanation. Its text can be reviewed before approval, and only approved, current drafts can be exported. A fingerprint covers facts, evidence, assumptions, and calculations. If a later scan changes that basis, old generated text is dropped and related drafts become stale.
 
-![The actual fix queue after approval, ready for manual export rather than automatic supplier outreach.](../demo/assets/screenshots/04-approved.png)
+![The actual fix queue after approval, ready for manual export rather than automatic supplier outreach.](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/04-approved.png)
 
 For verification, nine backend tests check arithmetic, source lineage, Excel import, quarantine, unit mismatches, sparse observations, unsupported source IDs and numbers, and stale approvals. Three browser tests cover the real model-to-export journey, mapping and corrections, and mobile navigation. TypeScript checking and a production build also passed. Docker Compose configuration is supplied and validated, but containers were not run because Docker's engine was unavailable; native execution is the verified path.
 

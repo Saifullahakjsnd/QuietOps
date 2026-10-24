@@ -1,6 +1,6 @@
 # QuietOps local handoff
 
-The user selected George for narration, supplied the uploaded YouTube video, and chose GitHub owner Saifullahakjsnd (Saifullah). All local deliverables are complete. GitHub publication is now requested but awaits authenticated access for that account; public visibility is confirmed. No repository or DEV article has been published by this workflow.
+The user selected George for narration, supplied the uploaded YouTube video, and chose GitHub owner Saifullahakjsnd (Saifullah). All local deliverables are complete. The public repository is live at https://github.com/Saifullahakjsnd/QuietOps. All eight hosted screenshots were verified against the originals. The DEV article is ready for user review and manual publication.
 
 ## Open the result
 
@@ -23,6 +23,6 @@ The demo and package fixtures are explicitly fictional. Code, documentation, syn
 
 ## External handoffs
 
-The article contains the verified public YouTube embed for https://youtu.be/NclbnG0_8d0. The selected GitHub destination owner is Saifullahakjsnd; public publication requires a signed-in connection for that exact account. After publication, replace local screenshots with verified repository-hosted URLs (or DEV image URLs for a private repository). The user reviews and publishes the DEV article. No nonexistent repository or screenshot URL is claimed.
+The article contains the verified public YouTube embed for https://youtu.be/NclbnG0_8d0. The public repository is https://github.com/Saifullahakjsnd/QuietOps, on branch `main`. The article uses five verified, commit-pinned repository image URLs. The README embeds actual application screenshots and the labelled local article preview. Authentication was verified as the selected owner, Saifullahakjsnd. The user reviews and publishes the DEV article manually.
 
 Docker Compose configuration is provided, but container execution remains unverified because the Docker engine is unavailable. The native loopback deployment is verified and running. Other sessions' services were left separate.

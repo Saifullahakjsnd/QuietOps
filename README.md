@@ -8,11 +8,11 @@ QuietOps is a working local application: Next.js + TypeScript + Tailwind + shadc
 
 - [Narrated demo](demo/assets/video/final_demo.mp4): 118.12 seconds, 1920×1080, genuine Kokoro-82M George (`bm_george`) voice selected by the user, readable burned-in English captions, real browser/backend/model journey on explicitly fictional data.
 - [Voiceover WAV](demo/assets/audio/kokoro_voiceover.wav), [SRT captions](demo/assets/audio/subtitles.srt), and [narration script](demo/assets/audio/narration_script.md).
-- [Article Markdown](docs/DEV_SUBMISSION.md) and [offline article/video preview](docs/DEV_SUBMISSION.html), with actual screenshots and measured results. [Watch on YouTube](https://youtu.be/NclbnG0_8d0). The user selected GitHub owner **Saifullahakjsnd (Saifullah)**; public visibility is confirmed; authenticated publishing access remains pending.
-- [Source and demo bundle](dist/quietops-local-bundle.zip), with checksums in `dist/SHA256SUMS.txt`. Model weights, virtual environments, logs and working shop data are excluded. Rebuild with `python -m scripts.package_release`.
+- [Article Markdown](docs/DEV_SUBMISSION.md) and [offline article/video preview](docs/DEV_SUBMISSION.html), with actual screenshots and measured results. [Watch on YouTube](https://youtu.be/NclbnG0_8d0). Published publicly under the user-selected account: [Saifullahakjsnd/QuietOps](https://github.com/Saifullahakjsnd/QuietOps).
+- [Download source and demo assets](https://github.com/Saifullahakjsnd/QuietOps/archive/refs/heads/main.zip). Model weights, virtual environments, logs and working shop data are excluded. Build an additional local bundle and SHA-256 checksum with `python -m scripts.package_release`; outputs are in `dist/`.
 - [Fictional fixtures](demo/fixtures/README.md), including four CSVs, a one-sheet XLSX and separately stored gold labels.
 
-The application remains available at **http://127.0.0.1:3002** while its launchers are running. The user uploaded the YouTube video. No GitHub repository or DEV post has yet been created by this workflow.
+The application remains available at **http://127.0.0.1:3002** while its launchers are running. The user uploaded the YouTube video. The [GitHub repository](https://github.com/Saifullahakjsnd/QuietOps) is public, with embedded application screenshots and a labelled article preview. The DEV article awaits user review and manual publication.
 
 [![Actual QuietOps dashboard](demo/assets/screenshots/01-dashboard.png)](https://youtu.be/NclbnG0_8d0)
 
@@ -147,4 +147,4 @@ SQLite, uploaded originals and derived records live in `data/` by default and ar
 
 Application: MIT. Model: [Ministral 3 8B Instruct 2512](https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512), Apache 2.0; [Ollama build](https://ollama.com/library/ministral-3). The model digest and runtime are recorded in evaluation output after genuine inference. Uses a 4096-token context, deterministic sampling, one concurrent request, five-minute keep-alive. There is no Gemma integration or eligibility claim for its category. No TabPFN integration is claimed.
 
-Architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Recording walkthrough: [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md). Publication remains subject to the account, voice and video handoffs in [docs/PUBLISHING_CHECKLIST.md](docs/PUBLISHING_CHECKLIST.md).
+Architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Recording walkthrough: [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md). Completed publication checks and the remaining manual DEV review are recorded in [docs/PUBLISHING_CHECKLIST.md](docs/PUBLISHING_CHECKLIST.md).

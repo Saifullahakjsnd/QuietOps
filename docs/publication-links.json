@@ -13,10 +13,67 @@
     "display_name": "Saifullah",
     "proposed_repository_name": "QuietOps",
     "visibility": "public",
-    "authenticated_access_verified": false,
-    "repository_url": null,
-    "public_lookup": "No publicly accessible repository at the proposed destination (HTTP 404). This does not rule out a private repository.",
+    "authenticated_access_verified": true,
+    "repository_url": "https://github.com/Saifullahakjsnd/QuietOps",
+    "public_lookup": "Repository created and verified public with default branch main.",
     "screenshot_request": "Embed actual application screenshots and a labelled local post-preview image in the public repository README.",
-    "authentication_method": "Project-local official GitHub CLI device authorization; awaiting user login."
+    "authentication_method": "Official GitHub CLI device authorization; verified as Saifullahakjsnd.",
+    "branch": "main",
+    "screenshot_commit": "317a1c1c4c22d263c773322d6350a1f104db675b",
+    "hosted_screenshots": [
+      {
+        "file": "demo/assets/screenshots/01-dashboard.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/01-dashboard.png",
+        "http_status": 200,
+        "sha256_match": true
+      },
+      {
+        "file": "demo/assets/screenshots/02-evidence.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/02-evidence.png",
+        "http_status": 200,
+        "sha256_match": true
+      },
+      {
+        "file": "demo/assets/screenshots/03-local-ai.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/03-local-ai.png",
+        "http_status": 200,
+        "sha256_match": true
+      },
+      {
+        "file": "demo/assets/screenshots/04-approved.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/04-approved.png",
+        "http_status": 200,
+        "sha256_match": true
+      },
+      {
+        "file": "demo/assets/screenshots/05-mobile.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/05-mobile.png",
+        "http_status": 200,
+        "sha256_match": true
+      },
+      {
+        "file": "demo/assets/screenshots/06-imports.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/06-imports.png",
+        "http_status": 200,
+        "sha256_match": true
+      },
+      {
+        "file": "demo/assets/screenshots/07-inventory.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/07-inventory.png",
+        "http_status": 200,
+        "sha256_match": true
+      },
+      {
+        "file": "demo/assets/screenshots/08-post-preview.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/317a1c1c4c22d263c773322d6350a1f104db675b/demo/assets/screenshots/08-post-preview.png",
+        "http_status": 200,
+        "sha256_match": true
+      }
+    ],
+    "source_archive": {
+      "url": "https://github.com/Saifullahakjsnd/QuietOps/archive/refs/heads/main.zip",
+      "http_status": 200,
+      "content_type": "application/zip"
+    }
   }
 }

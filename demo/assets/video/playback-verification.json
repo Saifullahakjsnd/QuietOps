@@ -1,5 +1,5 @@
 {
-  "verified_at": "2026-10-24T06:36:59.392Z",
+  "verified_at": "2026-10-24T07:13:07.709Z",
   "browser": "Microsoft Edge / Playwright",
   "metadata": {
     "duration": 118.12,
@@ -9,7 +9,7 @@
     "error": null
   },
   "playing": {
-    "currentTime": 1.007124,
+    "currentTime": 1.017112,
     "paused": false,
     "decodedFrames": 30
   },

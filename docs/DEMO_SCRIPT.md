@@ -45,4 +45,4 @@ The record of a simulated review/approval is confined to a separate fictional re
 - `audio/narration-scenes.json`: source-scene plan and silent-video hash.
 - `audio/subtitles.srt`: 31 English phrase cues. Timing is scene-anchored, not claimed word-for-word forced alignment.
 
-The user supplied the real YouTube video at https://youtu.be/NclbnG0_8d0; its oEmbed metadata resolves to “QuietOps” and the article contains the actual DEV embed. The user also selected GitHub owner Saifullahakjsnd (Saifullah). Repository publication awaits visibility and authenticated access. No repository link or hosted screenshot URL is invented.
+The user supplied the real YouTube video at https://youtu.be/NclbnG0_8d0; its oEmbed metadata resolves to “QuietOps” and the article contains the actual DEV embed. The source and screenshots are published at https://github.com/Saifullahakjsnd/QuietOps under the user-selected account. All eight hosted image URLs were verified, and the article uses five commit-pinned images. DEV publication remains manual after user review.
