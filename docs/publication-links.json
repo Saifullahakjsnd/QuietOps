@@ -1,0 +1,22 @@
+{
+  "youtube": {
+    "url": "https://youtu.be/NclbnG0_8d0",
+    "video_id": "NclbnG0_8d0",
+    "title": "QuietOps",
+    "author_name": "john gray",
+    "author_url": "https://www.youtube.com/@johngray-q8l",
+    "verification": "YouTube oEmbed returned a video entry and iframe for the supplied ID.",
+    "embed": "{% youtube NclbnG0_8d0 %}"
+  },
+  "github": {
+    "selected_owner": "Saifullahakjsnd",
+    "display_name": "Saifullah",
+    "proposed_repository_name": "QuietOps",
+    "visibility": "public",
+    "authenticated_access_verified": false,
+    "repository_url": null,
+    "public_lookup": "No publicly accessible repository at the proposed destination (HTTP 404). This does not rule out a private repository.",
+    "screenshot_request": "Embed actual application screenshots and a labelled local post-preview image in the public repository README.",
+    "authentication_method": "Project-local official GitHub CLI device authorization; awaiting user login."
+  }
+}

@@ -1,0 +1,3 @@
+# Optional genuine Kokoro-82M ONNX narration runtime, separate from application requirements.
+kokoro-onnx==0.6.1
+soundfile==0.14.0

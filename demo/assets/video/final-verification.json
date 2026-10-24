@@ -1,0 +1,495 @@
+{
+  "voice": "bm_george",
+  "user_selection": "George (bm_george), explicitly selected in chat",
+  "engine": "kokoro-onnx",
+  "engine_version": "0.6.1",
+  "model": "Kokoro-82M v1.0",
+  "model_sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voices_sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "duration_seconds": 118.12,
+  "audio_sample_rate": 24000,
+  "audio_frames": 2834880,
+  "subtitle_cues": 31,
+  "subtitle_alignment": "Scene-anchored phrases, duration proportional to word count; not forced word alignment.",
+  "source_screen_timing_preserved": true,
+  "full_decode_passed": true,
+  "scenes": [
+    {
+      "id": "01-evening",
+      "start": 0.5,
+      "end": 10.7,
+      "screen": "Empty shop workspace",
+      "text": "The shutters are down. The spreadsheets are still open. Stock, deliveries, invoices: one more evening spent looking for the small thing that could go wrong tomorrow.",
+      "speech_start": 0.554,
+      "speech_end": 10.646,
+      "raw_duration": 10.356,
+      "tempo": 1.0253
+    },
+    {
+      "id": "02-fictional-demo",
+      "start": 11.1,
+      "end": 19.4,
+      "screen": "Seeded demo dashboard",
+      "text": "This fictional shop has sixty products, twelve suppliers, and ninety days of sales. Twelve review candidates surface.",
+      "speech_start": 11.3,
+      "speech_end": 19.195,
+      "raw_duration": 7.904,
+      "tempo": 1.0
+    },
+    {
+      "id": "03-sources",
+      "start": 19.9,
+      "end": 26.1,
+      "screen": "Import and confirmed source files",
+      "text": "Original files stay intact. Confirmed mappings and recorded hashes keep every flag traceable.",
+      "speech_start": 19.955,
+      "speech_end": 26.045,
+      "raw_duration": 7.069,
+      "tempo": 1.1589
+    },
+    {
+      "id": "04-inventory",
+      "start": 26.55,
+      "end": 34.65,
+      "screen": "Inventory cover",
+      "text": "Stock cover compares recent sales with supplier lead time. The lowest cover comes first, with estimates clearly marked.",
+      "speech_start": 26.652,
+      "speech_end": 34.548,
+      "raw_duration": 7.904,
+      "tempo": 1.0
+    },
+    {
+      "id": "05-inbox",
+      "start": 35.25,
+      "end": 39.0,
+      "screen": "Issue inbox",
+      "text": "A short inbox replaces the hunt across rows.",
+      "speech_start": 35.304,
+      "speech_end": 38.946,
+      "raw_duration": 3.68,
+      "tempo": 1.0082
+    },
+    {
+      "id": "06-calculation",
+      "start": 39.45,
+      "end": 48.15,
+      "screen": "Oat milk source evidence and calculation",
+      "text": "Oat milk has four units left. A hundred and seventy-four sales over ninety days gives just over two days of cover.",
+      "speech_start": 39.65,
+      "speech_end": 47.884,
+      "raw_duration": 8.244,
+      "tempo": 1.0
+    },
+    {
+      "id": "07-assumptions",
+      "start": 48.6,
+      "end": 56.55,
+      "screen": "Expanded assumptions and local inference",
+      "text": "The supplier needs five days. But missing sales count as zero, and incoming orders still need checking. The assumptions stay visible.",
+      "speech_start": 48.651,
+      "speech_end": 56.499,
+      "raw_duration": 9.023,
+      "tempo": 1.1495
+    },
+    {
+      "id": "08-local-ai",
+      "start": 57.0,
+      "end": 68.7,
+      "screen": "Actual model explanation and suggested step",
+      "text": "Now Ministral reads the evidence locally. It explains the flag and proposes a next step. Source and number checks help, but the wording still needs human judgement.",
+      "speech_start": 57.2,
+      "speech_end": 68.125,
+      "raw_duration": 10.933,
+      "tempo": 1.0
+    },
+    {
+      "id": "09-draft",
+      "start": 69.4,
+      "end": 75.1,
+      "screen": "Purchase review draft in fix queue",
+      "text": "The proposed next step becomes a purchase review draft, ready for an owner to inspect.",
+      "speech_start": 69.453,
+      "speech_end": 75.047,
+      "raw_duration": 6.005,
+      "tempo": 1.0724
+    },
+    {
+      "id": "10-review",
+      "start": 75.6,
+      "end": 84.9,
+      "screen": "Editable action review dialog",
+      "text": "Review the wording, verify the sources, and edit where needed. The model helps write the request; it does not make the decision.",
+      "speech_start": 75.8,
+      "speech_end": 84.146,
+      "raw_duration": 8.351,
+      "tempo": 1.0
+    },
+    {
+      "id": "11-approve-export",
+      "start": 85.45,
+      "end": 95.2,
+      "screen": "Approved draft and manual export",
+      "text": "Approval makes the draft available for export. It sends no email, places no order, and changes no financial record.",
+      "speech_start": 85.65,
+      "speech_end": 94.113,
+      "raw_duration": 8.47,
+      "tempo": 1.0
+    },
+    {
+      "id": "12-audit",
+      "start": 95.75,
+      "end": 102.3,
+      "screen": "Audit history",
+      "text": "The audit trail records the check, model explanation, approval, and export. Each step stays accountable.",
+      "speech_start": 95.804,
+      "speech_end": 102.246,
+      "raw_duration": 7.397,
+      "tempo": 1.1468
+    },
+    {
+      "id": "13-payoff",
+      "start": 102.8,
+      "end": 117.8,
+      "screen": "Dashboard with one approved draft",
+      "text": "In this synthetic run, thousands of rows become twelve candidates and one approved draft. Actual owner time savings still need a field study. Catch the small things. Keep your evening.",
+      "speech_start": 103.0,
+      "speech_end": 115.547,
+      "raw_duration": 12.553,
+      "tempo": 1.0
+    }
+  ],
+  "subtitle_cue_timings": [
+    {
+      "start": 0.554479166666666,
+      "end": 2.1069471153846147,
+      "text": "The shutters are down.",
+      "scene": "01-evening"
+    },
+    {
+      "start": 2.1069471153846147,
+      "end": 4.047532051282051,
+      "text": "The spreadsheets are still open.",
+      "scene": "01-evening"
+    },
+    {
+      "start": 4.047532051282051,
+      "end": 9.093052884615386,
+      "text": "Stock, deliveries, invoices: one more evening spent looking for the small thing that",
+      "scene": "01-evening"
+    },
+    {
+      "start": 9.093052884615386,
+      "end": 10.645520833333334,
+      "text": "could go wrong tomorrow.",
+      "scene": "01-evening"
+    },
+    {
+      "start": 11.299999999999999,
+      "end": 17.337575980392156,
+      "text": "This fictional shop has sixty products, twelve suppliers, and ninety days of sales.",
+      "scene": "02-fictional-demo"
+    },
+    {
+      "start": 17.337575980392156,
+      "end": 19.195291666666666,
+      "text": "Twelve review candidates surface.",
+      "scene": "02-fictional-demo"
+    },
+    {
+      "start": 19.954520833333333,
+      "end": 21.82866185897436,
+      "text": "Original files stay intact.",
+      "scene": "03-sources"
+    },
+    {
+      "start": 21.82866185897436,
+      "end": 26.045479166666667,
+      "text": "Confirmed mappings and recorded hashes keep every flag traceable.",
+      "scene": "03-sources"
+    },
+    {
+      "start": 26.652124999999998,
+      "end": 30.599999999999998,
+      "text": "Stock cover compares recent sales with supplier lead time.",
+      "scene": "04-inventory"
+    },
+    {
+      "start": 30.599999999999998,
+      "end": 34.547875,
+      "text": "The lowest cover comes first, with estimates clearly marked.",
+      "scene": "04-inventory"
+    },
+    {
+      "start": 35.304125,
+      "end": 38.945875,
+      "text": "A short inbox replaces the hunt across rows.",
+      "scene": "05-inbox"
+    },
+    {
+      "start": 39.650000000000006,
+      "end": 42.002428571428574,
+      "text": "Oat milk has four units left.",
+      "scene": "06-calculation"
+    },
+    {
+      "start": 42.002428571428574,
+      "end": 47.883500000000005,
+      "text": "A hundred and seventy-four sales over ninety days gives just over two days of cover.",
+      "scene": "06-calculation"
+    },
+    {
+      "start": 48.650729166666665,
+      "end": 50.51942956349206,
+      "text": "The supplier needs five days.",
+      "scene": "07-assumptions"
+    },
+    {
+      "start": 50.51942956349206,
+      "end": 55.004310515873016,
+      "text": "But missing sales count as zero, and incoming orders still need checking.",
+      "scene": "07-assumptions"
+    },
+    {
+      "start": 55.004310515873016,
+      "end": 56.499270833333334,
+      "text": "The assumptions stay visible.",
+      "scene": "07-assumptions"
+    },
+    {
+      "start": 57.2,
+      "end": 59.62776851851852,
+      "text": "Now Ministral reads the evidence locally.",
+      "scene": "08-local-ai"
+    },
+    {
+      "start": 59.62776851851852,
+      "end": 63.2694212962963,
+      "text": "It explains the flag and proposes a next step.",
+      "scene": "08-local-ai"
+    },
+    {
+      "start": 63.2694212962963,
+      "end": 68.12495833333334,
+      "text": "Source and number checks help, but the wording still needs human judgement.",
+      "scene": "08-local-ai"
+    },
+    {
+      "start": 69.45252083333334,
+      "end": 75.04747916666668,
+      "text": "The proposed next step becomes a purchase review draft, ready for an owner to inspect.",
+      "scene": "09-draft"
+    },
+    {
+      "start": 75.8,
+      "end": 79.59354166666667,
+      "text": "Review the wording, verify the sources, and edit where needed.",
+      "scene": "10-review"
+    },
+    {
+      "start": 79.59354166666667,
+      "end": 84.14579166666667,
+      "text": "The model helps write the request; it does not make the decision.",
+      "scene": "10-review"
+    },
+    {
+      "start": 85.65,
+      "end": 88.76790131578947,
+      "text": "Approval makes the draft available for export.",
+      "scene": "11-approve-export"
+    },
+    {
+      "start": 88.76790131578947,
+      "end": 94.112875,
+      "text": "It sends no email, places no order, and changes no financial record.",
+      "scene": "11-approve-export"
+    },
+    {
+      "start": 95.80375,
+      "end": 100.52825,
+      "text": "The audit trail records the check, model explanation, approval, and export.",
+      "scene": "12-audit"
+    },
+    {
+      "start": 100.52825,
+      "end": 102.24625,
+      "text": "Each step stays accountable.",
+      "scene": "12-audit"
+    },
+    {
+      "start": 103.0,
+      "end": 108.43701527777777,
+      "text": "In this synthetic run, thousands of rows become twelve candidates and one approved",
+      "scene": "13-payoff"
+    },
+    {
+      "start": 108.43701527777777,
+      "end": 108.85524722222222,
+      "text": "draft.",
+      "scene": "13-payoff"
+    },
+    {
+      "start": 108.85524722222222,
+      "end": 112.61933472222222,
+      "text": "Actual owner time savings still need a field study.",
+      "scene": "13-payoff"
+    },
+    {
+      "start": 112.61933472222222,
+      "end": 114.29226249999999,
+      "text": "Catch the small things.",
+      "scene": "13-payoff"
+    },
+    {
+      "start": 114.29226249999999,
+      "end": 115.54695833333332,
+      "text": "Keep your evening.",
+      "scene": "13-payoff"
+    }
+  ],
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "25/1",
+        "avg_frame_rate": "25/1",
+        "time_base": "1/12800",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1511936,
+        "duration": "118.120000",
+        "bit_rate": "186334",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "2953",
+        "extradata_size": 48,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc62.11.100 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "24000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/24000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2834880,
+        "duration": "118.120000",
+        "bit_rate": "98750",
+        "nb_frames": "2770",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "G:\\Hacktoberfest-2026-Week3\\02-QuietOps\\demo\\assets\\video\\final_demo.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "118.120000",
+      "size": "4284490",
+      "bit_rate": "290178",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "title": "QuietOps \u2014 Evidence, a draft, and a quieter evening",
+        "encoder": "Lavf62.3.100",
+        "comment": "Fictional shop data; real local Ministral inference; genuine Kokoro-82M bm_george narration."
+      }
+    }
+  },
+  "elapsed_seconds": 52.99,
+  "outputs": {
+    "demo\\assets\\audio\\kokoro_voiceover.wav": "a8e659a0c72292f9397c614f49d2993ef70cbef65d8b2d35d45d34db4703fed6",
+    "demo\\assets\\audio\\subtitles.srt": "f0af38ea8985d1e7ad1ecf4a9513e48468d8c8c103f23740b1b818456cf799ea",
+    "demo\\assets\\video\\final_demo.mp4": "daf18fa61577ccb1c3b5d7d7c063e9cc8fe55e99cf9f39d094a1f0cfe2926980"
+  },
+  "captions": "English captions burned into a reserved 81px strip; separate SRT and WebVTT supplied. No duplicate subtitle overlay track."
+}

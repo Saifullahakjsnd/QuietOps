@@ -1,0 +1,140 @@
+WEBVTT
+
+1
+00:00:00.554 --> 00:00:02.107
+The shutters are down.
+
+2
+00:00:02.107 --> 00:00:04.048
+The spreadsheets are still open.
+
+3
+00:00:04.048 --> 00:00:09.093
+Stock, deliveries, invoices: one more evening
+spent looking for the small thing that
+
+4
+00:00:09.093 --> 00:00:10.646
+could go wrong tomorrow.
+
+5
+00:00:11.300 --> 00:00:17.338
+This fictional shop has sixty products, twelve
+suppliers, and ninety days of sales.
+
+6
+00:00:17.338 --> 00:00:19.195
+Twelve review candidates surface.
+
+7
+00:00:19.955 --> 00:00:21.829
+Original files stay intact.
+
+8
+00:00:21.829 --> 00:00:26.045
+Confirmed mappings and recorded hashes keep
+every flag traceable.
+
+9
+00:00:26.652 --> 00:00:30.600
+Stock cover compares recent sales with
+supplier lead time.
+
+10
+00:00:30.600 --> 00:00:34.548
+The lowest cover comes first, with estimates
+clearly marked.
+
+11
+00:00:35.304 --> 00:00:38.946
+A short inbox replaces the hunt across rows.
+
+12
+00:00:39.650 --> 00:00:42.002
+Oat milk has four units left.
+
+13
+00:00:42.002 --> 00:00:47.884
+A hundred and seventy-four sales over ninety
+days gives just over two days of cover.
+
+14
+00:00:48.651 --> 00:00:50.519
+The supplier needs five days.
+
+15
+00:00:50.519 --> 00:00:55.004
+But missing sales count as zero, and incoming
+orders still need checking.
+
+16
+00:00:55.004 --> 00:00:56.499
+The assumptions stay visible.
+
+17
+00:00:57.200 --> 00:00:59.628
+Now Ministral reads the evidence locally.
+
+18
+00:00:59.628 --> 00:01:03.269
+It explains the flag and proposes a next step.
+
+19
+00:01:03.269 --> 00:01:08.125
+Source and number checks help, but the wording
+still needs human judgement.
+
+20
+00:01:09.453 --> 00:01:15.047
+The proposed next step becomes a purchase
+review draft, ready for an owner to inspect.
+
+21
+00:01:15.800 --> 00:01:19.594
+Review the wording, verify the sources, and
+edit where needed.
+
+22
+00:01:19.594 --> 00:01:24.146
+The model helps write the request; it does not
+make the decision.
+
+23
+00:01:25.650 --> 00:01:28.768
+Approval makes the draft available for export.
+
+24
+00:01:28.768 --> 00:01:34.113
+It sends no email, places no order, and
+changes no financial record.
+
+25
+00:01:35.804 --> 00:01:40.528
+The audit trail records the check, model
+explanation, approval, and export.
+
+26
+00:01:40.528 --> 00:01:42.246
+Each step stays accountable.
+
+27
+00:01:43.000 --> 00:01:48.437
+In this synthetic run, thousands of rows
+become twelve candidates and one approved
+
+28
+00:01:48.437 --> 00:01:48.855
+draft.
+
+29
+00:01:48.855 --> 00:01:52.619
+Actual owner time savings still need a field
+study.
+
+30
+00:01:52.619 --> 00:01:54.292
+Catch the small things.
+
+31
+00:01:54.292 --> 00:01:55.547
+Keep your evening.

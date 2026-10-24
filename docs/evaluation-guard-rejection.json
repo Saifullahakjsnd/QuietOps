@@ -1,0 +1,100 @@
+{
+  "at": "2026-10-23T21:00:07.755749+00:00",
+  "dataset": "Explicitly fictional seed 42; 60 SKUs / 12 suppliers / 90 days",
+  "scope": "In-distribution synthetic fixture only, not real shop accuracy; detector thresholds are not independently tuned.",
+  "rows": 5522,
+  "issues": 12,
+  "scan_latency_ms": 74,
+  "demo_import_and_scan_ms": 351,
+  "detectors": {
+    "stockout": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "late_order": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "duplicate_exact": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "duplicate_fuzzy": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "measured_human_time_saved": null,
+  "real_ai": [
+    {
+      "kind": "stockout",
+      "http_status": 200,
+      "wall_ms": 2211,
+      "explanation": "The stock of oat milk (SKU-001) from Northfield Foods shows only about two days of remaining inventory based on recent sales trends, which is below the supplier\u2019s typical five-day lead time. This suggests a potential stockout risk if no new orders are placed soon, assuming current demand patterns continue.",
+      "next_step": "Verify if there are any open purchase orders for SKU-001 in the system before initiating a new reorder to avoid duplicate orders. Confirm the inventory snapshot date in the inventory.csv file (source c351a257-r2) is current and aligns with the sales data in sales.csv (source 9fccd4f4-r2).",
+      "evidence_ids": [
+        "c351a257-r2",
+        "9fccd4f4-r2"
+      ],
+      "model": "ministral-3:8b",
+      "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+      "latency_ms": 2198,
+      "generated_at": "2026-10-23T21:00:09.956610+00:00",
+      "guard": "Source-ID and numeric-token validation; human review still required.",
+      "guards_passed": true
+    },
+    {
+      "kind": "late_order",
+      "http_status": 503,
+      "wall_ms": 1222,
+      "guards_passed": false,
+      "error": "{\"detail\":\"Local model unavailable or grounding validation failed. No generated explanation was substituted. Model cited an unknown source; response withheld.\"}"
+    },
+    {
+      "kind": "duplicate_exact",
+      "http_status": 200,
+      "wall_ms": 1495,
+      "explanation": "The invoice identifier INV-4100 from Northfield Foods appears twice in the records, suggesting a potential duplicate entry that requires verification before proceeding with payment processing. This is a standard review candidate, not definitive proof of fraud or incorrect payment.",
+      "next_step": "Confirm whether INV-4100 was issued twice or if one entry should be removed. Provide clarification on the correct invoice details or indicate if both entries are valid and should be processed separately.",
+      "evidence_ids": [
+        "6e52dcf4-r2",
+        "6e52dcf4-r38"
+      ],
+      "model": "ministral-3:8b",
+      "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+      "latency_ms": 1483,
+      "generated_at": "2026-10-23T21:00:12.673843+00:00",
+      "guard": "Source-ID and numeric-token validation; human review still required.",
+      "guards_passed": true
+    },
+    {
+      "kind": "duplicate_fuzzy",
+      "http_status": 200,
+      "wall_ms": 1716,
+      "explanation": "The system flagged two invoices from Oak & Grain with identical amounts and currency, similar invoice identifiers (score 0.76), and dates within three days, raising a potential duplicate transaction concern. Reviewing the original invoice details is required to confirm whether this is a legitimate separate transaction or an error.",
+      "next_step": "Please provide the full text or scanned images of both invoices (IDs: INV-4101 and the matching candidate) for manual comparison of line items, dates, and supplier references. Confirm if these represent two distinct purchases or if one should be voided.",
+      "evidence_ids": [
+        "6e52dcf4-r3",
+        "6e52dcf4-r39"
+      ],
+      "model": "ministral-3:8b",
+      "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+      "latency_ms": 1704,
+      "generated_at": "2026-10-23T21:00:14.390548+00:00",
+      "guard": "Source-ID and numeric-token validation; human review still required.",
+      "guards_passed": true
+    }
+  ]
+}

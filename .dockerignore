@@ -1,0 +1,10 @@
+node_modules
+.next
+.venv
+data
+logs
+.git
+.env
+.env.local
+test-results
+demo/assets

@@ -1,0 +1,22 @@
+{
+  "stockout": [
+    "SKU-001",
+    "SKU-002",
+    "SKU-003",
+    "SKU-004",
+    "SKU-005",
+    "SKU-006"
+  ],
+  "late_order": [
+    "PO-2020",
+    "PO-2021",
+    "PO-2022",
+    "PO-2023"
+  ],
+  "duplicate_exact": [
+    "INV-4100"
+  ],
+  "duplicate_fuzzy": [
+    "INV-4101"
+  ]
+}

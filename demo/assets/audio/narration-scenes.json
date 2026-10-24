@@ -1,0 +1,87 @@
+{
+  "voice": "bm_george",
+  "video": "demo/assets/video/demo_silent.mp4",
+  "duration": 118.12,
+  "timing_source": "Actual scene changes inspected with FFmpeg scene detection and the UI storyboard; original screen timing preserved.",
+  "scenes": [
+    {
+      "id": "01-evening",
+      "start": 0.5,
+      "end": 10.7,
+      "screen": "Empty shop workspace"
+    },
+    {
+      "id": "02-fictional-demo",
+      "start": 11.1,
+      "end": 19.4,
+      "screen": "Seeded demo dashboard"
+    },
+    {
+      "id": "03-sources",
+      "start": 19.9,
+      "end": 26.1,
+      "screen": "Import and confirmed source files"
+    },
+    {
+      "id": "04-inventory",
+      "start": 26.55,
+      "end": 34.65,
+      "screen": "Inventory cover"
+    },
+    {
+      "id": "05-inbox",
+      "start": 35.25,
+      "end": 39.0,
+      "screen": "Issue inbox"
+    },
+    {
+      "id": "06-calculation",
+      "start": 39.45,
+      "end": 48.15,
+      "screen": "Oat milk source evidence and calculation"
+    },
+    {
+      "id": "07-assumptions",
+      "start": 48.6,
+      "end": 56.55,
+      "screen": "Expanded assumptions and local inference"
+    },
+    {
+      "id": "08-local-ai",
+      "start": 57.0,
+      "end": 68.7,
+      "screen": "Actual model explanation and suggested step"
+    },
+    {
+      "id": "09-draft",
+      "start": 69.4,
+      "end": 75.1,
+      "screen": "Purchase review draft in fix queue"
+    },
+    {
+      "id": "10-review",
+      "start": 75.6,
+      "end": 84.9,
+      "screen": "Editable action review dialog"
+    },
+    {
+      "id": "11-approve-export",
+      "start": 85.45,
+      "end": 95.2,
+      "screen": "Approved draft and manual export"
+    },
+    {
+      "id": "12-audit",
+      "start": 95.75,
+      "end": 102.3,
+      "screen": "Audit history"
+    },
+    {
+      "id": "13-payoff",
+      "start": 102.8,
+      "end": 117.8,
+      "screen": "Dashboard with one approved draft"
+    }
+  ],
+  "video_sha256": "2c78e6dc6576a444f44a618b29733852f59a07cecb9ddca5249225415ce89856"
+}

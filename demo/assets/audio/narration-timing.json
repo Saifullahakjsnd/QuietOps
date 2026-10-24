@@ -1,0 +1,150 @@
+{
+  "voice": "bm_george",
+  "sample_rate": 24000,
+  "duration": 118.12,
+  "chunks": [
+    {
+      "id": "01-evening",
+      "start": 0.5,
+      "end": 10.7,
+      "screen": "Empty shop workspace",
+      "text": "The shutters are down. The spreadsheets are still open. Stock, deliveries, invoices: one more evening spent looking for the small thing that could go wrong tomorrow.",
+      "speech_start": 0.554,
+      "speech_end": 10.646,
+      "raw_duration": 10.356,
+      "tempo": 1.0253
+    },
+    {
+      "id": "02-fictional-demo",
+      "start": 11.1,
+      "end": 19.4,
+      "screen": "Seeded demo dashboard",
+      "text": "This fictional shop has sixty products, twelve suppliers, and ninety days of sales. Twelve review candidates surface.",
+      "speech_start": 11.3,
+      "speech_end": 19.195,
+      "raw_duration": 7.904,
+      "tempo": 1.0
+    },
+    {
+      "id": "03-sources",
+      "start": 19.9,
+      "end": 26.1,
+      "screen": "Import and confirmed source files",
+      "text": "Original files stay intact. Confirmed mappings and recorded hashes keep every flag traceable.",
+      "speech_start": 19.955,
+      "speech_end": 26.045,
+      "raw_duration": 7.069,
+      "tempo": 1.1589
+    },
+    {
+      "id": "04-inventory",
+      "start": 26.55,
+      "end": 34.65,
+      "screen": "Inventory cover",
+      "text": "Stock cover compares recent sales with supplier lead time. The lowest cover comes first, with estimates clearly marked.",
+      "speech_start": 26.652,
+      "speech_end": 34.548,
+      "raw_duration": 7.904,
+      "tempo": 1.0
+    },
+    {
+      "id": "05-inbox",
+      "start": 35.25,
+      "end": 39.0,
+      "screen": "Issue inbox",
+      "text": "A short inbox replaces the hunt across rows.",
+      "speech_start": 35.304,
+      "speech_end": 38.946,
+      "raw_duration": 3.68,
+      "tempo": 1.0082
+    },
+    {
+      "id": "06-calculation",
+      "start": 39.45,
+      "end": 48.15,
+      "screen": "Oat milk source evidence and calculation",
+      "text": "Oat milk has four units left. A hundred and seventy-four sales over ninety days gives just over two days of cover.",
+      "speech_start": 39.65,
+      "speech_end": 47.884,
+      "raw_duration": 8.244,
+      "tempo": 1.0
+    },
+    {
+      "id": "07-assumptions",
+      "start": 48.6,
+      "end": 56.55,
+      "screen": "Expanded assumptions and local inference",
+      "text": "The supplier needs five days. But missing sales count as zero, and incoming orders still need checking. The assumptions stay visible.",
+      "speech_start": 48.651,
+      "speech_end": 56.499,
+      "raw_duration": 9.023,
+      "tempo": 1.1495
+    },
+    {
+      "id": "08-local-ai",
+      "start": 57.0,
+      "end": 68.7,
+      "screen": "Actual model explanation and suggested step",
+      "text": "Now Ministral reads the evidence locally. It explains the flag and proposes a next step. Source and number checks help, but the wording still needs human judgement.",
+      "speech_start": 57.2,
+      "speech_end": 68.125,
+      "raw_duration": 10.933,
+      "tempo": 1.0
+    },
+    {
+      "id": "09-draft",
+      "start": 69.4,
+      "end": 75.1,
+      "screen": "Purchase review draft in fix queue",
+      "text": "The proposed next step becomes a purchase review draft, ready for an owner to inspect.",
+      "speech_start": 69.453,
+      "speech_end": 75.047,
+      "raw_duration": 6.005,
+      "tempo": 1.0724
+    },
+    {
+      "id": "10-review",
+      "start": 75.6,
+      "end": 84.9,
+      "screen": "Editable action review dialog",
+      "text": "Review the wording, verify the sources, and edit where needed. The model helps write the request; it does not make the decision.",
+      "speech_start": 75.8,
+      "speech_end": 84.146,
+      "raw_duration": 8.351,
+      "tempo": 1.0
+    },
+    {
+      "id": "11-approve-export",
+      "start": 85.45,
+      "end": 95.2,
+      "screen": "Approved draft and manual export",
+      "text": "Approval makes the draft available for export. It sends no email, places no order, and changes no financial record.",
+      "speech_start": 85.65,
+      "speech_end": 94.113,
+      "raw_duration": 8.47,
+      "tempo": 1.0
+    },
+    {
+      "id": "12-audit",
+      "start": 95.75,
+      "end": 102.3,
+      "screen": "Audit history",
+      "text": "The audit trail records the check, model explanation, approval, and export. Each step stays accountable.",
+      "speech_start": 95.804,
+      "speech_end": 102.246,
+      "raw_duration": 7.397,
+      "tempo": 1.1468
+    },
+    {
+      "id": "13-payoff",
+      "start": 102.8,
+      "end": 117.8,
+      "screen": "Dashboard with one approved draft",
+      "text": "In this synthetic run, thousands of rows become twelve candidates and one approved draft. Actual owner time savings still need a field study. Catch the small things. Keep your evening.",
+      "speech_start": 103.0,
+      "speech_end": 115.547,
+      "raw_duration": 12.553,
+      "tempo": 1.0
+    }
+  ]
+}

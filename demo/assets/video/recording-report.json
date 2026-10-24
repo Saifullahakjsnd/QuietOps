@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-10-23T21:09:28.099Z",
+  "elapsed_ms": 126762,
+  "synthetic": true,
+  "real_local_inference": true,
+  "output": "G:\\Hacktoberfest-2026-Week3\\02-QuietOps\\demo\\assets\\video\\demo_silent.mp4",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "format": {
+      "duration": "118.120000"
+    }
+  },
+  "browser_errors": []
+}

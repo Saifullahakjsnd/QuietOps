@@ -1,0 +1,25 @@
+order_id,sku,supplier,expected_date,ordered_qty,received_qty,unit
+PO-2020,SKU-001,Northfield Foods,2026-10-21,60,20,each
+PO-2021,SKU-002,Oak & Grain,2026-10-20,60,20,each
+PO-2022,SKU-003,Daily Dairy Co.,2026-10-19,60,20,each
+PO-2023,SKU-004,Greenhouse Produce,2026-10-18,60,20,each
+PO-2024,SKU-005,Harbor Pantry,2026-11-01,60,0,each
+PO-2025,SKU-006,Sunrise Bakery,2026-11-02,60,0,each
+PO-2026,SKU-007,Meadow Mills,2026-11-03,60,0,each
+PO-2027,SKU-008,Kindred Coffee,2026-11-04,60,0,each
+PO-2028,SKU-009,Orchard Supply,2026-11-05,60,0,each
+PO-2029,SKU-010,Well & Good,2026-11-06,60,0,each
+PO-2030,SKU-011,Maple Trading,2026-11-07,60,0,each
+PO-2031,SKU-012,Cornerstone Goods,2026-11-08,60,0,each
+PO-2032,SKU-013,Northfield Foods,2026-11-09,60,0,each
+PO-2033,SKU-014,Oak & Grain,2026-11-10,60,0,each
+PO-2034,SKU-015,Daily Dairy Co.,2026-11-11,60,0,each
+PO-2035,SKU-016,Greenhouse Produce,2026-11-12,60,0,each
+PO-2036,SKU-017,Harbor Pantry,2026-11-13,60,0,each
+PO-2037,SKU-018,Sunrise Bakery,2026-11-14,60,0,each
+PO-2038,SKU-019,Meadow Mills,2026-11-15,60,0,each
+PO-2039,SKU-020,Kindred Coffee,2026-11-16,60,0,each
+PO-2040,SKU-021,Orchard Supply,2026-11-17,60,0,each
+PO-2041,SKU-022,Well & Good,2026-11-18,60,0,each
+PO-2042,SKU-023,Maple Trading,2026-11-19,60,0,each
+PO-2043,SKU-024,Cornerstone Goods,2026-11-20,60,0,each

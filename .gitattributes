@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.ico -text
+*.xlsx -text
+*.mp4 -text
+*.webm -text
+*.wav -text
+*.zip -text
+# Preserve exact generated caption bytes referenced by media checksum reports.
+*.srt -text
+*.vtt -text

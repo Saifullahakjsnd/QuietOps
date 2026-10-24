@@ -1,0 +1,26 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11436}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-ministral-3:8b}
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - "127.0.0.1:9002:9002"
+    volumes:
+      - quietops-data:/app/data
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+      args:
+        BACKEND_URL: http://backend:9002
+    depends_on:
+      - backend
+    ports:
+      - "127.0.0.1:3002:3002"
+volumes:
+  quietops-data:

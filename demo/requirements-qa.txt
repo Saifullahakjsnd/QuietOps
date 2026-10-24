@@ -1,0 +1,3 @@
+# Optional independent speech QA and local article renderer.
+faster-whisper==1.2.1
+markdown==3.11.2

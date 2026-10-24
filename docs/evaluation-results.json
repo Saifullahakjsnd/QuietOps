@@ -1,0 +1,109 @@
+{
+  "at": "2026-10-23T21:01:46.050382+00:00",
+  "dataset": "Explicitly fictional seed 42; 60 SKUs / 12 suppliers / 90 days",
+  "scope": "In-distribution synthetic fixture only, not real shop accuracy; detector thresholds are not independently tuned.",
+  "rows": 5522,
+  "issues": 12,
+  "scan_latency_ms": 72,
+  "demo_import_and_scan_ms": 342,
+  "detectors": {
+    "stockout": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "late_order": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "duplicate_exact": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "duplicate_fuzzy": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "measured_human_time_saved": null,
+  "real_ai": [
+    {
+      "kind": "stockout",
+      "http_status": 200,
+      "wall_ms": 1928,
+      "explanation": "The stock of oat milk (SKU-001) from Northfield Foods shows only about two days of remaining inventory based on recent sales trends, which is below the supplier\u2019s typical five-day lead time. This suggests a potential stockout risk if no new orders are placed soon, assuming current demand patterns continue without adjustment.",
+      "next_step": "Verify if there are any open purchase orders for SKU-001 in the system before initiating a new reorder to avoid duplicate invoices. Confirm the inventory snapshot date in the inventory.csv file (source b725ea7f-r2) matches the most recent stock count.",
+      "evidence_ids": [
+        "b725ea7f-r2",
+        "98653d38-r2"
+      ],
+      "model": "ministral-3:8b",
+      "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+      "latency_ms": 1916,
+      "generated_at": "2026-10-23T21:01:47.968676+00:00",
+      "guard": "Source-ID and numeric-token validation; human review still required.",
+      "guards_passed": true
+    },
+    {
+      "kind": "late_order",
+      "http_status": 200,
+      "wall_ms": 1374,
+      "explanation": "The purchase order PO-2022 from Daily Dairy Co. shows a delivery delay of five days past the agreed date, with only a portion of the ordered quantity received. The outstanding quantity remains unfulfilled as of the latest scan date.",
+      "next_step": "Confirm whether the remaining 40 units from PO-2022 are still required or if the order should be canceled. Verify if any adjustments to the delivery date or quantity were communicated by Daily Dairy Co.",
+      "evidence_ids": [
+        "40aae2d1-r4"
+      ],
+      "model": "ministral-3:8b",
+      "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+      "latency_ms": 1360,
+      "generated_at": "2026-10-23T21:01:49.341849+00:00",
+      "guard": "Source-ID and numeric-token validation; human review still required.",
+      "guards_passed": true
+    },
+    {
+      "kind": "duplicate_exact",
+      "http_status": 200,
+      "wall_ms": 1509,
+      "explanation": "The invoice identifier INV-4100 from Northfield Foods appears twice in the records, suggesting a potential duplicate entry that requires verification before proceeding with payment processing. This is a candidate for review but does not confirm fraud or confirmed duplicate payments.",
+      "next_step": "Confirm whether INV-4100 was issued twice or if one entry should be removed. Provide clarification on the correct invoice details or indicate if both entries are valid and should be processed separately.",
+      "evidence_ids": [
+        "d5899065-r2",
+        "d5899065-r38"
+      ],
+      "model": "ministral-3:8b",
+      "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+      "latency_ms": 1497,
+      "generated_at": "2026-10-23T21:01:50.852543+00:00",
+      "guard": "Source-ID and numeric-token validation; human review still required.",
+      "guards_passed": true
+    },
+    {
+      "kind": "duplicate_fuzzy",
+      "http_status": 200,
+      "wall_ms": 1596,
+      "explanation": "The two invoices from Oak & Grain share the same amount and currency, with invoice identifiers showing high similarity (0.76) and were issued within three days of each other. This pattern meets the threshold for a potential duplicate candidate, requiring manual verification of the original documents.",
+      "next_step": "Please provide the original invoice files (INV-4101 and any related documents) for Oak & Grain to confirm whether these are separate transactions or duplicates. Verify dates, line items, and supplier references for consistency.",
+      "evidence_ids": [
+        "d5899065-r3",
+        "d5899065-r39"
+      ],
+      "model": "ministral-3:8b",
+      "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+      "latency_ms": 1583,
+      "generated_at": "2026-10-23T21:01:52.447909+00:00",
+      "guard": "Source-ID and numeric-token validation; human review still required.",
+      "guards_passed": true
+    }
+  ]
+}

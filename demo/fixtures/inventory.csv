@@ -1,0 +1,61 @@
+sku,item,supplier,on_hand,lead_days,unit,unit_cost,currency
+SKU-001,Oat milk,Northfield Foods,4,5,each,1.5,USD
+SKU-002,Sourdough loaf,Oak & Grain,6,6,each,1.81,USD
+SKU-003,Free-range eggs,Daily Dairy Co.,8,7,each,2.12,USD
+SKU-004,Cherry tomatoes,Greenhouse Produce,10,8,each,2.43,USD
+SKU-005,Jasmine rice,Harbor Pantry,12,9,each,2.74,USD
+SKU-006,Greek yogurt,Sunrise Bakery,14,10,each,3.05,USD
+SKU-007,Rolled oats,Meadow Mills,224,5,each,3.36,USD
+SKU-008,House blend coffee,Kindred Coffee,56,6,each,3.67,USD
+SKU-009,Apple juice,Orchard Supply,84,7,each,3.98,USD
+SKU-010,Olive oil,Well & Good,112,8,each,4.29,USD
+SKU-011,Wildflower honey,Maple Trading,140,9,each,4.6,USD
+SKU-012,Dark chocolate,Cornerstone Goods,168,10,each,4.91,USD
+SKU-013,Almond butter,Northfield Foods,196,5,each,5.22,USD
+SKU-014,Sea salt crackers,Oak & Grain,224,6,each,5.53,USD
+SKU-015,Red lentils,Daily Dairy Co.,56,7,each,5.84,USD
+SKU-016,Sparkling water,Greenhouse Produce,84,8,each,6.15,USD
+SKU-017,Coconut milk,Harbor Pantry,112,9,each,6.46,USD
+SKU-018,Penne pasta,Sunrise Bakery,140,10,each,6.77,USD
+SKU-019,Tomato passata,Meadow Mills,168,5,each,7.08,USD
+SKU-020,Granola,Kindred Coffee,196,6,each,7.39,USD
+SKU-021,Oat milk · 2,Orchard Supply,224,7,each,7.7,USD
+SKU-022,Sourdough loaf · 2,Well & Good,56,8,each,8.01,USD
+SKU-023,Free-range eggs · 2,Maple Trading,84,9,each,8.32,USD
+SKU-024,Cherry tomatoes · 2,Cornerstone Goods,112,10,each,8.63,USD
+SKU-025,Jasmine rice · 2,Northfield Foods,140,5,each,8.94,USD
+SKU-026,Greek yogurt · 2,Oak & Grain,168,6,each,9.25,USD
+SKU-027,Rolled oats · 2,Daily Dairy Co.,196,7,each,9.56,USD
+SKU-028,House blend coffee · 2,Greenhouse Produce,224,8,each,9.87,USD
+SKU-029,Apple juice · 2,Harbor Pantry,56,9,each,10.18,USD
+SKU-030,Olive oil · 2,Sunrise Bakery,84,10,each,10.49,USD
+SKU-031,Wildflower honey · 2,Meadow Mills,112,5,each,10.8,USD
+SKU-032,Dark chocolate · 2,Kindred Coffee,140,6,each,11.11,USD
+SKU-033,Almond butter · 2,Orchard Supply,168,7,each,11.42,USD
+SKU-034,Sea salt crackers · 2,Well & Good,196,8,each,11.73,USD
+SKU-035,Red lentils · 2,Maple Trading,224,9,each,12.04,USD
+SKU-036,Sparkling water · 2,Cornerstone Goods,56,10,each,12.35,USD
+SKU-037,Coconut milk · 2,Northfield Foods,84,5,each,12.66,USD
+SKU-038,Penne pasta · 2,Oak & Grain,112,6,each,12.97,USD
+SKU-039,Tomato passata · 2,Daily Dairy Co.,140,7,each,13.28,USD
+SKU-040,Granola · 2,Greenhouse Produce,168,8,each,13.59,USD
+SKU-041,Oat milk · 3,Harbor Pantry,196,9,each,13.9,USD
+SKU-042,Sourdough loaf · 3,Sunrise Bakery,224,10,each,14.21,USD
+SKU-043,Free-range eggs · 3,Meadow Mills,56,5,each,14.52,USD
+SKU-044,Cherry tomatoes · 3,Kindred Coffee,84,6,each,14.83,USD
+SKU-045,Jasmine rice · 3,Orchard Supply,112,7,each,15.14,USD
+SKU-046,Greek yogurt · 3,Well & Good,140,8,each,15.45,USD
+SKU-047,Rolled oats · 3,Maple Trading,168,9,each,15.76,USD
+SKU-048,House blend coffee · 3,Cornerstone Goods,196,10,each,16.07,USD
+SKU-049,Apple juice · 3,Northfield Foods,224,5,each,16.38,USD
+SKU-050,Olive oil · 3,Oak & Grain,56,6,each,16.69,USD
+SKU-051,Wildflower honey · 3,Daily Dairy Co.,84,7,each,17.0,USD
+SKU-052,Dark chocolate · 3,Greenhouse Produce,112,8,each,17.31,USD
+SKU-053,Almond butter · 3,Harbor Pantry,140,9,each,17.62,USD
+SKU-054,Sea salt crackers · 3,Sunrise Bakery,168,10,each,17.93,USD
+SKU-055,Red lentils · 3,Meadow Mills,196,5,each,18.24,USD
+SKU-056,Sparkling water · 3,Kindred Coffee,224,6,each,18.55,USD
+SKU-057,Coconut milk · 3,Orchard Supply,56,7,each,18.86,USD
+SKU-058,Penne pasta · 3,Well & Good,84,8,each,19.17,USD
+SKU-059,Tomato passata · 3,Maple Trading,112,9,each,19.48,USD
+SKU-060,Granola · 3,Cornerstone Goods,140,10,each,19.79,USD
