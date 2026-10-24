@@ -35,4 +35,4 @@ Built with Next.js, TypeScript, Tailwind, Radix/shadcn components, FastAPI, Pand
 
 The supplied video ID is `NclbnG0_8d0`. The public embed has been verified and added. No placeholder ID is used.
 
-The DEV post already contains five actual screenshots at verified, commit-pinned public GitHub URLs. The complete text is in `docs/DEV_SUBMISSION.md`; the offline article/video review is `docs/DEV_SUBMISSION.html`. Publish only after your review.
+The DEV post already contains five actual screenshots at verified, commit-pinned public GitHub URLs. The complete text is in `docs/DEV_SUBMISSION.md`; the offline article/video review is `docs/DEV_SUBMISSION.html`. The user has now published the reviewed article at https://dev.to/saif-uk/i-built-a-local-ai-to-turn-a-shops-evening-spreadsheet-hunt-into-a-fix-queue-5b5p.

@@ -1,6 +1,6 @@
 # QuietOps local handoff
 
-The user selected George for narration, supplied the uploaded YouTube video, and chose GitHub owner Saifullahakjsnd (Saifullah). All local deliverables are complete. The public repository is live at https://github.com/Saifullahakjsnd/QuietOps. All eight hosted screenshots were verified against the originals. The DEV article is ready for user review and manual publication.
+The user selected George for narration, supplied the uploaded YouTube video, and chose GitHub owner Saifullahakjsnd (Saifullah). All local deliverables are complete. The public repository is live at https://github.com/Saifullahakjsnd/QuietOps. All eight hosted screenshots were verified against the originals. The user published the [DEV article](https://dev.to/saif-uk/i-built-a-local-ai-to-turn-a-shops-evening-spreadsheet-hunt-into-a-fix-queue-5b5p) manually; its public page, five screenshots, YouTube embed, GitHub link and challenge tags are verified.
 
 ## Open the result
 
@@ -23,6 +23,6 @@ The demo and package fixtures are explicitly fictional. Code, documentation, syn
 
 ## External handoffs
 
-The article contains the verified public YouTube embed for https://youtu.be/NclbnG0_8d0. The public repository is https://github.com/Saifullahakjsnd/QuietOps, on branch `main`. The article uses five verified, commit-pinned repository image URLs. The README embeds actual application screenshots and the labelled local article preview. Authentication was verified as the selected owner, Saifullahakjsnd. The user reviews and publishes the DEV article manually.
+The article contains the verified public YouTube embed for https://youtu.be/NclbnG0_8d0. The public repository is https://github.com/Saifullahakjsnd/QuietOps, on branch `main`. The article uses five verified, commit-pinned repository image URLs. The README embeds actual application screenshots and the labelled local article preview. Authentication was verified as the selected owner, Saifullahakjsnd. The user published the DEV article manually at https://dev.to/saif-uk/i-built-a-local-ai-to-turn-a-shops-evening-spreadsheet-hunt-into-a-fix-queue-5b5p. The live post screenshot is included in the repository README, and the publication checklist is complete.
 
 Docker Compose configuration is provided, but container execution remains unverified because the Docker engine is unavailable. The native loopback deployment is verified and running. Other sessions' services were left separate.

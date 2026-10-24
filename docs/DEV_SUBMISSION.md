@@ -1,4 +1,4 @@
-<!-- READY FOR USER REVIEW. Public GitHub repository, commit-pinned screenshots and supplied YouTube embed verified. DEV publication remains manual after review. -->
+<!-- SOURCE ARTICLE. The user published the reviewed post at https://dev.to/saif-uk/i-built-a-local-ai-to-turn-a-shops-evening-spreadsheet-hunt-into-a-fix-queue-5b5p. This file preserves the prepared Markdown; the live post uses DEV-hosted copies of the five screenshots. -->
 
 Title: I Built a Local AI to Turn a Shop's Evening Spreadsheet Hunt Into a Fix Queue
 

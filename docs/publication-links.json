@@ -75,5 +75,21 @@
       "http_status": 200,
       "content_type": "application/zip"
     }
+  },
+  "dev": {
+    "url": "https://dev.to/saif-uk/i-built-a-local-ai-to-turn-a-shops-evening-spreadsheet-hunt-into-a-fix-queue-5b5p",
+    "article_id": 4909609,
+    "author": "saif-uk",
+    "published_at": "2026-10-24T09:01:14Z",
+    "tags": [
+      "devchallenge",
+      "hf26challenge",
+      "ai",
+      "opensource"
+    ],
+    "publication_method": "Published manually by the user; public article and DEV API returned HTTP 200.",
+    "youtube_embed_verified": true,
+    "github_link_verified": true,
+    "article_screenshots": 5
   }
 }

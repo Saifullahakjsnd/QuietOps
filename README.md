@@ -12,7 +12,7 @@ QuietOps is a working local application: Next.js + TypeScript + Tailwind + shadc
 - [Download source and demo assets](https://github.com/Saifullahakjsnd/QuietOps/archive/refs/heads/main.zip). Model weights, virtual environments, logs and working shop data are excluded. Build an additional local bundle and SHA-256 checksum with `python -m scripts.package_release`; outputs are in `dist/`.
 - [Fictional fixtures](demo/fixtures/README.md), including four CSVs, a one-sheet XLSX and separately stored gold labels.
 
-The application remains available at **http://127.0.0.1:3002** while its launchers are running. The user uploaded the YouTube video. The [GitHub repository](https://github.com/Saifullahakjsnd/QuietOps) is public, with embedded application screenshots and a labelled article preview. The DEV article awaits user review and manual publication.
+The application remains available at **http://127.0.0.1:3002** while its launchers are running. The user uploaded the YouTube video. The [GitHub repository](https://github.com/Saifullahakjsnd/QuietOps) is public, with embedded application screenshots and a labelled article preview. The user published the [DEV article](https://dev.to/saif-uk/i-built-a-local-ai-to-turn-a-shops-evening-spreadsheet-hunt-into-a-fix-queue-5b5p); the video embed, five screenshots, GitHub link and challenge tags are verified.
 
 [![Actual QuietOps dashboard](demo/assets/screenshots/01-dashboard.png)](https://youtu.be/NclbnG0_8d0)
 
@@ -40,7 +40,13 @@ These screenshots come from the running application using explicitly fictional s
 
 ![Preview of the article rendered from the local Markdown draft](demo/assets/screenshots/08-post-preview.png)
 
-Read the [complete article draft](docs/DEV_SUBMISSION.md). The preview is a local rendering; the DEV article has not been published automatically.
+Read the [published DEV article](https://dev.to/saif-uk/i-built-a-local-ai-to-turn-a-shops-evening-spreadsheet-hunt-into-a-fix-queue-5b5p) or the [source Markdown](docs/DEV_SUBMISSION.md). The image above is the retained local preview.
+
+### Published DEV post
+
+[![Actual published DEV article, captured in Microsoft Edge](demo/assets/screenshots/09-published-dev-post.png)](https://dev.to/saif-uk/i-built-a-local-ai-to-turn-a-shops-evening-spreadsheet-hunt-into-a-fix-queue-5b5p)
+
+This screenshot comes from the live public post. The user published it manually; its five article images, YouTube embed and GitHub link were verified.
 
 ## Run on Windows
 
@@ -147,4 +153,4 @@ SQLite, uploaded originals and derived records live in `data/` by default and ar
 
 Application: MIT. Model: [Ministral 3 8B Instruct 2512](https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512), Apache 2.0; [Ollama build](https://ollama.com/library/ministral-3). The model digest and runtime are recorded in evaluation output after genuine inference. Uses a 4096-token context, deterministic sampling, one concurrent request, five-minute keep-alive. There is no Gemma integration or eligibility claim for its category. No TabPFN integration is claimed.
 
-Architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Recording walkthrough: [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md). Completed publication checks and the remaining manual DEV review are recorded in [docs/PUBLISHING_CHECKLIST.md](docs/PUBLISHING_CHECKLIST.md).
+Architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). Recording walkthrough: [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md). The completed publication checklist is recorded in [docs/PUBLISHING_CHECKLIST.md](docs/PUBLISHING_CHECKLIST.md).

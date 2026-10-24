@@ -20,8 +20,8 @@ The user selected **George** for narration, supplied the real YouTube video, and
 - [x] User supplied the uploaded YouTube video: https://youtu.be/NclbnG0_8d0.
 - [x] Verify supplied video via YouTube oEmbed, title “QuietOps”; insert `{% youtube NclbnG0_8d0 %}` in the article.
 - [x] Replaced all five article images with verified commit-pinned public URLs; added the actual repository and source ZIP links.
-- [ ] User reviews and publishes the article manually. No automatic DEV publication.
+- [x] User published the article manually: [Read the live DEV post](https://dev.to/saif-uk/i-built-a-local-ai-to-turn-a-shops-evening-spreadsheet-hunt-into-a-fix-queue-5b5p). Public page and API verified, with the selected challenge tags, five screenshots, YouTube embed and GitHub link.
 
-The application, video, captions, portable archive and publication assets are complete. The public repository and all eight hosted images are verified. The article is ready for user review; it has not been published to DEV automatically.
+The application, video, captions, portable archive and publication assets are complete. The public repository and all eight hosted images are verified. The user published the DEV article manually, and its public URL and embedded assets are verified. The requested publication pipeline is complete.
 
 No Gemma, TabPFN, ElevenLabs or other partner-category integration is claimed. The project addresses the overall theme; personal contest eligibility is not asserted. Challenge rules and tags were inspected at the official [Week 3 page](https://dev.to/challenges/hacktoberfest-week3-2026-10-19).
