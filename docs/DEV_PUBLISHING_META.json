@@ -44,14 +44,22 @@
     }
   ],
   "new_video": {
-    "hosting": "github",
-    "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/video/final_demo.mp4",
-    "preview_url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/3ef2f835e4cbc8be82c29ddaef584a3271765007/demo/assets/tabpfn/final/video/post-preview.mp4",
-    "poster": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/03-predictive-risk.png",
-    "sha256": "5baa6633e9332b1d2ecac6f186324cde9a213c79e5814f01c3da6d758ded8dd0",
-    "verified_hosted_bytes": true,
-    "inline_preview_muted": true,
-    "dev_player_behavior": "Forem treats raw HTML video as a muted loop and removes controls; full narration is available through the explicit MP4 link."
+    "title": "quiet-ops-final",
+    "author_name": "john gray",
+    "author_url": "https://www.youtube.com/@johngray-q8l",
+    "type": "video",
+    "height": 113,
+    "width": 200,
+    "version": "1.0",
+    "provider_name": "YouTube",
+    "provider_url": "https://www.youtube.com/",
+    "thumbnail_height": 360,
+    "thumbnail_width": 480,
+    "thumbnail_url": "https://i.ytimg.com/vi/yvtDUqRYet8/hqdefault.jpg",
+    "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/yvtDUqRYet8?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"quiet-ops-final\"></iframe>",
+    "hosting": "youtube",
+    "url": "https://youtu.be/yvtDUqRYet8",
+    "video_id": "yvtDUqRYet8"
   },
   "body_file": "docs/DEV_SUBMISSION_FINAL.md"
 }

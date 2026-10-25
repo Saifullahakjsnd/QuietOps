@@ -18,13 +18,9 @@ That separation matters. A late order is a calculation from dates and outstandin
 
 ## Demo
 
-<video autoplay loop muted playsinline preload="metadata" width="800" poster="https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/03-predictive-risk.png">
-  <source src="https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/3ef2f835e4cbc8be82c29ddaef584a3271765007/demo/assets/tabpfn/final/video/post-preview.mp4" type="video/mp4">
-</video>
+{% youtube yvtDUqRYet8 %}
 
-**[▶ Watch or download the full narrated demo — 2:24, 1080p](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/video/final_demo.mp4)**
-
-The inline excerpt is muted. The full GitHub-hosted MP4 includes George’s narration and English captions; opening its link may download the file for your video player.
+The [updated narrated walkthrough](https://youtu.be/yvtDUqRYet8) is a genuine 1920×1080 browser recording, approximately two minutes and twenty-four seconds long.
 
 The new 143.76-second, 1920 x 1080 recording follows the actual application, backend, TabPFN inference, local Ministral explanation, editable supplier-review draft, approval, and export. The narration uses genuine local Kokoro-82M with George (`bm_george`), the voice selected for the original demonstration. Captions occupy a strip below the application so they do not cover its controls.
 

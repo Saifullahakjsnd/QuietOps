@@ -13,7 +13,7 @@ The new narrated final edition is [143.76 seconds, 1920?1080, with genuine Georg
 - [Actual historical evaluation JSON](tabpfn-evaluation.json) and [current prediction evidence](tabpfn-live-predictions.json)
 - [43-second captioned workflow video](../demo/assets/tabpfn/looking-ahead-demo.mp4), [screenshots](../demo/assets/tabpfn/02-looking-ahead.png), [comparison](../demo/assets/tabpfn/07-comparison.png), and [approved supplier-review export](../demo/assets/tabpfn/approved-supplier-review.md)
 - [Demo walkthrough](TABPFN_DEMO.md) and reproducible recorder via `npm run demo:predictive` in an empty isolated workspace
-- [Final post for review](DEV_SUBMISSION_FINAL.md) and [GitHub video publication guide](VIDEO_PUBLICATION.md), prepared locally for review; the published post was not updated
+- [Final post for review](DEV_SUBMISSION_FINAL.md) and [video publication guide](VIDEO_PUBLICATION.md), prepared locally for review; the published post was not updated
 - [Verification record](tabpfn-verification.json): 18 backend tests, three existing browser tests, the new real-model recording, TypeScript checking, production build, dependency check, full video decode and desktop/mobile inspection passed
 
 The historical comparison uses 420 training and 240 later test examples. TabPFN precision/recall/F1: **100.0% / 94.5% / 97.2%**. Cover-rule F1: **64.7%**; recent-demand F1: **71.8%**. These measured synthetic results do not establish real-shop accuracy, calibrated business risk, prevented losses or saved time.

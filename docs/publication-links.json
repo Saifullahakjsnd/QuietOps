@@ -107,11 +107,14 @@
       "width": 1920,
       "height": 1080,
       "voice": "bm_george",
-      "youtube_url": null,
-      "status": "Verified GitHub-hosted video; no new YouTube upload required",
+      "youtube_url": "https://youtu.be/yvtDUqRYet8",
+      "status": "Owner-supplied YouTube upload verified; final post uses its YouTube embed",
       "youtube_required": false,
       "preview_url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/3ef2f835e4cbc8be82c29ddaef584a3271765007/demo/assets/tabpfn/final/video/post-preview.mp4",
-      "inline_preview_muted": true
+      "youtube_video_id": "yvtDUqRYet8",
+      "youtube_embed": "{% youtube yvtDUqRYet8 %}",
+      "youtube_oembed_verified": true,
+      "article_hosting": "youtube"
     },
     "post_review": "docs/DEV_SUBMISSION_FINAL.md",
     "live_dev_updated": false,
@@ -148,6 +151,6 @@
       }
     ],
     "publication_ready": true,
-    "video_hosting_preference": "Owner requested GitHub video and inline preview instead of a new YouTube upload."
+    "video_hosting_preference": "Owner supplied a new YouTube upload after the GitHub inline preview did not embed as intended in DEV."
   }
 }

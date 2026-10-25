@@ -1,6 +1,6 @@
-# Optional YouTube alternative (superseded for this edition)
+# YouTube upload completed
 
-The owner chose GitHub-hosted video for the updated post. No YouTube upload is required. See [the current video publication guide](VIDEO_PUBLICATION.md). The instructions below remain only as an optional future alternative.
+The owner supplied https://youtu.be/yvtDUqRYet8. YouTube oEmbed verified this new upload, and the final post uses `{% youtube yvtDUqRYet8 %}`. See [the current video publication guide](VIDEO_PUBLICATION.md). The upload instructions below are retained as production notes; no further upload is needed. The owner is editing the live DEV article manually.
 
 # Updated video upload handoff
 
