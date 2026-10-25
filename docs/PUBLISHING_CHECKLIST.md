@@ -25,3 +25,19 @@ The user selected **George** for narration, supplied the real YouTube video, and
 The application, video, captions, portable archive and publication assets are complete. The public repository and all eight hosted images are verified. The user published the DEV article manually, and its public URL and embedded assets are verified. The requested publication pipeline is complete.
 
 No Gemma, TabPFN, ElevenLabs or other partner-category integration is claimed. The project addresses the overall theme; personal contest eligibility is not asserted. Challenge rules and tags were inspected at the official [Week 3 page](https://dev.to/challenges/hacktoberfest-week3-2026-10-19).
+
+
+## TabPFN upgrade publication (2026-10-25)
+
+The records above describe the original published edition. The new edition adds genuine TabPFN-3.5 inference; its prize-category claim belongs to the updated post, not the preserved original.
+
+- [x] Genuine TabPFN-3.5 inference, chronological evaluation and baseline results retained.
+- [x] Original published article and original narration/video assets preserved.
+- [x] Updated approximately 1,960-word post prepared in `DEV_SUBMISSION_TABPFN.md`, with category, limitations and scenario-selection disclosure.
+- [x] User's previous George voice selection retained; genuine Kokoro-82M narration generated.
+- [x] New 143.76-second 1920x1080 recording includes real model calls, evidence, edited draft, approval and export.
+- [x] User explicitly approved the push to the existing public `Saifullahakjsnd/QuietOps` repository.
+- [ ] Push verified assets and code; verify hosted screenshot hashes.
+- [ ] User uploads the new video to YouTube and supplies its actual URL.
+- [ ] Insert and verify the new YouTube embed; generate `DEV_SUBMISSION_FINAL.md` with no pending notices.
+- [ ] Owner reviews and updates the existing DEV post, then verifies the live category, images and embed.

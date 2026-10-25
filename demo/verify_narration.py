@@ -5,6 +5,7 @@ claim of perfect pronunciation or human listening review. FFmpeg supplies PCM
 directly to avoid PyAV version-specific file-decoder APIs.
 """
 import difflib
+import argparse
 import hashlib
 import json
 import re
@@ -20,6 +21,11 @@ def tokens(text):
     return re.findall(r"[a-z]+|\d+",text.lower())
 
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--audio-dir',default='demo/assets/audio')
+    args=parser.parse_args()
+    global AUDIO
+    AUDIO=(ROOT/args.audio_dir).resolve()
     audio_hash=hashlib.sha256((AUDIO/'kokoro_voiceover.wav').read_bytes()).hexdigest()
     model=WhisperModel('tiny.en',device='cpu',compute_type='int8',cpu_threads=2,num_workers=1,download_root=str(ROOT/'data/whisper-qa'))
     result=subprocess.run(['ffmpeg','-v','error','-i',str(AUDIO/'kokoro_voiceover.wav'),'-ar','16000','-ac','1','-f','f32le','-'],capture_output=True,check=True)

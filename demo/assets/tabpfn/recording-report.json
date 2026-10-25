@@ -1,0 +1,126 @@
+{
+  "recorded_at": "2026-10-25T07:45:39.119Z",
+  "duration_seconds": 42.001,
+  "synthetic": true,
+  "constructed_live_example_selected_after_exploration": true,
+  "model": {
+    "state": "inference_completed",
+    "available": true,
+    "model": "TabPFN-3.5",
+    "checkpoint": "tabpfn-v3.5-20260909.safetensors",
+    "repository": "Prior-Labs/tabpfn_3_5",
+    "package_version": "9.2.0",
+    "license_url": "https://huggingface.co/Prior-Labs/tabpfn_3_5/blob/main/LICENSE",
+    "license_accepted": true,
+    "device": "cpu",
+    "message": "Ready to attempt local inference; checkpoint access is verified on first run.",
+    "inference_ran": true,
+    "revision": "b0662010dd17679509f42326e2f9ba37a6f58818",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "latency_ms": 1877,
+    "n_estimators": 2,
+    "seed": 42,
+    "torch_version": "2.14.1+cpu",
+    "training_rows": 420,
+    "prediction_rows": 300
+  },
+  "comparison": {
+    "tabpfn": {
+      "tp": 103,
+      "fp": 0,
+      "fn": 6,
+      "tn": 131,
+      "support": 240,
+      "precision": 1,
+      "recall": 0.944954128440367,
+      "f1": 0.9716981132075472,
+      "accuracy": 0.975,
+      "brier_score": 0.026395619722530853,
+      "roc_auc": 0.9899852930877513,
+      "average_precision": 0.9907190266624705
+    },
+    "stock_cover_rule": {
+      "tp": 78,
+      "fp": 54,
+      "fn": 31,
+      "tn": 77,
+      "support": 240,
+      "precision": 0.5909090909090909,
+      "recall": 0.7155963302752294,
+      "f1": 0.6473029045643154,
+      "accuracy": 0.6458333333333334
+    },
+    "recent_demand": {
+      "tp": 74,
+      "fp": 23,
+      "fn": 35,
+      "tn": 108,
+      "support": 240,
+      "precision": 0.7628865979381443,
+      "recall": 0.6788990825688074,
+      "f1": 0.7184466019417476,
+      "accuracy": 0.7583333333333333
+    }
+  },
+  "local_explanation": {
+    "explanation": "The model estimates a high likelihood that recent demand for rolled oats may exceed available stock within the next few days, based on current inventory levels and observed sales trends. This assumes no incoming receipts and relies on a snapshot of stock and recent sales data without supplier performance history.",
+    "next_step": "Verify the most recent inventory snapshot for rolled oats (SKU-007) from Meadow Mills to confirm the on-hand quantity matches current operational records. Request confirmation of any pending orders or receipts that could alter the stock availability within the next five days.",
+    "evidence_ids": [
+      "e4589f9e-r8",
+      "f2e5c8f1-r542",
+      "db31ac61-r14402"
+    ],
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "latency_ms": 2067,
+    "generated_at": "2026-10-25T07:45:24.913869+00:00",
+    "guard": "Source-ID and numeric-token validation; human review still required."
+  },
+  "browser_errors": [],
+  "scenes": [
+    {
+      "at": 4.727,
+      "text": "The original fictional shop: deterministic checks and source-linked findings."
+    },
+    {
+      "at": 7.231,
+      "text": "One stock snapshot cannot train a historical predictor. Add explicitly synthetic history."
+    },
+    {
+      "at": 13.049,
+      "text": "Run genuine local TabPFN-3.5 inference. No fallback model supplies these probabilities."
+    },
+    {
+      "at": 20.095,
+      "text": "SKU-007: both simple rules show cover; TabPFN estimates uncertain future demand risk."
+    },
+    {
+      "at": 22.607,
+      "text": "Follow the stock snapshot and both sales files. The probability comes from TabPFN."
+    },
+    {
+      "at": 25.126,
+      "text": "Assume no incoming receipt. This constructed example was selected after model exploration."
+    },
+    {
+      "at": 27.556,
+      "text": "Ministral runs locally to explain supplied facts and draft a review step."
+    },
+    {
+      "at": 30.22,
+      "text": "Grounded local explanation: model uncertainty and human review remain visible."
+    },
+    {
+      "at": 33.605,
+      "text": "Edit the supplier-review draft. Approval only makes it available for manual export."
+    },
+    {
+      "at": 36.125,
+      "text": "Approved draft. Nothing has been sent, ordered, or changed in the shop records."
+    },
+    {
+      "at": 39.007,
+      "text": "Compare actual later-date precision, recall and F1 against both baselines. Synthetic data only."
+    }
+  ]
+}

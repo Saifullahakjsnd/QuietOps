@@ -1,0 +1,43 @@
+1
+00:00:04,727 --> 00:00:07,231
+The original fictional shop: deterministic checks and source-linked findings.
+
+2
+00:00:07,231 --> 00:00:13,049
+One stock snapshot cannot train a historical predictor. Add explicitly synthetic history.
+
+3
+00:00:13,049 --> 00:00:20,095
+Run genuine local TabPFN-3.5 inference. No fallback model supplies these probabilities.
+
+4
+00:00:20,095 --> 00:00:22,607
+SKU-007: both simple rules show cover; TabPFN estimates uncertain future demand risk.
+
+5
+00:00:22,607 --> 00:00:25,126
+Follow the stock snapshot and both sales files. The probability comes from TabPFN.
+
+6
+00:00:25,126 --> 00:00:27,556
+Assume no incoming receipt. This constructed example was selected after model exploration.
+
+7
+00:00:27,556 --> 00:00:30,220
+Ministral runs locally to explain supplied facts and draft a review step.
+
+8
+00:00:30,220 --> 00:00:33,605
+Grounded local explanation: model uncertainty and human review remain visible.
+
+9
+00:00:33,605 --> 00:00:36,125
+Edit the supplier-review draft. Approval only makes it available for manual export.
+
+10
+00:00:36,125 --> 00:00:39,007
+Approved draft. Nothing has been sent, ordered, or changed in the shop records.
+
+11
+00:00:39,007 --> 00:00:42,001
+Compare actual later-date precision, recall and F1 against both baselines. Synthetic data only.

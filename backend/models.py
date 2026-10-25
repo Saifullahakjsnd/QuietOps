@@ -1,7 +1,7 @@
 from typing import Literal
 from pydantic import BaseModel, Field
 
-Kind = Literal['inventory', 'sales', 'orders', 'invoices']
+Kind = Literal['inventory', 'sales', 'orders', 'invoices', 'stock_history']
 
 class Mapping(BaseModel):
     kind: Kind

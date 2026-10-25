@@ -1,0 +1,43 @@
+{
+  "verified_at": "2026-10-25T07:47:19.856433+00:00",
+  "backend_tests": {
+    "passed": 18
+  },
+  "existing_browser_tests": {
+    "passed": 3
+  },
+  "predictive_browser_recording": "passed with real TabPFN and Ministral, edited approval and exported draft",
+  "typecheck": "passed",
+  "production_build": "passed",
+  "pip_check": "passed",
+  "git_diff_check": "passed",
+  "published_article_and_original_demo_assets": "unchanged",
+  "video_full_decode": "passed",
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1600,
+        "height": 1000
+      }
+    ],
+    "format": {
+      "duration": "43.360000"
+    }
+  },
+  "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+  "current_demo": {
+    "url": "http://127.0.0.1:3002",
+    "workspace": "data/tabpfn-recording-handoff",
+    "synthetic": true,
+    "probability": 0.8423507213592529,
+    "rule_risk": false,
+    "recent_demand_risk": false,
+    "local_explanation_model": "ministral-3:8b",
+    "approved_predictive_drafts": 1
+  },
+  "scope": "Synthetic temporal holdout; constructed live example selected after exploration; no field-performance or time-saved claim."
+}

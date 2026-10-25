@@ -16,3 +16,8 @@ demo/assets/video/qa/
 dist/
 demo/assets/audio/chunks/
 demo/assets/audio/voiceover-unnormalized.wav
+demo/assets/tabpfn/raw/
+demo/assets/tabpfn/final/video/raw/
+demo/assets/tabpfn/final/audio/chunks/
+demo/assets/tabpfn/final/audio/voiceover-unnormalized.wav
+demo/assets/tabpfn/final/qa/

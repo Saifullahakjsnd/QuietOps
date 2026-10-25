@@ -1,0 +1,49 @@
+{
+  "verified_at": "2026-10-25T08:07:48.055Z",
+  "browser": "Microsoft Edge / Playwright",
+  "metadata": {
+    "duration": 143.76,
+    "width": 1920,
+    "height": 1080,
+    "error": null
+  },
+  "playing": {
+    "currentTime": 1.017153,
+    "paused": false,
+    "decodedFrames": 30
+  },
+  "article": {
+    "images": [
+      {
+        "source": "../demo/assets/tabpfn/final/screenshots/03-predictive-risk.png",
+        "loaded": true
+      },
+      {
+        "source": "../demo/assets/tabpfn/final/screenshots/01-original-dashboard.png",
+        "loaded": true
+      },
+      {
+        "source": "../demo/assets/tabpfn/final/screenshots/04-evaluation.png",
+        "loaded": true
+      },
+      {
+        "source": "../demo/assets/tabpfn/final/screenshots/06-ministral.png",
+        "loaded": true
+      },
+      {
+        "source": "../demo/assets/tabpfn/final/screenshots/07-editable-draft.png",
+        "loaded": true
+      }
+    ],
+    "headings": [
+      "What I Built",
+      "Demo",
+      "Code",
+      "How I Built It",
+      "Why Does Open Innovation Matter?",
+      "The Lazy Payoff",
+      "Prize Categories"
+    ]
+  },
+  "browser_errors": []
+}

@@ -22,6 +22,9 @@ def main():
     for name in ['final_demo.mp4','demo_silent.mp4','approved-demo-draft.md','recording-report.json','final-verification.json','playback-verification.json']:
         p=ROOT/'demo/assets/video'/name
         if p.exists():files.add(p)
+    for p in (ROOT/'demo/assets/tabpfn').rglob('*'):
+        if p.is_file() and not any(part in {'raw','chunks','qa'} for part in p.relative_to(ROOT/'demo/assets/tabpfn').parts) and p.name != 'voiceover-unnormalized.wav':
+            files.add(p)
     files={p for p in files if p.is_file()}
     forbidden={'data','logs','node_modules','.venv','.next','.git','dist','__pycache__'}
     for p in files:

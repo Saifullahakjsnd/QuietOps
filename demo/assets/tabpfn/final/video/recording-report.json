@@ -1,0 +1,149 @@
+{
+  "recorded_at": "2026-10-25T07:55:59.668Z",
+  "synthetic": true,
+  "constructed_example_selected_after_exploration": true,
+  "model": {
+    "state": "inference_completed",
+    "available": true,
+    "model": "TabPFN-3.5",
+    "checkpoint": "tabpfn-v3.5-20260909.safetensors",
+    "repository": "Prior-Labs/tabpfn_3_5",
+    "package_version": "9.2.0",
+    "license_url": "https://huggingface.co/Prior-Labs/tabpfn_3_5/blob/main/LICENSE",
+    "license_accepted": true,
+    "device": "cpu",
+    "message": "Ready to attempt local inference; checkpoint access is verified on first run.",
+    "inference_ran": true,
+    "revision": "b0662010dd17679509f42326e2f9ba37a6f58818",
+    "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+    "latency_ms": 1688,
+    "n_estimators": 2,
+    "seed": 42,
+    "torch_version": "2.14.1+cpu",
+    "training_rows": 420,
+    "prediction_rows": 300
+  },
+  "comparison": {
+    "tabpfn": {
+      "tp": 103,
+      "fp": 0,
+      "fn": 6,
+      "tn": 131,
+      "support": 240,
+      "precision": 1,
+      "recall": 0.944954128440367,
+      "f1": 0.9716981132075472,
+      "accuracy": 0.975,
+      "brier_score": 0.026395619722530853,
+      "roc_auc": 0.9899852930877513,
+      "average_precision": 0.9907190266624705
+    },
+    "stock_cover_rule": {
+      "tp": 78,
+      "fp": 54,
+      "fn": 31,
+      "tn": 77,
+      "support": 240,
+      "precision": 0.5909090909090909,
+      "recall": 0.7155963302752294,
+      "f1": 0.6473029045643154,
+      "accuracy": 0.6458333333333334
+    },
+    "recent_demand": {
+      "tp": 74,
+      "fp": 23,
+      "fn": 35,
+      "tn": 108,
+      "support": 240,
+      "precision": 0.7628865979381443,
+      "recall": 0.6788990825688074,
+      "f1": 0.7184466019417476,
+      "accuracy": 0.7583333333333333
+    }
+  },
+  "local_explanation": {
+    "explanation": "The model estimates a high likelihood that recent demand for rolled oats may exceed available stock within the next few days, based on current inventory levels and observed sales trends. This assumes no incoming receipts and relies on a snapshot of on-hand stock and recent daily sales patterns, without supplier performance history or order confirmation.",
+    "next_step": "Verify whether the latest inventory snapshot for SKU-007 from Meadow Mills is current as of the review date. Confirm if any pending orders or receipts are scheduled to arrive before the predicted stockout risk period.",
+    "evidence_ids": [
+      "b6586eef-r8",
+      "ff828261-r542",
+      "c3e54b94-r14402"
+    ],
+    "model": "ministral-3:8b",
+    "digest": "1922accd5827ebe6829e536369195db25eaf664528dc66206d646ea3bb386b71",
+    "latency_ms": 2105,
+    "generated_at": "2026-10-25T07:55:02.784826+00:00",
+    "guard": "Source-ID and numeric-token validation; human review still required."
+  },
+  "browser_errors": [],
+  "scenes": [
+    {
+      "id": "01-evening",
+      "start": 0.949,
+      "end": 10.556,
+      "screen": "The shop is closed. The spreadsheets are still open. QuietOps makes that search a short review queue, with evidence and a draft ready for your decision."
+    },
+    {
+      "id": "02-deterministic",
+      "start": 10.556,
+      "end": 22.341,
+      "screen": "Start with the original fictional shop. Deterministic checks find stock-cover risks, late deliveries, and invoice candidates. These findings remain separate from the new predictive review."
+    },
+    {
+      "id": "03-history",
+      "start": 22.341,
+      "end": 34.721,
+      "screen": "Predictions need history. The original files contain one stock snapshot. This optional example adds explicitly synthetic dated snapshots and earlier sales, preserving the originals."
+    },
+    {
+      "id": "04-predict",
+      "start": 34.721,
+      "end": 47.299,
+      "screen": "Run real Tab P F N inference locally. It estimates whether sales during supplier lead time could exceed stock, assuming no receipt. Failed inference never gets a substitute score."
+    },
+    {
+      "id": "05-disagreement",
+      "start": 47.299,
+      "end": 62.608,
+      "screen": "Rolled oats shows the disagreement. Both simple baselines show cover, but the model estimates about eighty-four percent risk. This recurring-demand illustration was selected after exploring model outputs; it is not an independent test."
+    },
+    {
+      "id": "06-evaluation",
+      "start": 62.608,
+      "end": 76.889,
+      "screen": "The separate historical holdout uses earlier training and later test dates. On two hundred and forty synthetic examples, model F one reached ninety-seven percent, against sixty-five and seventy-two for the baselines."
+    },
+    {
+      "id": "07-evidence",
+      "start": 76.889,
+      "end": 89.926,
+      "screen": "Inspect the stock snapshot and both sales files. Originals stay downloadable. Estimates are uncalibrated, and sales can hide demand lost during stockouts. Real shop performance remains unproven."
+    },
+    {
+      "id": "08-ministral",
+      "start": 89.926,
+      "end": 104.533,
+      "screen": "Now ask local Ministral to explain the supplied prediction. Tab P F N provides the probability. Ministral explains the facts and suggests a review step, while guards check source references, numbers, and uncertain wording."
+    },
+    {
+      "id": "09-edit",
+      "start": 104.533,
+      "end": 115.191,
+      "screen": "Create a supplier-review draft and edit the wording. Confirm the delivery plan and current stock before considering a purchase. The draft still needs a human decision."
+    },
+    {
+      "id": "10-approve",
+      "start": 115.191,
+      "end": 128.836,
+      "screen": "Approve for manual export. QuietOps sends no message and places no order. Changed data or a new scan date makes predictive drafts stale, blocking approval and export until the evidence is reviewed again."
+    },
+    {
+      "id": "11-close",
+      "start": 128.836,
+      "end": 142.039,
+      "screen": "Open models keep inference and shop files on your machine after setup. The measured results come from synthetic data, with no claim of saved minutes. Less searching, a clearer next step, and you stay in charge."
+    }
+  ],
+  "duration_seconds": 143.76,
+  "source": "G:\\Hacktoberfest-2026-Week3\\02-QuietOps\\demo\\assets\\tabpfn\\final\\video\\raw\\page@404806d648e387da73c30305ead45b39.webm"
+}

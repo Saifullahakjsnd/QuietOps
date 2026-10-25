@@ -1,0 +1,2 @@
+# Install CPU or CUDA PyTorch first; see docs/TABPFN_SETUP.md. Optional to the core app.
+tabpfn==9.2.0

@@ -8,7 +8,8 @@
     "start": "next start --hostname 127.0.0.1 --port 3002",
     "typecheck": "tsc --noEmit",
     "test:e2e": "playwright test",
-    "demo:record": "tsx demo/record_demo.ts"
+    "demo:record": "tsx demo/record_demo.ts",
+    "demo:predictive": "tsx demo/record_predictive.ts"
   },
   "dependencies": {
     "next": "16.4.3",

@@ -1,0 +1,186 @@
+WEBVTT
+
+1
+00:00:01.002 --> 00:00:02.464
+The shop is closed.
+
+2
+00:00:02.464 --> 00:00:04.291
+The spreadsheets are still open.
+
+3
+00:00:04.291 --> 00:00:09.772
+QuietOps makes that search a short review
+queue, with evidence and a draft ready for
+
+4
+00:00:09.772 --> 00:00:10.503
+your decision.
+
+5
+00:00:10.609 --> 00:00:13.412
+Start with the original fictional shop.
+
+6
+00:00:13.412 --> 00:00:18.083
+Deterministic checks find stock-cover risks,
+late deliveries, and invoice candidates.
+
+7
+00:00:18.083 --> 00:00:22.288
+These findings remain separate from the new
+predictive review.
+
+8
+00:00:22.399 --> 00:00:23.932
+Predictions need history.
+
+9
+00:00:23.932 --> 00:00:27.509
+The original files contain one stock snapshot.
+
+10
+00:00:27.509 --> 00:00:33.130
+This optional example adds explicitly
+synthetic dated snapshots and earlier sales,
+
+11
+00:00:33.130 --> 00:00:34.663
+preserving the originals.
+
+12
+00:00:34.778 --> 00:00:37.175
+Run real TabPFN inference locally.
+
+13
+00:00:37.175 --> 00:00:43.407
+It estimates whether sales during supplier
+lead time could exceed stock, assuming no
+
+14
+00:00:43.407 --> 00:00:43.886
+receipt.
+
+15
+00:00:43.886 --> 00:00:47.242
+Failed inference never gets a substitute
+score.
+
+16
+00:00:47.351 --> 00:00:49.655
+Rolled oats shows the disagreement.
+
+17
+00:00:49.655 --> 00:00:55.184
+Both simple baselines show cover, but the
+model estimates about eighty-four percent
+
+18
+00:00:55.184 --> 00:00:55.645
+risk.
+
+19
+00:00:55.645 --> 00:01:00.713
+This recurring-demand illustration was
+selected after exploring model outputs; it is
+
+20
+00:01:00.713 --> 00:01:02.556
+not an independent test.
+
+21
+00:01:02.659 --> 00:01:07.858
+The separate historical holdout uses earlier
+training and later test dates.
+
+22
+00:01:07.858 --> 00:01:13.530
+On two hundred and forty synthetic examples,
+model F1 reached ninety-seven percent,
+
+23
+00:01:13.530 --> 00:01:16.838
+against sixty-five and seventy-two for the
+baselines.
+
+24
+00:01:16.942 --> 00:01:20.773
+Inspect the stock snapshot and both sales
+files.
+
+25
+00:01:20.773 --> 00:01:22.210
+Originals stay downloadable.
+
+26
+00:01:22.210 --> 00:01:27.478
+Estimates are uncalibrated, and sales can hide
+demand lost during stockouts.
+
+27
+00:01:27.478 --> 00:01:29.873
+Real shop performance remains unproven.
+
+28
+00:01:29.980 --> 00:01:34.189
+Now ask local Ministral to explain the
+supplied prediction.
+
+29
+00:01:34.189 --> 00:01:36.060
+TabPFN provides the probability.
+
+30
+00:01:36.060 --> 00:01:42.141
+Ministral explains the facts and suggests a
+review step, while guards check source
+
+31
+00:01:42.141 --> 00:01:44.479
+references, numbers, and uncertain wording.
+
+32
+00:01:44.585 --> 00:01:47.832
+Create a supplier-review draft and edit the
+wording.
+
+33
+00:01:47.832 --> 00:01:52.298
+Confirm the delivery plan and current stock
+before considering a purchase.
+
+34
+00:01:52.298 --> 00:01:55.139
+The draft still needs a human decision.
+
+35
+00:01:55.249 --> 00:01:56.889
+Approve for manual export.
+
+36
+00:01:56.889 --> 00:02:00.169
+QuietOps sends no message and places no order.
+
+37
+00:02:00.169 --> 00:02:05.908
+Changed data or a new scan date makes
+predictive drafts stale, blocking approval and
+
+38
+00:02:05.908 --> 00:02:08.778
+export until the evidence is reviewed again.
+
+39
+00:02:08.892 --> 00:02:13.256
+Open models keep inference and shop files on
+your machine after setup.
+
+40
+00:02:13.256 --> 00:02:17.983
+The measured results come from synthetic data,
+with no claim of saved minutes.
+
+41
+00:02:17.983 --> 00:02:21.983
+Less searching, a clearer next step, and you
+stay in charge.

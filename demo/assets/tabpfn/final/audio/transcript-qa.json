@@ -1,0 +1,2191 @@
+{
+  "model": "Systran/faster-whisper-tiny.en",
+  "device": "cpu",
+  "language": "en",
+  "duration": 143.76,
+  "audio_sha256": "66e6604408d3110e4cad4c621b3be084efceeffb5f329f52505249bfd302462d",
+  "purpose": "Independent speech-continuity and rough content check; ASR can itself make recognition errors.",
+  "token_sequence_similarity": 0.9325153374233128,
+  "expected_word_tokens": 331,
+  "observed_word_tokens": 321,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 6.46,
+      "text": " The shop is closed, the spreadsheets are still open, quiet ops makes that search a short",
+      "words": [
+        {
+          "word": " The",
+          "start": 0.0,
+          "end": 1.2,
+          "probability": 0.3745940625667572
+        },
+        {
+          "word": " shop",
+          "start": 1.2,
+          "end": 1.42,
+          "probability": 0.9657763838768005
+        },
+        {
+          "word": " is",
+          "start": 1.42,
+          "end": 1.68,
+          "probability": 0.9966572523117065
+        },
+        {
+          "word": " closed,",
+          "start": 1.68,
+          "end": 2.16,
+          "probability": 0.9993084669113159
+        },
+        {
+          "word": " the",
+          "start": 2.52,
+          "end": 2.7,
+          "probability": 0.9776516556739807
+        },
+        {
+          "word": " spreadsheets",
+          "start": 2.7,
+          "end": 3.16,
+          "probability": 0.8710237443447113
+        },
+        {
+          "word": " are",
+          "start": 3.16,
+          "end": 3.44,
+          "probability": 0.9970415234565735
+        },
+        {
+          "word": " still",
+          "start": 3.44,
+          "end": 3.76,
+          "probability": 0.9980752468109131
+        },
+        {
+          "word": " open,",
+          "start": 3.76,
+          "end": 4.3,
+          "probability": 0.993935763835907
+        },
+        {
+          "word": " quiet",
+          "start": 4.66,
+          "end": 4.86,
+          "probability": 0.9251270294189453
+        },
+        {
+          "word": " ops",
+          "start": 4.86,
+          "end": 5.14,
+          "probability": 0.9673735499382019
+        },
+        {
+          "word": " makes",
+          "start": 5.14,
+          "end": 5.42,
+          "probability": 0.9826322793960571
+        },
+        {
+          "word": " that",
+          "start": 5.42,
+          "end": 5.68,
+          "probability": 0.9901817440986633
+        },
+        {
+          "word": " search",
+          "start": 5.68,
+          "end": 5.92,
+          "probability": 0.9907289743423462
+        },
+        {
+          "word": " a",
+          "start": 5.92,
+          "end": 6.18,
+          "probability": 0.965294361114502
+        },
+        {
+          "word": " short",
+          "start": 6.18,
+          "end": 6.46,
+          "probability": 0.9937760829925537
+        }
+      ]
+    },
+    {
+      "start": 6.46,
+      "end": 10.26,
+      "text": " review queue with evidence and a draft ready for your decision.",
+      "words": [
+        {
+          "word": " review",
+          "start": 6.46,
+          "end": 6.8,
+          "probability": 0.9709790945053101
+        },
+        {
+          "word": " queue",
+          "start": 6.8,
+          "end": 7.34,
+          "probability": 0.8735401034355164
+        },
+        {
+          "word": " with",
+          "start": 7.34,
+          "end": 7.78,
+          "probability": 0.9114983677864075
+        },
+        {
+          "word": " evidence",
+          "start": 7.78,
+          "end": 8.18,
+          "probability": 0.992241621017456
+        },
+        {
+          "word": " and",
+          "start": 8.18,
+          "end": 8.62,
+          "probability": 0.9374600052833557
+        },
+        {
+          "word": " a",
+          "start": 8.62,
+          "end": 8.7,
+          "probability": 0.9836852550506592
+        },
+        {
+          "word": " draft",
+          "start": 8.7,
+          "end": 9.06,
+          "probability": 0.9871360063552856
+        },
+        {
+          "word": " ready",
+          "start": 9.06,
+          "end": 9.36,
+          "probability": 0.9952768087387085
+        },
+        {
+          "word": " for",
+          "start": 9.36,
+          "end": 9.58,
+          "probability": 0.9972131848335266
+        },
+        {
+          "word": " your",
+          "start": 9.58,
+          "end": 9.84,
+          "probability": 0.9973325729370117
+        },
+        {
+          "word": " decision.",
+          "start": 9.84,
+          "end": 10.26,
+          "probability": 0.9971340894699097
+        }
+      ]
+    },
+    {
+      "start": 10.72,
+      "end": 15.76,
+      "text": " Start with the original fictional shop, deterministic checks, find stock cover risks,",
+      "words": [
+        {
+          "word": " Start",
+          "start": 10.72,
+          "end": 11.0,
+          "probability": 0.9865691661834717
+        },
+        {
+          "word": " with",
+          "start": 11.0,
+          "end": 11.2,
+          "probability": 0.9990367889404297
+        },
+        {
+          "word": " the",
+          "start": 11.2,
+          "end": 11.5,
+          "probability": 0.9958630800247192
+        },
+        {
+          "word": " original",
+          "start": 11.5,
+          "end": 11.82,
+          "probability": 0.9838343858718872
+        },
+        {
+          "word": " fictional",
+          "start": 11.82,
+          "end": 12.22,
+          "probability": 0.9713975191116333
+        },
+        {
+          "word": " shop,",
+          "start": 12.22,
+          "end": 12.78,
+          "probability": 0.996168315410614
+        },
+        {
+          "word": " deterministic",
+          "start": 13.16,
+          "end": 13.78,
+          "probability": 0.9399614334106445
+        },
+        {
+          "word": " checks,",
+          "start": 13.78,
+          "end": 14.32,
+          "probability": 0.9558148980140686
+        },
+        {
+          "word": " find",
+          "start": 14.64,
+          "end": 14.86,
+          "probability": 0.7539569735527039
+        },
+        {
+          "word": " stock",
+          "start": 14.86,
+          "end": 15.14,
+          "probability": 0.9803604483604431
+        },
+        {
+          "word": " cover",
+          "start": 15.14,
+          "end": 15.36,
+          "probability": 0.9503448009490967
+        },
+        {
+          "word": " risks,",
+          "start": 15.36,
+          "end": 15.76,
+          "probability": 0.9793334603309631
+        }
+      ]
+    },
+    {
+      "start": 16.38,
+      "end": 18.26,
+      "text": " late deliveries and invoice candidates.",
+      "words": [
+        {
+          "word": " late",
+          "start": 16.38,
+          "end": 16.4,
+          "probability": 0.9777182936668396
+        },
+        {
+          "word": " deliveries",
+          "start": 16.4,
+          "end": 16.82,
+          "probability": 0.9901993870735168
+        },
+        {
+          "word": " and",
+          "start": 16.82,
+          "end": 17.46,
+          "probability": 0.572610080242157
+        },
+        {
+          "word": " invoice",
+          "start": 17.46,
+          "end": 17.82,
+          "probability": 0.9837163686752319
+        },
+        {
+          "word": " candidates.",
+          "start": 17.82,
+          "end": 18.26,
+          "probability": 0.994601845741272
+        }
+      ]
+    },
+    {
+      "start": 18.98,
+      "end": 22.16,
+      "text": " These findings remain separate from the new predictive review.",
+      "words": [
+        {
+          "word": " These",
+          "start": 18.98,
+          "end": 19.26,
+          "probability": 0.992455244064331
+        },
+        {
+          "word": " findings",
+          "start": 19.26,
+          "end": 19.68,
+          "probability": 0.9973611235618591
+        },
+        {
+          "word": " remain",
+          "start": 19.68,
+          "end": 20.18,
+          "probability": 0.9539413452148438
+        },
+        {
+          "word": " separate",
+          "start": 20.18,
+          "end": 20.46,
+          "probability": 0.9974997639656067
+        },
+        {
+          "word": " from",
+          "start": 20.46,
+          "end": 20.76,
+          "probability": 0.9983382225036621
+        },
+        {
+          "word": " the",
+          "start": 20.76,
+          "end": 20.92,
+          "probability": 0.9962551593780518
+        },
+        {
+          "word": " new",
+          "start": 20.92,
+          "end": 21.16,
+          "probability": 0.9920478463172913
+        },
+        {
+          "word": " predictive",
+          "start": 21.16,
+          "end": 21.58,
+          "probability": 0.9228073954582214
+        },
+        {
+          "word": " review.",
+          "start": 21.58,
+          "end": 22.16,
+          "probability": 0.9973760843276978
+        }
+      ]
+    },
+    {
+      "start": 22.54,
+      "end": 26.98,
+      "text": " Predictions need history, the original files contain one stock snapshot.",
+      "words": [
+        {
+          "word": " Predictions",
+          "start": 22.54,
+          "end": 22.96,
+          "probability": 0.9475586712360382
+        },
+        {
+          "word": " need",
+          "start": 22.96,
+          "end": 23.34,
+          "probability": 0.990545392036438
+        },
+        {
+          "word": " history,",
+          "start": 23.34,
+          "end": 23.76,
+          "probability": 0.9962129592895508
+        },
+        {
+          "word": " the",
+          "start": 24.3,
+          "end": 24.44,
+          "probability": 0.9908313155174255
+        },
+        {
+          "word": " original",
+          "start": 24.44,
+          "end": 24.82,
+          "probability": 0.9972139000892639
+        },
+        {
+          "word": " files",
+          "start": 24.82,
+          "end": 25.34,
+          "probability": 0.9953722357749939
+        },
+        {
+          "word": " contain",
+          "start": 25.34,
+          "end": 25.7,
+          "probability": 0.9951388835906982
+        },
+        {
+          "word": " one",
+          "start": 25.7,
+          "end": 26.22,
+          "probability": 0.9823294281959534
+        },
+        {
+          "word": " stock",
+          "start": 26.22,
+          "end": 26.46,
+          "probability": 0.9590179920196533
+        },
+        {
+          "word": " snapshot.",
+          "start": 26.46,
+          "end": 26.98,
+          "probability": 0.9870744943618774
+        }
+      ]
+    },
+    {
+      "start": 26.98,
+      "end": 32.84,
+      "text": " This optional example adds explicitly synthetic dated snapshots and earlier sales,",
+      "words": [
+        {
+          "word": " This",
+          "start": 26.98,
+          "end": 27.68,
+          "probability": 0.31135207414627075
+        },
+        {
+          "word": " optional",
+          "start": 27.68,
+          "end": 28.08,
+          "probability": 0.9919781684875488
+        },
+        {
+          "word": " example",
+          "start": 28.08,
+          "end": 28.78,
+          "probability": 0.9940471649169922
+        },
+        {
+          "word": " adds",
+          "start": 28.78,
+          "end": 29.22,
+          "probability": 0.9844643473625183
+        },
+        {
+          "word": " explicitly",
+          "start": 29.22,
+          "end": 29.78,
+          "probability": 0.9967107772827148
+        },
+        {
+          "word": " synthetic",
+          "start": 29.78,
+          "end": 30.42,
+          "probability": 0.9866523146629333
+        },
+        {
+          "word": " dated",
+          "start": 30.42,
+          "end": 30.84,
+          "probability": 0.803382396697998
+        },
+        {
+          "word": " snapshots",
+          "start": 30.84,
+          "end": 31.3,
+          "probability": 0.9512917995452881
+        },
+        {
+          "word": " and",
+          "start": 31.3,
+          "end": 31.96,
+          "probability": 0.9754805564880371
+        },
+        {
+          "word": " earlier",
+          "start": 31.96,
+          "end": 32.24,
+          "probability": 0.9648041129112244
+        },
+        {
+          "word": " sales,",
+          "start": 32.24,
+          "end": 32.84,
+          "probability": 0.9538595080375671
+        }
+      ]
+    },
+    {
+      "start": 33.2,
+      "end": 34.44,
+      "text": " preserving the originals.",
+      "words": [
+        {
+          "word": " preserving",
+          "start": 33.2,
+          "end": 33.46,
+          "probability": 0.9763462543487549
+        },
+        {
+          "word": " the",
+          "start": 33.46,
+          "end": 33.88,
+          "probability": 0.9987711310386658
+        },
+        {
+          "word": " originals.",
+          "start": 33.88,
+          "end": 34.44,
+          "probability": 0.9881882071495056
+        }
+      ]
+    },
+    {
+      "start": 35.16,
+      "end": 37.82,
+      "text": " Run Real Tab PFN inference locally.",
+      "words": [
+        {
+          "word": " Run",
+          "start": 35.16,
+          "end": 35.2,
+          "probability": 0.866828203201294
+        },
+        {
+          "word": " Real",
+          "start": 35.2,
+          "end": 35.54,
+          "probability": 0.5661453604698181
+        },
+        {
+          "word": " Tab",
+          "start": 35.54,
+          "end": 35.96,
+          "probability": 0.4708609879016876
+        },
+        {
+          "word": " PFN",
+          "start": 35.96,
+          "end": 36.8,
+          "probability": 0.4842738211154938
+        },
+        {
+          "word": " inference",
+          "start": 36.8,
+          "end": 37.4,
+          "probability": 0.47125717997550964
+        },
+        {
+          "word": " locally.",
+          "start": 37.4,
+          "end": 37.82,
+          "probability": 0.9921211004257202
+        }
+      ]
+    },
+    {
+      "start": 38.44,
+      "end": 42.48,
+      "text": " It estimates whether sales during supplier lead time could exceed stock,",
+      "words": [
+        {
+          "word": " It",
+          "start": 38.44,
+          "end": 38.56,
+          "probability": 0.9917182922363281
+        },
+        {
+          "word": " estimates",
+          "start": 38.56,
+          "end": 38.9,
+          "probability": 0.9933164119720459
+        },
+        {
+          "word": " whether",
+          "start": 38.9,
+          "end": 39.36,
+          "probability": 0.8866568207740784
+        },
+        {
+          "word": " sales",
+          "start": 39.36,
+          "end": 39.74,
+          "probability": 0.982801616191864
+        },
+        {
+          "word": " during",
+          "start": 39.74,
+          "end": 40.1,
+          "probability": 0.989304780960083
+        },
+        {
+          "word": " supplier",
+          "start": 40.1,
+          "end": 40.56,
+          "probability": 0.7579683065414429
+        },
+        {
+          "word": " lead",
+          "start": 40.56,
+          "end": 40.9,
+          "probability": 0.9488939642906189
+        },
+        {
+          "word": " time",
+          "start": 40.9,
+          "end": 41.32,
+          "probability": 0.959202229976654
+        },
+        {
+          "word": " could",
+          "start": 41.32,
+          "end": 41.62,
+          "probability": 0.983639657497406
+        },
+        {
+          "word": " exceed",
+          "start": 41.62,
+          "end": 42.0,
+          "probability": 0.9953462481498718
+        },
+        {
+          "word": " stock,",
+          "start": 42.0,
+          "end": 42.48,
+          "probability": 0.994350790977478
+        }
+      ]
+    },
+    {
+      "start": 42.76,
+      "end": 43.82,
+      "text": " assuming no receipt.",
+      "words": [
+        {
+          "word": " assuming",
+          "start": 42.76,
+          "end": 42.98,
+          "probability": 0.9891553521156311
+        },
+        {
+          "word": " no",
+          "start": 42.98,
+          "end": 43.4,
+          "probability": 0.9976617097854614
+        },
+        {
+          "word": " receipt.",
+          "start": 43.4,
+          "end": 43.82,
+          "probability": 0.9977771639823914
+        }
+      ]
+    },
+    {
+      "start": 44.66,
+      "end": 47.04,
+      "text": " Failed inference never gets a substitute score.",
+      "words": [
+        {
+          "word": " Failed",
+          "start": 44.66,
+          "end": 44.66,
+          "probability": 0.3328343629837036
+        },
+        {
+          "word": " inference",
+          "start": 44.66,
+          "end": 45.18,
+          "probability": 0.9917891025543213
+        },
+        {
+          "word": " never",
+          "start": 45.18,
+          "end": 45.64,
+          "probability": 0.9848228693008423
+        },
+        {
+          "word": " gets",
+          "start": 45.64,
+          "end": 45.88,
+          "probability": 0.9910865426063538
+        },
+        {
+          "word": " a",
+          "start": 45.88,
+          "end": 46.18,
+          "probability": 0.9981483221054077
+        },
+        {
+          "word": " substitute",
+          "start": 46.18,
+          "end": 46.46,
+          "probability": 0.9741180539131165
+        },
+        {
+          "word": " score.",
+          "start": 46.46,
+          "end": 47.04,
+          "probability": 0.9975008368492126
+        }
+      ]
+    },
+    {
+      "start": 47.42,
+      "end": 49.14,
+      "text": " Rolled oats shows the disagreement.",
+      "words": [
+        {
+          "word": " Rolled",
+          "start": 47.42,
+          "end": 47.86,
+          "probability": 0.6096146404743195
+        },
+        {
+          "word": " oats",
+          "start": 47.86,
+          "end": 48.1,
+          "probability": 0.6707990765571594
+        },
+        {
+          "word": " shows",
+          "start": 48.1,
+          "end": 48.56,
+          "probability": 0.9896054267883301
+        },
+        {
+          "word": " the",
+          "start": 48.56,
+          "end": 48.76,
+          "probability": 0.9982700347900391
+        },
+        {
+          "word": " disagreement.",
+          "start": 48.76,
+          "end": 49.14,
+          "probability": 0.9945747256278992
+        }
+      ]
+    },
+    {
+      "start": 49.74,
+      "end": 55.0,
+      "text": " Both simple baselines show cover, but the model estimates about 84% risk.",
+      "words": [
+        {
+          "word": " Both",
+          "start": 49.74,
+          "end": 50.08,
+          "probability": 0.99491286277771
+        },
+        {
+          "word": " simple",
+          "start": 50.08,
+          "end": 50.42,
+          "probability": 0.9720922708511353
+        },
+        {
+          "word": " baselines",
+          "start": 50.42,
+          "end": 50.92,
+          "probability": 0.9230146706104279
+        },
+        {
+          "word": " show",
+          "start": 50.92,
+          "end": 51.36,
+          "probability": 0.991344690322876
+        },
+        {
+          "word": " cover,",
+          "start": 51.36,
+          "end": 51.66,
+          "probability": 0.9942952990531921
+        },
+        {
+          "word": " but",
+          "start": 52.0,
+          "end": 52.1,
+          "probability": 0.9974972605705261
+        },
+        {
+          "word": " the",
+          "start": 52.1,
+          "end": 52.26,
+          "probability": 0.9945076107978821
+        },
+        {
+          "word": " model",
+          "start": 52.26,
+          "end": 52.5,
+          "probability": 0.9532312750816345
+        },
+        {
+          "word": " estimates",
+          "start": 52.5,
+          "end": 52.98,
+          "probability": 0.9968961477279663
+        },
+        {
+          "word": " about",
+          "start": 52.98,
+          "end": 53.7,
+          "probability": 0.9728329181671143
+        },
+        {
+          "word": " 84",
+          "start": 53.7,
+          "end": 54.14,
+          "probability": 0.991166889667511
+        },
+        {
+          "word": "%",
+          "start": 54.14,
+          "end": 54.66,
+          "probability": 0.7094737887382507
+        },
+        {
+          "word": " risk.",
+          "start": 54.66,
+          "end": 55.0,
+          "probability": 0.9952384233474731
+        }
+      ]
+    },
+    {
+      "start": 55.0,
+      "end": 60.18,
+      "text": " This recurring demand illustration was selected after exploring model outputs.",
+      "words": [
+        {
+          "word": " This",
+          "start": 55.0,
+          "end": 55.68,
+          "probability": 0.5079122185707092
+        },
+        {
+          "word": " recurring",
+          "start": 55.68,
+          "end": 56.16,
+          "probability": 0.9897100329399109
+        },
+        {
+          "word": " demand",
+          "start": 56.16,
+          "end": 56.62,
+          "probability": 0.9904060959815979
+        },
+        {
+          "word": " illustration",
+          "start": 56.62,
+          "end": 57.24,
+          "probability": 0.997454822063446
+        },
+        {
+          "word": " was",
+          "start": 57.24,
+          "end": 57.74,
+          "probability": 0.9915196299552917
+        },
+        {
+          "word": " selected",
+          "start": 57.74,
+          "end": 58.16,
+          "probability": 0.9982910752296448
+        },
+        {
+          "word": " after",
+          "start": 58.16,
+          "end": 58.8,
+          "probability": 0.9803050756454468
+        },
+        {
+          "word": " exploring",
+          "start": 58.8,
+          "end": 59.3,
+          "probability": 0.991198718547821
+        },
+        {
+          "word": " model",
+          "start": 59.3,
+          "end": 59.68,
+          "probability": 0.9218719601631165
+        },
+        {
+          "word": " outputs.",
+          "start": 59.68,
+          "end": 60.18,
+          "probability": 0.9933536052703857
+        }
+      ]
+    },
+    {
+      "start": 60.7,
+      "end": 62.38,
+      "text": " It is not an independent test.",
+      "words": [
+        {
+          "word": " It",
+          "start": 60.7,
+          "end": 60.7,
+          "probability": 0.9888335466384888
+        },
+        {
+          "word": " is",
+          "start": 60.7,
+          "end": 60.9,
+          "probability": 0.9912590384483337
+        },
+        {
+          "word": " not",
+          "start": 60.9,
+          "end": 61.1,
+          "probability": 0.9984179735183716
+        },
+        {
+          "word": " an",
+          "start": 61.1,
+          "end": 61.36,
+          "probability": 0.9971098303794861
+        },
+        {
+          "word": " independent",
+          "start": 61.36,
+          "end": 61.76,
+          "probability": 0.9882746934890747
+        },
+        {
+          "word": " test.",
+          "start": 61.76,
+          "end": 62.38,
+          "probability": 0.9972705245018005
+        }
+      ]
+    },
+    {
+      "start": 62.84,
+      "end": 67.08,
+      "text": " The separate historical holdout uses earlier training and later test dates.",
+      "words": [
+        {
+          "word": " The",
+          "start": 62.84,
+          "end": 62.92,
+          "probability": 0.9884080290794373
+        },
+        {
+          "word": " separate",
+          "start": 62.92,
+          "end": 63.22,
+          "probability": 0.9732477068901062
+        },
+        {
+          "word": " historical",
+          "start": 63.22,
+          "end": 63.74,
+          "probability": 0.978803813457489
+        },
+        {
+          "word": " holdout",
+          "start": 63.74,
+          "end": 64.52,
+          "probability": 0.9506739675998688
+        },
+        {
+          "word": " uses",
+          "start": 64.52,
+          "end": 64.86,
+          "probability": 0.9844116568565369
+        },
+        {
+          "word": " earlier",
+          "start": 64.86,
+          "end": 65.34,
+          "probability": 0.9792972207069397
+        },
+        {
+          "word": " training",
+          "start": 65.34,
+          "end": 65.78,
+          "probability": 0.9910616874694824
+        },
+        {
+          "word": " and",
+          "start": 65.78,
+          "end": 66.22,
+          "probability": 0.9477776288986206
+        },
+        {
+          "word": " later",
+          "start": 66.22,
+          "end": 66.4,
+          "probability": 0.9971776008605957
+        },
+        {
+          "word": " test",
+          "start": 66.4,
+          "end": 66.7,
+          "probability": 0.9907141923904419
+        },
+        {
+          "word": " dates.",
+          "start": 66.7,
+          "end": 67.08,
+          "probability": 0.9907379746437073
+        }
+      ]
+    },
+    {
+      "start": 67.68,
+      "end": 76.5,
+      "text": " On 240 synthetic examples, Model F1 reached 97%, against 65 and 72 for the baselines.",
+      "words": [
+        {
+          "word": " On",
+          "start": 67.68,
+          "end": 67.82,
+          "probability": 0.9910506010055542
+        },
+        {
+          "word": " 240",
+          "start": 67.82,
+          "end": 68.7,
+          "probability": 0.9802963733673096
+        },
+        {
+          "word": " synthetic",
+          "start": 68.7,
+          "end": 69.28,
+          "probability": 0.9936787486076355
+        },
+        {
+          "word": " examples,",
+          "start": 69.28,
+          "end": 70.02,
+          "probability": 0.9968900084495544
+        },
+        {
+          "word": " Model",
+          "start": 70.58,
+          "end": 70.58,
+          "probability": 0.836649477481842
+        },
+        {
+          "word": " F1",
+          "start": 70.58,
+          "end": 71.44,
+          "probability": 0.8820767104625702
+        },
+        {
+          "word": " reached",
+          "start": 71.44,
+          "end": 71.78,
+          "probability": 0.9923785924911499
+        },
+        {
+          "word": " 97%,",
+          "start": 71.78,
+          "end": 73.28,
+          "probability": 0.6452714502811432
+        },
+        {
+          "word": " against",
+          "start": 73.28,
+          "end": 73.66,
+          "probability": 0.9884753227233887
+        },
+        {
+          "word": " 65",
+          "start": 73.66,
+          "end": 74.28,
+          "probability": 0.9872336387634277
+        },
+        {
+          "word": " and",
+          "start": 74.28,
+          "end": 74.78,
+          "probability": 0.8405619263648987
+        },
+        {
+          "word": " 72",
+          "start": 74.78,
+          "end": 75.32,
+          "probability": 0.9935165643692017
+        },
+        {
+          "word": " for",
+          "start": 75.32,
+          "end": 75.84,
+          "probability": 0.9126917123794556
+        },
+        {
+          "word": " the",
+          "start": 75.84,
+          "end": 75.98,
+          "probability": 0.9971545934677124
+        },
+        {
+          "word": " baselines.",
+          "start": 75.98,
+          "end": 76.5,
+          "probability": 0.9055261313915253
+        }
+      ]
+    },
+    {
+      "start": 77.16,
+      "end": 79.94,
+      "text": " Inspect the stock snapshot and both sales files.",
+      "words": [
+        {
+          "word": " Inspect",
+          "start": 77.16,
+          "end": 77.38,
+          "probability": 0.7748914361000061
+        },
+        {
+          "word": " the",
+          "start": 77.38,
+          "end": 77.64,
+          "probability": 0.9972004890441895
+        },
+        {
+          "word": " stock",
+          "start": 77.64,
+          "end": 77.84,
+          "probability": 0.9839330911636353
+        },
+        {
+          "word": " snapshot",
+          "start": 77.84,
+          "end": 78.28,
+          "probability": 0.9774746298789978
+        },
+        {
+          "word": " and",
+          "start": 78.28,
+          "end": 78.76,
+          "probability": 0.8709754943847656
+        },
+        {
+          "word": " both",
+          "start": 78.76,
+          "end": 79.1,
+          "probability": 0.9949927926063538
+        },
+        {
+          "word": " sales",
+          "start": 79.1,
+          "end": 79.42,
+          "probability": 0.9734416604042053
+        },
+        {
+          "word": " files.",
+          "start": 79.42,
+          "end": 79.94,
+          "probability": 0.9942966103553772
+        }
+      ]
+    },
+    {
+      "start": 79.94,
+      "end": 81.72,
+      "text": " Original stay downloadable.",
+      "words": [
+        {
+          "word": " Original",
+          "start": 79.94,
+          "end": 80.7,
+          "probability": 0.28195643424987793
+        },
+        {
+          "word": " stay",
+          "start": 80.7,
+          "end": 81.16,
+          "probability": 0.3828037977218628
+        },
+        {
+          "word": " downloadable.",
+          "start": 81.16,
+          "end": 81.72,
+          "probability": 0.953301191329956
+        }
+      ]
+    },
+    {
+      "start": 82.42,
+      "end": 86.94,
+      "text": " Estimates are uncalibrated and sales can hide demand lost during stock outs.",
+      "words": [
+        {
+          "word": " Estimates",
+          "start": 82.42,
+          "end": 82.56,
+          "probability": 0.965743362903595
+        },
+        {
+          "word": " are",
+          "start": 82.56,
+          "end": 82.96,
+          "probability": 0.99824059009552
+        },
+        {
+          "word": " uncalibrated",
+          "start": 82.96,
+          "end": 83.62,
+          "probability": 0.9000397473573685
+        },
+        {
+          "word": " and",
+          "start": 83.62,
+          "end": 84.16,
+          "probability": 0.6951198577880859
+        },
+        {
+          "word": " sales",
+          "start": 84.16,
+          "end": 84.46,
+          "probability": 0.9913444519042969
+        },
+        {
+          "word": " can",
+          "start": 84.46,
+          "end": 84.72,
+          "probability": 0.9981240630149841
+        },
+        {
+          "word": " hide",
+          "start": 84.72,
+          "end": 85.0,
+          "probability": 0.9889077544212341
+        },
+        {
+          "word": " demand",
+          "start": 85.0,
+          "end": 85.42,
+          "probability": 0.9872632622718811
+        },
+        {
+          "word": " lost",
+          "start": 85.42,
+          "end": 85.78,
+          "probability": 0.9442634582519531
+        },
+        {
+          "word": " during",
+          "start": 85.78,
+          "end": 86.22,
+          "probability": 0.9972407817840576
+        },
+        {
+          "word": " stock",
+          "start": 86.22,
+          "end": 86.5,
+          "probability": 0.9607245922088623
+        },
+        {
+          "word": " outs.",
+          "start": 86.5,
+          "end": 86.94,
+          "probability": 0.17887219786643982
+        }
+      ]
+    },
+    {
+      "start": 87.62,
+      "end": 89.54,
+      "text": " Real shop performance remains unproven.",
+      "words": [
+        {
+          "word": " Real",
+          "start": 87.62,
+          "end": 87.66,
+          "probability": 0.9220420718193054
+        },
+        {
+          "word": " shop",
+          "start": 87.66,
+          "end": 87.92,
+          "probability": 0.8644841909408569
+        },
+        {
+          "word": " performance",
+          "start": 87.92,
+          "end": 88.52,
+          "probability": 0.9954557418823242
+        },
+        {
+          "word": " remains",
+          "start": 88.52,
+          "end": 89.04,
+          "probability": 0.9970269799232483
+        },
+        {
+          "word": " unproven.",
+          "start": 89.04,
+          "end": 89.54,
+          "probability": 0.9852380156517029
+        }
+      ]
+    },
+    {
+      "start": 90.06,
+      "end": 93.3,
+      "text": " Now ask local ministral to explain the supplied prediction.",
+      "words": [
+        {
+          "word": " Now",
+          "start": 90.06,
+          "end": 90.38,
+          "probability": 0.9931281805038452
+        },
+        {
+          "word": " ask",
+          "start": 90.38,
+          "end": 90.64,
+          "probability": 0.5944089293479919
+        },
+        {
+          "word": " local",
+          "start": 90.64,
+          "end": 90.98,
+          "probability": 0.933077335357666
+        },
+        {
+          "word": " ministral",
+          "start": 90.98,
+          "end": 91.46,
+          "probability": 0.46443655093510944
+        },
+        {
+          "word": " to",
+          "start": 91.46,
+          "end": 91.76,
+          "probability": 0.9959126114845276
+        },
+        {
+          "word": " explain",
+          "start": 91.76,
+          "end": 92.08,
+          "probability": 0.9952917098999023
+        },
+        {
+          "word": " the",
+          "start": 92.08,
+          "end": 92.36,
+          "probability": 0.9977374076843262
+        },
+        {
+          "word": " supplied",
+          "start": 92.36,
+          "end": 92.66,
+          "probability": 0.9372227191925049
+        },
+        {
+          "word": " prediction.",
+          "start": 92.66,
+          "end": 93.3,
+          "probability": 0.9975829124450684
+        }
+      ]
+    },
+    {
+      "start": 93.92,
+      "end": 96.1,
+      "text": " Tab PFN provides the probability.",
+      "words": [
+        {
+          "word": " Tab",
+          "start": 93.92,
+          "end": 94.14,
+          "probability": 0.7058367729187012
+        },
+        {
+          "word": " PFN",
+          "start": 94.14,
+          "end": 94.92,
+          "probability": 0.4372436963021755
+        },
+        {
+          "word": " provides",
+          "start": 94.92,
+          "end": 95.36,
+          "probability": 0.9971139430999756
+        },
+        {
+          "word": " the",
+          "start": 95.36,
+          "end": 95.72,
+          "probability": 0.9967921376228333
+        },
+        {
+          "word": " probability.",
+          "start": 95.72,
+          "end": 96.1,
+          "probability": 0.991913914680481
+        }
+      ]
+    },
+    {
+      "start": 96.74,
+      "end": 99.92,
+      "text": " Ministral explains the facts and suggests a review step,",
+      "words": [
+        {
+          "word": " Ministral",
+          "start": 96.74,
+          "end": 97.16,
+          "probability": 0.9505236546198527
+        },
+        {
+          "word": " explains",
+          "start": 97.16,
+          "end": 97.58,
+          "probability": 0.9974918365478516
+        },
+        {
+          "word": " the",
+          "start": 97.58,
+          "end": 97.88,
+          "probability": 0.997665524482727
+        },
+        {
+          "word": " facts",
+          "start": 97.88,
+          "end": 98.2,
+          "probability": 0.9730850458145142
+        },
+        {
+          "word": " and",
+          "start": 98.2,
+          "end": 98.72,
+          "probability": 0.9188047051429749
+        },
+        {
+          "word": " suggests",
+          "start": 98.72,
+          "end": 99.08,
+          "probability": 0.9961651563644409
+        },
+        {
+          "word": " a",
+          "start": 99.08,
+          "end": 99.34,
+          "probability": 0.9964196681976318
+        },
+        {
+          "word": " review",
+          "start": 99.34,
+          "end": 99.6,
+          "probability": 0.9972290396690369
+        },
+        {
+          "word": " step,",
+          "start": 99.6,
+          "end": 99.92,
+          "probability": 0.9812747836112976
+        }
+      ]
+    },
+    {
+      "start": 100.34,
+      "end": 104.28,
+      "text": " while guards check source references, numbers and uncertain wording.",
+      "words": [
+        {
+          "word": " while",
+          "start": 100.34,
+          "end": 100.48,
+          "probability": 0.9848998785018921
+        },
+        {
+          "word": " guards",
+          "start": 100.48,
+          "end": 100.82,
+          "probability": 0.6584946513175964
+        },
+        {
+          "word": " check",
+          "start": 100.82,
+          "end": 101.18,
+          "probability": 0.923156201839447
+        },
+        {
+          "word": " source",
+          "start": 101.18,
+          "end": 101.5,
+          "probability": 0.9745903611183167
+        },
+        {
+          "word": " references,",
+          "start": 101.5,
+          "end": 102.2,
+          "probability": 0.9885492920875549
+        },
+        {
+          "word": " numbers",
+          "start": 102.86,
+          "end": 102.86,
+          "probability": 0.9971038699150085
+        },
+        {
+          "word": " and",
+          "start": 102.86,
+          "end": 103.32,
+          "probability": 0.45119690895080566
+        },
+        {
+          "word": " uncertain",
+          "start": 103.32,
+          "end": 103.9,
+          "probability": 0.9829024076461792
+        },
+        {
+          "word": " wording.",
+          "start": 103.9,
+          "end": 104.28,
+          "probability": 0.9963130354881287
+        }
+      ]
+    },
+    {
+      "start": 105.0,
+      "end": 107.58,
+      "text": " Create a supplier review draft and edit the wording.",
+      "words": [
+        {
+          "word": " Create",
+          "start": 105.0,
+          "end": 105.0,
+          "probability": 0.9606849551200867
+        },
+        {
+          "word": " a",
+          "start": 105.0,
+          "end": 105.26,
+          "probability": 0.9991031885147095
+        },
+        {
+          "word": " supplier",
+          "start": 105.26,
+          "end": 105.6,
+          "probability": 0.9329854249954224
+        },
+        {
+          "word": " review",
+          "start": 105.6,
+          "end": 105.96,
+          "probability": 0.8377756476402283
+        },
+        {
+          "word": " draft",
+          "start": 105.96,
+          "end": 106.34,
+          "probability": 0.9908488988876343
+        },
+        {
+          "word": " and",
+          "start": 106.34,
+          "end": 106.78,
+          "probability": 0.9502568244934082
+        },
+        {
+          "word": " edit",
+          "start": 106.78,
+          "end": 106.94,
+          "probability": 0.9904864430427551
+        },
+        {
+          "word": " the",
+          "start": 106.94,
+          "end": 107.22,
+          "probability": 0.999147891998291
+        },
+        {
+          "word": " wording.",
+          "start": 107.22,
+          "end": 107.58,
+          "probability": 0.9989466071128845
+        }
+      ]
+    },
+    {
+      "start": 107.58,
+      "end": 112.3,
+      "text": " Confirm the delivery plan and current stock before considering a purchase.",
+      "words": [
+        {
+          "word": " Confirm",
+          "start": 107.58,
+          "end": 108.48,
+          "probability": 0.7867930233478546
+        },
+        {
+          "word": " the",
+          "start": 108.48,
+          "end": 108.7,
+          "probability": 0.997633695602417
+        },
+        {
+          "word": " delivery",
+          "start": 108.7,
+          "end": 109.04,
+          "probability": 0.9652989506721497
+        },
+        {
+          "word": " plan",
+          "start": 109.04,
+          "end": 109.48,
+          "probability": 0.9958030581474304
+        },
+        {
+          "word": " and",
+          "start": 109.48,
+          "end": 109.78,
+          "probability": 0.9495960474014282
+        },
+        {
+          "word": " current",
+          "start": 109.78,
+          "end": 110.1,
+          "probability": 0.9912989735603333
+        },
+        {
+          "word": " stock",
+          "start": 110.1,
+          "end": 110.46,
+          "probability": 0.9816457033157349
+        },
+        {
+          "word": " before",
+          "start": 110.46,
+          "end": 111.0,
+          "probability": 0.947808563709259
+        },
+        {
+          "word": " considering",
+          "start": 111.0,
+          "end": 111.54,
+          "probability": 0.9968108534812927
+        },
+        {
+          "word": " a",
+          "start": 111.54,
+          "end": 111.84,
+          "probability": 0.9899328947067261
+        },
+        {
+          "word": " purchase.",
+          "start": 111.84,
+          "end": 112.3,
+          "probability": 0.9911448359489441
+        }
+      ]
+    },
+    {
+      "start": 112.88,
+      "end": 114.96,
+      "text": " The draft still needs a human decision.",
+      "words": [
+        {
+          "word": " The",
+          "start": 112.88,
+          "end": 112.92,
+          "probability": 0.9891631603240967
+        },
+        {
+          "word": " draft",
+          "start": 112.92,
+          "end": 113.24,
+          "probability": 0.9401442408561707
+        },
+        {
+          "word": " still",
+          "start": 113.24,
+          "end": 113.56,
+          "probability": 0.9962557554244995
+        },
+        {
+          "word": " needs",
+          "start": 113.56,
+          "end": 113.82,
+          "probability": 0.9965200424194336
+        },
+        {
+          "word": " a",
+          "start": 113.82,
+          "end": 114.02,
+          "probability": 0.9977166652679443
+        },
+        {
+          "word": " human",
+          "start": 114.02,
+          "end": 114.34,
+          "probability": 0.9699601531028748
+        },
+        {
+          "word": " decision.",
+          "start": 114.34,
+          "end": 114.96,
+          "probability": 0.9908265471458435
+        }
+      ]
+    },
+    {
+      "start": 115.46,
+      "end": 116.8,
+      "text": " Approve for manual export.",
+      "words": [
+        {
+          "word": " Approve",
+          "start": 115.46,
+          "end": 115.68,
+          "probability": 0.8068563640117645
+        },
+        {
+          "word": " for",
+          "start": 115.68,
+          "end": 115.88,
+          "probability": 0.9373771548271179
+        },
+        {
+          "word": " manual",
+          "start": 115.88,
+          "end": 116.2,
+          "probability": 0.9712371230125427
+        },
+        {
+          "word": " export.",
+          "start": 116.2,
+          "end": 116.8,
+          "probability": 0.9575617909431458
+        }
+      ]
+    },
+    {
+      "start": 117.54,
+      "end": 120.38,
+      "text": " Quiet ops sends no message and places no order.",
+      "words": [
+        {
+          "word": " Quiet",
+          "start": 117.54,
+          "end": 117.56,
+          "probability": 0.9355562329292297
+        },
+        {
+          "word": " ops",
+          "start": 117.56,
+          "end": 117.9,
+          "probability": 0.565202534198761
+        },
+        {
+          "word": " sends",
+          "start": 117.9,
+          "end": 118.18,
+          "probability": 0.996098518371582
+        },
+        {
+          "word": " no",
+          "start": 118.18,
+          "end": 118.52,
+          "probability": 0.9960243701934814
+        },
+        {
+          "word": " message",
+          "start": 118.52,
+          "end": 118.84,
+          "probability": 0.9960434436798096
+        },
+        {
+          "word": " and",
+          "start": 118.84,
+          "end": 119.32,
+          "probability": 0.903822124004364
+        },
+        {
+          "word": " places",
+          "start": 119.32,
+          "end": 119.6,
+          "probability": 0.9905070066452026
+        },
+        {
+          "word": " no",
+          "start": 119.6,
+          "end": 119.98,
+          "probability": 0.9965456128120422
+        },
+        {
+          "word": " order.",
+          "start": 119.98,
+          "end": 120.38,
+          "probability": 0.9975327253341675
+        }
+      ]
+    },
+    {
+      "start": 120.74,
+      "end": 124.58,
+      "text": " Change data or a new scan date makes predictive draft stale,",
+      "words": [
+        {
+          "word": " Change",
+          "start": 120.74,
+          "end": 121.12,
+          "probability": 0.979892373085022
+        },
+        {
+          "word": " data",
+          "start": 121.12,
+          "end": 121.46,
+          "probability": 0.9732766151428223
+        },
+        {
+          "word": " or",
+          "start": 121.46,
+          "end": 121.86,
+          "probability": 0.9675489664077759
+        },
+        {
+          "word": " a",
+          "start": 121.86,
+          "end": 122.04,
+          "probability": 0.994042694568634
+        },
+        {
+          "word": " new",
+          "start": 122.04,
+          "end": 122.26,
+          "probability": 0.9976551532745361
+        },
+        {
+          "word": " scan",
+          "start": 122.26,
+          "end": 122.54,
+          "probability": 0.9608941674232483
+        },
+        {
+          "word": " date",
+          "start": 122.54,
+          "end": 122.88,
+          "probability": 0.9895666837692261
+        },
+        {
+          "word": " makes",
+          "start": 122.88,
+          "end": 123.32,
+          "probability": 0.9703847169876099
+        },
+        {
+          "word": " predictive",
+          "start": 123.32,
+          "end": 123.7,
+          "probability": 0.961622953414917
+        },
+        {
+          "word": " draft",
+          "start": 123.7,
+          "end": 124.16,
+          "probability": 0.6570001244544983
+        },
+        {
+          "word": " stale,",
+          "start": 124.16,
+          "end": 124.58,
+          "probability": 0.8753398060798645
+        }
+      ]
+    },
+    {
+      "start": 125.2,
+      "end": 128.64,
+      "text": " blocking approval and export until the evidence is reviewed again.",
+      "words": [
+        {
+          "word": " blocking",
+          "start": 125.2,
+          "end": 125.2,
+          "probability": 0.9801503419876099
+        },
+        {
+          "word": " approval",
+          "start": 125.2,
+          "end": 125.64,
+          "probability": 0.9905238747596741
+        },
+        {
+          "word": " and",
+          "start": 125.64,
+          "end": 126.0,
+          "probability": 0.9864776134490967
+        },
+        {
+          "word": " export",
+          "start": 126.0,
+          "end": 126.4,
+          "probability": 0.9952847361564636
+        },
+        {
+          "word": " until",
+          "start": 126.4,
+          "end": 126.98,
+          "probability": 0.9540700912475586
+        },
+        {
+          "word": " the",
+          "start": 126.98,
+          "end": 127.36,
+          "probability": 0.9978346228599548
+        },
+        {
+          "word": " evidence",
+          "start": 127.36,
+          "end": 127.52,
+          "probability": 0.9942909479141235
+        },
+        {
+          "word": " is",
+          "start": 127.52,
+          "end": 127.92,
+          "probability": 0.9996490478515625
+        },
+        {
+          "word": " reviewed",
+          "start": 127.92,
+          "end": 128.12,
+          "probability": 0.9986093044281006
+        },
+        {
+          "word": " again.",
+          "start": 128.12,
+          "end": 128.64,
+          "probability": 0.9927917718887329
+        }
+      ]
+    },
+    {
+      "start": 129.0,
+      "end": 132.92,
+      "text": " Open models keep inference and shop files on your machine after setup.",
+      "words": [
+        {
+          "word": " Open",
+          "start": 129.0,
+          "end": 129.3,
+          "probability": 0.9917891025543213
+        },
+        {
+          "word": " models",
+          "start": 129.3,
+          "end": 129.6,
+          "probability": 0.9272955656051636
+        },
+        {
+          "word": " keep",
+          "start": 129.6,
+          "end": 130.0,
+          "probability": 0.9748035073280334
+        },
+        {
+          "word": " inference",
+          "start": 130.0,
+          "end": 130.38,
+          "probability": 0.9922637939453125
+        },
+        {
+          "word": " and",
+          "start": 130.38,
+          "end": 130.9,
+          "probability": 0.9966211318969727
+        },
+        {
+          "word": " shop",
+          "start": 130.9,
+          "end": 130.92,
+          "probability": 0.8987748622894287
+        },
+        {
+          "word": " files",
+          "start": 130.92,
+          "end": 131.3,
+          "probability": 0.9922361969947815
+        },
+        {
+          "word": " on",
+          "start": 131.3,
+          "end": 131.5,
+          "probability": 0.9988521337509155
+        },
+        {
+          "word": " your",
+          "start": 131.5,
+          "end": 131.74,
+          "probability": 0.9969981908798218
+        },
+        {
+          "word": " machine",
+          "start": 131.74,
+          "end": 132.1,
+          "probability": 0.9945363998413086
+        },
+        {
+          "word": " after",
+          "start": 132.1,
+          "end": 132.56,
+          "probability": 0.9836134910583496
+        },
+        {
+          "word": " setup.",
+          "start": 132.56,
+          "end": 132.92,
+          "probability": 0.7396867275238037
+        }
+      ]
+    },
+    {
+      "start": 132.92,
+      "end": 137.74,
+      "text": " The measured results come from synthetic data with no claim of saved minutes.",
+      "words": [
+        {
+          "word": " The",
+          "start": 132.92,
+          "end": 133.52,
+          "probability": 0.6073464155197144
+        },
+        {
+          "word": " measured",
+          "start": 133.52,
+          "end": 133.8,
+          "probability": 0.9921787977218628
+        },
+        {
+          "word": " results",
+          "start": 133.8,
+          "end": 134.22,
+          "probability": 0.9988338351249695
+        },
+        {
+          "word": " come",
+          "start": 134.22,
+          "end": 134.52,
+          "probability": 0.9941298961639404
+        },
+        {
+          "word": " from",
+          "start": 134.52,
+          "end": 134.88,
+          "probability": 0.9985723495483398
+        },
+        {
+          "word": " synthetic",
+          "start": 134.88,
+          "end": 135.14,
+          "probability": 0.9962367415428162
+        },
+        {
+          "word": " data",
+          "start": 135.14,
+          "end": 135.64,
+          "probability": 0.9986345171928406
+        },
+        {
+          "word": " with",
+          "start": 135.64,
+          "end": 136.12,
+          "probability": 0.8332003951072693
+        },
+        {
+          "word": " no",
+          "start": 136.12,
+          "end": 136.42,
+          "probability": 0.9951549768447876
+        },
+        {
+          "word": " claim",
+          "start": 136.42,
+          "end": 136.68,
+          "probability": 0.9858204126358032
+        },
+        {
+          "word": " of",
+          "start": 136.68,
+          "end": 137.0,
+          "probability": 0.9977673292160034
+        },
+        {
+          "word": " saved",
+          "start": 137.0,
+          "end": 137.28,
+          "probability": 0.9924429059028625
+        },
+        {
+          "word": " minutes.",
+          "start": 137.28,
+          "end": 137.74,
+          "probability": 0.9876114726066589
+        }
+      ]
+    },
+    {
+      "start": 138.22,
+      "end": 141.72,
+      "text": " Less searching, a clearer next step and you stay in charge.",
+      "words": [
+        {
+          "word": " Less",
+          "start": 138.22,
+          "end": 138.46,
+          "probability": 0.9400306344032288
+        },
+        {
+          "word": " searching,",
+          "start": 138.46,
+          "end": 138.88,
+          "probability": 0.9771701693534851
+        },
+        {
+          "word": " a",
+          "start": 139.3,
+          "end": 139.36,
+          "probability": 0.9694554805755615
+        },
+        {
+          "word": " clearer",
+          "start": 139.36,
+          "end": 139.6,
+          "probability": 0.9684246778488159
+        },
+        {
+          "word": " next",
+          "start": 139.6,
+          "end": 139.94,
+          "probability": 0.9618102312088013
+        },
+        {
+          "word": " step",
+          "start": 139.94,
+          "end": 140.26,
+          "probability": 0.9984849095344543
+        },
+        {
+          "word": " and",
+          "start": 140.26,
+          "end": 140.64,
+          "probability": 0.4339902698993683
+        },
+        {
+          "word": " you",
+          "start": 140.64,
+          "end": 140.82,
+          "probability": 0.9880202412605286
+        },
+        {
+          "word": " stay",
+          "start": 140.82,
+          "end": 141.04,
+          "probability": 0.9950657486915588
+        },
+        {
+          "word": " in",
+          "start": 141.04,
+          "end": 141.26,
+          "probability": 0.9994376301765442
+        },
+        {
+          "word": " charge.",
+          "start": 141.26,
+          "end": 141.72,
+          "probability": 0.994821310043335
+        }
+      ]
+    }
+  ]
+}

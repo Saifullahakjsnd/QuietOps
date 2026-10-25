@@ -1,0 +1,71 @@
+{
+  "voice": "bm_george",
+  "scenes": [
+    {
+      "id": "01-evening",
+      "text": "The shop is closed. The spreadsheets are still open. QuietOps makes that search a short review queue, with evidence and a draft ready for your decision.",
+      "speech_seconds": 9.972,
+      "minimum_window_seconds": 9.604
+    },
+    {
+      "id": "02-deterministic",
+      "text": "Start with the original fictional shop. Deterministic checks find stock-cover risks, late deliveries, and invoice candidates. These findings remain separate from the new predictive review.",
+      "speech_seconds": 12.34,
+      "minimum_window_seconds": 11.718
+    },
+    {
+      "id": "03-history",
+      "text": "Predictions need history. The original files contain one stock snapshot. This optional example adds explicitly synthetic dated snapshots and earlier sales, preserving the originals.",
+      "speech_seconds": 13.003,
+      "minimum_window_seconds": 12.31
+    },
+    {
+      "id": "04-predict",
+      "text": "Run real Tab P F N inference locally. It estimates whether sales during supplier lead time could exceed stock, assuming no receipt. Failed inference never gets a substitute score.",
+      "speech_seconds": 13.29,
+      "minimum_window_seconds": 12.566
+    },
+    {
+      "id": "05-disagreement",
+      "text": "Rolled oats shows the disagreement. Both simple baselines show cover, but the model estimates about eighty-four percent risk. This recurring-demand illustration was selected after exploring model outputs; it is not an independent test.",
+      "speech_seconds": 16.277,
+      "minimum_window_seconds": 15.233
+    },
+    {
+      "id": "06-evaluation",
+      "text": "The separate historical holdout uses earlier training and later test dates. On two hundred and forty synthetic examples, model F one reached ninety-seven percent, against sixty-five and seventy-two for the baselines.",
+      "speech_seconds": 15.125,
+      "minimum_window_seconds": 14.204
+    },
+    {
+      "id": "07-evidence",
+      "text": "Inspect the stock snapshot and both sales files. Originals stay downloadable. Estimates are uncalibrated, and sales can hide demand lost during stockouts. Real shop performance remains unproven.",
+      "speech_seconds": 13.715,
+      "minimum_window_seconds": 12.946
+    },
+    {
+      "id": "08-ministral",
+      "text": "Now ask local Ministral to explain the supplied prediction. Tab P F N provides the probability. Ministral explains the facts and suggests a review step, while guards check source references, numbers, and uncertain wording.",
+      "speech_seconds": 15.466,
+      "minimum_window_seconds": 14.509
+    },
+    {
+      "id": "09-edit",
+      "text": "Create a supplier-review draft and edit the wording. Confirm the delivery plan and current stock before considering a purchase. The draft still needs a human decision.",
+      "speech_seconds": 11.06,
+      "minimum_window_seconds": 10.575
+    },
+    {
+      "id": "10-approve",
+      "text": "Approve for manual export. QuietOps sends no message and places no order. Changed data or a new scan date makes predictive drafts stale, blocking approval and export until the evidence is reviewed again.",
+      "speech_seconds": 14.421,
+      "minimum_window_seconds": 13.576
+    },
+    {
+      "id": "11-close",
+      "text": "Open models keep inference and shop files on your machine after setup. The measured results come from synthetic data, with no claim of saved minutes. Less searching, a clearer next step, and you stay in charge.",
+      "speech_seconds": 13.93,
+      "minimum_window_seconds": 13.137
+    }
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "voice": "bm_george",
+  "user_selection": "George (bm_george), explicitly selected in chat",
+  "engine": "kokoro-onnx",
+  "engine_version": "0.6.1",
+  "model": "Kokoro-82M v1.0",
+  "model_sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voices_sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "duration_seconds": 143.76,
+  "audio_sample_rate": 24000,
+  "audio_frames": 3450240,
+  "subtitle_cues": 41,
+  "subtitle_alignment": "Scene-anchored phrases, duration proportional to word count; not forced word alignment.",
+  "source_screen_timing_preserved": true,
+  "full_decode_passed": true,
+  "scenes": [
+    {
+      "id": "01-evening",
+      "start": 0.949,
+      "end": 10.556,
+      "screen": "The shop is closed. The spreadsheets are still open. QuietOps makes that search a short review queue, with evidence and a draft ready for your decision.",
+      "text": "The shop is closed. The spreadsheets are still open. QuietOps makes that search a short review queue, with evidence and a draft ready for your decision.",
+      "speech_start": 1.002,
+      "speech_end": 10.503,
+      "raw_duration": 9.972,
+      "tempo": 1.0489
+    },
+    {
+      "id": "02-deterministic",
+      "start": 10.556,
+      "end": 22.341,
+      "screen": "Start with the original fictional shop. Deterministic checks find stock-cover risks, late deliveries, and invoice candidates. These findings remain separate from the new predictive review.",
+      "text": "Start with the original fictional shop. Deterministic checks find stock-cover risks, late deliveries, and invoice candidates. These findings remain separate from the new predictive review.",
+      "speech_start": 10.609,
+      "speech_end": 22.288,
+      "raw_duration": 12.34,
+      "tempo": 1.0561
+    },
+    {
+      "id": "03-history",
+      "start": 22.341,
+      "end": 34.721,
+      "screen": "Predictions need history. The original files contain one stock snapshot. This optional example adds explicitly synthetic dated snapshots and earlier sales, preserving the originals.",
+      "text": "Predictions need history. The original files contain one stock snapshot. This optional example adds explicitly synthetic dated snapshots and earlier sales, preserving the originals.",
+      "speech_start": 22.399,
+      "speech_end": 34.663,
+      "raw_duration": 13.003,
+      "tempo": 1.0588
+    },
+    {
+      "id": "04-predict",
+      "start": 34.721,
+      "end": 47.299,
+      "screen": "Run real Tab P F N inference locally. It estimates whether sales during supplier lead time could exceed stock, assuming no receipt. Failed inference never gets a substitute score.",
+      "text": "Run real Tab P F N inference locally. It estimates whether sales during supplier lead time could exceed stock, assuming no receipt. Failed inference never gets a substitute score.",
+      "speech_start": 34.778,
+      "speech_end": 47.242,
+      "raw_duration": 13.29,
+      "tempo": 1.0651
+    },
+    {
+      "id": "05-disagreement",
+      "start": 47.299,
+      "end": 62.608,
+      "screen": "Rolled oats shows the disagreement. Both simple baselines show cover, but the model estimates about eighty-four percent risk. This recurring-demand illustration was selected after exploring model outputs; it is not an independent test.",
+      "text": "Rolled oats shows the disagreement. Both simple baselines show cover, but the model estimates about eighty-four percent risk. This recurring-demand illustration was selected after exploring model outputs; it is not an independent test.",
+      "speech_start": 47.351,
+      "speech_end": 62.556,
+      "raw_duration": 16.277,
+      "tempo": 1.0702
+    },
+    {
+      "id": "06-evaluation",
+      "start": 62.608,
+      "end": 76.889,
+      "screen": "The separate historical holdout uses earlier training and later test dates. On two hundred and forty synthetic examples, model F one reached ninety-seven percent, against sixty-five and seventy-two for the baselines.",
+      "text": "The separate historical holdout uses earlier training and later test dates. On two hundred and forty synthetic examples, model F one reached ninety-seven percent, against sixty-five and seventy-two for the baselines.",
+      "speech_start": 62.659,
+      "speech_end": 76.838,
+      "raw_duration": 15.125,
+      "tempo": 1.0665
+    },
+    {
+      "id": "07-evidence",
+      "start": 76.889,
+      "end": 89.926,
+      "screen": "Inspect the stock snapshot and both sales files. Originals stay downloadable. Estimates are uncalibrated, and sales can hide demand lost during stockouts. Real shop performance remains unproven.",
+      "text": "Inspect the stock snapshot and both sales files. Originals stay downloadable. Estimates are uncalibrated, and sales can hide demand lost during stockouts. Real shop performance remains unproven.",
+      "speech_start": 76.942,
+      "speech_end": 89.873,
+      "raw_duration": 13.715,
+      "tempo": 1.0602
+    },
+    {
+      "id": "08-ministral",
+      "start": 89.926,
+      "end": 104.533,
+      "screen": "Now ask local Ministral to explain the supplied prediction. Tab P F N provides the probability. Ministral explains the facts and suggests a review step, while guards check source references, numbers, and uncertain wording.",
+      "text": "Now ask local Ministral to explain the supplied prediction. Tab P F N provides the probability. Ministral explains the facts and suggests a review step, while guards check source references, numbers, and uncertain wording.",
+      "speech_start": 89.98,
+      "speech_end": 104.479,
+      "raw_duration": 15.466,
+      "tempo": 1.0661
+    },
+    {
+      "id": "09-edit",
+      "start": 104.533,
+      "end": 115.191,
+      "screen": "Create a supplier-review draft and edit the wording. Confirm the delivery plan and current stock before considering a purchase. The draft still needs a human decision.",
+      "text": "Create a supplier-review draft and edit the wording. Confirm the delivery plan and current stock before considering a purchase. The draft still needs a human decision.",
+      "speech_start": 104.585,
+      "speech_end": 115.139,
+      "raw_duration": 11.06,
+      "tempo": 1.0475
+    },
+    {
+      "id": "10-approve",
+      "start": 115.191,
+      "end": 128.836,
+      "screen": "Approve for manual export. QuietOps sends no message and places no order. Changed data or a new scan date makes predictive drafts stale, blocking approval and export until the evidence is reviewed again.",
+      "text": "Approve for manual export. QuietOps sends no message and places no order. Changed data or a new scan date makes predictive drafts stale, blocking approval and export until the evidence is reviewed again.",
+      "speech_start": 115.249,
+      "speech_end": 128.778,
+      "raw_duration": 14.421,
+      "tempo": 1.0646
+    },
+    {
+      "id": "11-close",
+      "start": 128.836,
+      "end": 142.039,
+      "screen": "Open models keep inference and shop files on your machine after setup. The measured results come from synthetic data, with no claim of saved minutes. Less searching, a clearer next step, and you stay in charge.",
+      "text": "Open models keep inference and shop files on your machine after setup. The measured results come from synthetic data, with no claim of saved minutes. Less searching, a clearer next step, and you stay in charge.",
+      "speech_start": 128.892,
+      "speech_end": 141.983,
+      "raw_duration": 13.93,
+      "tempo": 1.0631
+    }
+  ],
+  "subtitle_cue_timings": [
+    {
+      "start": 1.0019583333333326,
+      "end": 2.463663461538461,
+      "text": "The shop is closed.",
+      "scene": "01-evening"
+    },
+    {
+      "start": 2.463663461538461,
+      "end": 4.290794871794871,
+      "text": "The spreadsheets are still open.",
+      "scene": "01-evening"
+    },
+    {
+      "start": 4.290794871794871,
+      "end": 9.772189102564102,
+      "text": "QuietOps makes that search a short review queue, with evidence and a draft ready for",
+      "scene": "01-evening"
+    },
+    {
+      "start": 9.772189102564102,
+      "end": 10.503041666666666,
+      "text": "your decision.",
+      "scene": "01-evening"
+    },
+    {
+      "start": 10.6093125,
+      "end": 13.412122499999999,
+      "text": "Start with the original fictional shop.",
+      "scene": "02-deterministic"
+    },
+    {
+      "start": 13.412122499999999,
+      "end": 18.0834725,
+      "text": "Deterministic checks find stock-cover risks, late deliveries, and invoice candidates.",
+      "scene": "02-deterministic"
+    },
+    {
+      "start": 18.0834725,
+      "end": 22.2876875,
+      "text": "These findings remain separate from the new predictive review.",
+      "scene": "02-deterministic"
+    },
+    {
+      "start": 22.398645833333333,
+      "end": 23.931734375,
+      "text": "Predictions need history.",
+      "scene": "03-history"
+    },
+    {
+      "start": 23.931734375,
+      "end": 27.508940972222224,
+      "text": "The original files contain one stock snapshot.",
+      "scene": "03-history"
+    },
+    {
+      "start": 27.508940972222224,
+      "end": 33.130265625,
+      "text": "This optional example adds explicitly synthetic dated snapshots and earlier sales,",
+      "scene": "03-history"
+    },
+    {
+      "start": 33.130265625,
+      "end": 34.663354166666664,
+      "text": "preserving the originals.",
+      "scene": "03-history"
+    },
+    {
+      "start": 34.77820833333333,
+      "end": 37.17505128205128,
+      "text": "Run real TabPFN inference locally.",
+      "scene": "04-predict"
+    },
+    {
+      "start": 37.17505128205128,
+      "end": 43.406842948717944,
+      "text": "It estimates whether sales during supplier lead time could exceed stock, assuming no",
+      "scene": "04-predict"
+    },
+    {
+      "start": 43.406842948717944,
+      "end": 43.88621153846153,
+      "text": "receipt.",
+      "scene": "04-predict"
+    },
+    {
+      "start": 43.88621153846153,
+      "end": 47.24179166666666,
+      "text": "Failed inference never gets a substitute score.",
+      "scene": "04-predict"
+    },
+    {
+      "start": 47.35120833333333,
+      "end": 49.65493308080808,
+      "text": "Rolled oats shows the disagreement.",
+      "scene": "05-disagreement"
+    },
+    {
+      "start": 49.65493308080808,
+      "end": 55.183872474747474,
+      "text": "Both simple baselines show cover, but the model estimates about eighty-four percent",
+      "scene": "05-disagreement"
+    },
+    {
+      "start": 55.183872474747474,
+      "end": 55.644617424242426,
+      "text": "risk.",
+      "scene": "05-disagreement"
+    },
+    {
+      "start": 55.644617424242426,
+      "end": 60.71281186868687,
+      "text": "This recurring-demand illustration was selected after exploring model outputs; it is",
+      "scene": "05-disagreement"
+    },
+    {
+      "start": 60.71281186868687,
+      "end": 62.55579166666667,
+      "text": "not an independent test.",
+      "scene": "05-disagreement"
+    },
+    {
+      "start": 62.65852083333333,
+      "end": 67.85783888888888,
+      "text": "The separate historical holdout uses earlier training and later test dates.",
+      "scene": "06-evaluation"
+    },
+    {
+      "start": 67.85783888888888,
+      "end": 73.52982222222221,
+      "text": "On two hundred and forty synthetic examples, model F1 reached ninety-seven percent,",
+      "scene": "06-evaluation"
+    },
+    {
+      "start": 73.52982222222221,
+      "end": 76.83847916666666,
+      "text": "against sixty-five and seventy-two for the baselines.",
+      "scene": "06-evaluation"
+    },
+    {
+      "start": 76.9419375,
+      "end": 80.77338194444444,
+      "text": "Inspect the stock snapshot and both sales files.",
+      "scene": "07-evidence"
+    },
+    {
+      "start": 80.77338194444444,
+      "end": 82.2101736111111,
+      "text": "Originals stay downloadable.",
+      "scene": "07-evidence"
+    },
+    {
+      "start": 82.2101736111111,
+      "end": 87.47840972222221,
+      "text": "Estimates are uncalibrated, and sales can hide demand lost during stockouts.",
+      "scene": "07-evidence"
+    },
+    {
+      "start": 87.47840972222221,
+      "end": 89.87306249999999,
+      "text": "Real shop performance remains unproven.",
+      "scene": "07-evidence"
+    },
+    {
+      "start": 89.9796875,
+      "end": 94.1892560483871,
+      "text": "Now ask local Ministral to explain the supplied prediction.",
+      "scene": "08-ministral"
+    },
+    {
+      "start": 94.1892560483871,
+      "end": 96.0601754032258,
+      "text": "TabPFN provides the probability.",
+      "scene": "08-ministral"
+    },
+    {
+      "start": 96.0601754032258,
+      "end": 102.1406633064516,
+      "text": "Ministral explains the facts and suggests a review step, while guards check source",
+      "scene": "08-ministral"
+    },
+    {
+      "start": 102.1406633064516,
+      "end": 104.47931249999999,
+      "text": "references, numbers, and uncertain wording.",
+      "scene": "08-ministral"
+    },
+    {
+      "start": 104.5846875,
+      "end": 107.83226442307692,
+      "text": "Create a supplier-review draft and edit the wording.",
+      "scene": "09-edit"
+    },
+    {
+      "start": 107.83226442307692,
+      "end": 112.29768269230769,
+      "text": "Confirm the delivery plan and current stock before considering a purchase.",
+      "scene": "09-edit"
+    },
+    {
+      "start": 112.29768269230769,
+      "end": 115.1393125,
+      "text": "The draft still needs a human decision.",
+      "scene": "09-edit"
+    },
+    {
+      "start": 115.248625,
+      "end": 116.8885946969697,
+      "text": "Approve for manual export.",
+      "scene": "10-approve"
+    },
+    {
+      "start": 116.8885946969697,
+      "end": 120.1685340909091,
+      "text": "QuietOps sends no message and places no order.",
+      "scene": "10-approve"
+    },
+    {
+      "start": 120.1685340909091,
+      "end": 125.90842803030304,
+      "text": "Changed data or a new scan date makes predictive drafts stale, blocking approval and",
+      "scene": "10-approve"
+    },
+    {
+      "start": 125.90842803030304,
+      "end": 128.778375,
+      "text": "export until the evidence is reviewed again.",
+      "scene": "10-approve"
+    },
+    {
+      "start": 128.89202083333333,
+      "end": 133.25567361111112,
+      "text": "Open models keep inference and shop files on your machine after setup.",
+      "scene": "11-close"
+    },
+    {
+      "start": 133.25567361111112,
+      "end": 137.98296412037038,
+      "text": "The measured results come from synthetic data, with no claim of saved minutes.",
+      "scene": "11-close"
+    },
+    {
+      "start": 137.98296412037038,
+      "end": 141.98297916666667,
+      "text": "Less searching, a clearer next step, and you stay in charge.",
+      "scene": "11-close"
+    }
+  ],
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "25/1",
+        "avg_frame_rate": "25/1",
+        "time_base": "1/12800",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1840128,
+        "duration": "143.760000",
+        "bit_rate": "204908",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "3594",
+        "extradata_size": 48,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc62.11.100 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "24000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/24000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 3450240,
+        "duration": "143.760000",
+        "bit_rate": "109833",
+        "nb_frames": "3371",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "G:\\Hacktoberfest-2026-Week3\\02-QuietOps\\demo\\assets\\tabpfn\\final\\video\\final_demo.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "143.760000",
+      "size": "5747053",
+      "bit_rate": "319813",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "title": "QuietOps \u2014 Evidence, predictions, and a quieter evening",
+        "encoder": "Lavf62.3.100",
+        "comment": "Fictional shop data; genuine local model inference; genuine Kokoro-82M narration."
+      }
+    }
+  },
+  "elapsed_seconds": 69.39,
+  "outputs": {
+    "demo\\assets\\tabpfn\\final\\audio\\kokoro_voiceover.wav": "66e6604408d3110e4cad4c621b3be084efceeffb5f329f52505249bfd302462d",
+    "demo\\assets\\tabpfn\\final\\audio\\subtitles.srt": "c98568c37adcf48ae2085f760a2376c6f501a2b3db986eb00ebccbc5552dbce3",
+    "demo\\assets\\tabpfn\\final\\video\\final_demo.mp4": "5baa6633e9332b1d2ecac6f186324cde9a213c79e5814f01c3da6d758ded8dd0"
+  }
+}

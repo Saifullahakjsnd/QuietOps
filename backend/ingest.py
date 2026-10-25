@@ -16,6 +16,7 @@ FIELDS = {
     'sales': ['sku', 'date', 'qty', 'unit'],
     'orders': ['order_id', 'sku', 'supplier', 'expected_date', 'ordered_qty', 'received_qty', 'unit'],
     'invoices': ['invoice_id', 'supplier', 'date', 'amount', 'currency'],
+    'stock_history': ['sku', 'date', 'on_hand', 'lead_days', 'supplier', 'unit'],
 }
 ALIASES = {
     'sku': ['sku', 'itemcode', 'productid', 'productcode'], 'item': ['item', 'product', 'itemname', 'productname', 'description'],
@@ -130,12 +131,12 @@ def validate(dataset, raw, mapping: Mapping):
             problems.append({'id': uuid4().hex, 'dataset_id': dataset['id'], 'file': dataset['name'], 'row': row_number,
                              'field': 'received_qty', 'cell': f"{get_column_letter(dataset['headers'].index(mapping.columns['received_qty'])+1)}{row_number}",
                              'value': str(row['received_qty']), 'message': 'Received exceeds ordered quantity; review the unit or order.', 'severity': 'error'})
-        key = row.get('sku') if mapping.kind == 'inventory' else (row.get('order_id'), row.get('sku')) if mapping.kind == 'orders' else None
+        key = row.get('sku') if mapping.kind == 'inventory' else (row.get('order_id'), row.get('sku')) if mapping.kind == 'orders' else (row.get('sku'), row.get('date')) if mapping.kind == 'stock_history' else None
         if key is not None and not problems:
             if key in seen:
                 problems.append({'id': uuid4().hex, 'dataset_id': dataset['id'], 'file': dataset['name'], 'row': row_number,
                                  'field': 'sku', 'cell': f"{get_column_letter(dataset['headers'].index(mapping.columns['sku'])+1)}{row_number}",
-                                 'value': str(key), 'message': 'Repeated inventory SKU or order line; later row quarantined. First occurrence retained.', 'severity': 'error'})
+                                 'value': str(key), 'message': ('Repeated SKU/date history snapshot; later row quarantined. First occurrence retained.' if mapping.kind == 'stock_history' else 'Repeated inventory SKU or order line; later row quarantined. First occurrence retained.'), 'severity': 'error'})
             else:
                 seen[key] = row_number
         if problems:

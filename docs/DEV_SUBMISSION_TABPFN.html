@@ -1,0 +1,89 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QuietOps — final post review</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f3f5ee;color:#24392d;font:17px/1.8 system-ui,sans-serif}main{max-width:980px;margin:35px auto;background:white;padding:45px 60px;border:1px solid #dce4d4;border-radius:12px}h1,h2{font-family:Georgia,serif;font-weight:400;line-height:1.25}h1{font-size:38px}h2{font-size:30px;margin-top:40px}p{margin:18px 0}a{color:#366d4b}img,video{display:block;width:100%;height:auto;border:1px solid #dce4d4;border-radius:8px}video{background:#15271f}aside{background:#edf3e4;border-left:4px solid #91a96d;padding:15px 20px;font-size:14px;margin-bottom:30px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:10px;border:1px solid #dce4d4;text-align:left}code{font-size:.9em}pre{overflow:auto}header>p{font-size:13px;color:#62725b}.player{margin:24px 0}@media(max-width:700px){main{margin:0;padding:24px 20px}h1{font-size:30px}table{font-size:11px}td,th{padding:6px}}
+</style></head><body><main><aside>Review edition. GitHub asset publication and the new user-supplied YouTube URL are pending. The existing DEV article remains unchanged.</aside><header><h1>QuietOps: Local AI, Predictive Stock Risk, and a Quieter Evening</h1><p>Tags: devchallenge, hf26challenge, ai, opensource</p></header><div class="player"><video controls preload="metadata" src="../demo/assets/tabpfn/final/video/final_demo.mp4"><track kind="captions" srclang="en" label="English" src="../demo/assets/tabpfn/final/audio/subtitles.vtt"></video></div><p><em>This is a submission for the <a href="https://dev.to/challenges/hacktoberfest-week3-2026-10-19">Hacktoberfest Open-Source AI Challenge Week 3: Slow and Steady</a></em></p>
+<h2>What I Built</h2>
+<p>The shop is closed. The spreadsheets are still open.</p>
+<p>Imagine an owner trying to finish the day. Sales say what moved, inventory says what remains, purchase orders say what should arrive, and invoices say what someone expects to be paid. Finding one suspicious number is manageable. Connecting four files, checking the assumptions, and deciding what to ask a supplier takes the evening with it.</p>
+<p>That owner is a fictional protagonist, not a customer whose saved time I have measured. The task is concrete, though: find the few records worth reviewing and make the next step easier to judge.</p>
+<p>I built <strong>QuietOps</strong>, a local operations review agent with an evidence-backed fix queue. It imports CSV or XLSX files, asks the owner to confirm their mappings, quarantines invalid rows, and checks stock cover, overdue deliveries, and duplicate invoice candidates. Local Ministral explains the supplied findings and drafts a review request. The person edits the wording and approves it for manual export.</p>
+<p>The new <strong>Looking Ahead</strong> view adds a different question: could sales during a supplier's lead-time window exceed the stock available today? Genuine local <strong>TabPFN-3.5</strong> inference supplies that estimate. It can flag a case that the existing stock-cover rule leaves covered, while keeping the predictive estimate separate from the deterministic finding.</p>
+<p><img alt="The real Looking Ahead view: a fictional rolled-oats example receives an 84.2% model estimate while both simple baselines show cover." src="../demo/assets/tabpfn/final/screenshots/03-predictive-risk.png" /></p>
+<p>That separation matters. A late order is a calculation from dates and outstanding quantity. A future demand risk is an uncertain model estimate. Putting both in the same red counter would make the interface simpler at the cost of hiding what the owner is being asked to trust.</p>
+<h2>Demo</h2>
+<p><strong>Updated narrated walkthrough:</strong> the finished local video is <a href="../demo/assets/tabpfn/final/video/final_demo.mp4">final_demo.mp4</a>. Its new YouTube upload and verified embed are pending; this review notice must be replaced before publishing this edition.</p>
+<p>The new 143.76-second, 1920?1080 recording follows the actual application, backend, TabPFN inference, local Ministral explanation, editable supplier-review draft, approval, and export. The narration uses genuine local Kokoro-82M with George (<code>bm_george</code>), the voice selected for the original demonstration. Captions occupy a strip below the application so they do not cover its controls.</p>
+<p>All shop data is explicitly fictional. The original fixture contains 60 products, 12 suppliers, 90 days of sales, 24 purchase-order lines, and 38 invoice rows. Its twelve deterministic review candidates remain reproducible. The predictive companion is optional and separately labelled; it adds earlier synthetic sales and dated stock snapshots without replacing the original files.</p>
+<p><img alt="The original fictional shop dashboard and its deterministic review candidates." src="../demo/assets/tabpfn/final/screenshots/01-original-dashboard.png" /></p>
+<p>The new demo's rolled-oats example has 224 units, about 11.24 days of trailing cover, and a five-day supplier lead time. Its recent seven-day cover also exceeds lead time. Both simple baselines show cover; TabPFN estimates <strong>84.2%</strong> risk that lead-window sales exceed stock, assuming no incoming receipt.</p>
+<p><strong>This current illustration was selected after exploring model outputs.</strong> An initial isolated one-week surge was not flagged, nor were several longer isolated plateaus. The final illustration continues the companion's recurring demand pattern. It demonstrates a possible disagreement, not independently validated predictive performance. The separate held-out historical examples and their reported metrics were not changed during that exploration.</p>
+<h2>Code</h2>
+<p>{% github https://github.com/Saifullahakjsnd/QuietOps %}</p>
+<p>The <a href="https://github.com/Saifullahakjsnd/QuietOps">QuietOps repository</a> contains the application, fixture generators, tests, evaluation records, screenshots, and reproducible demo scripts. The updated local edition is prepared for the existing repository; its publication is a separate review step.</p>
+<p>The existing stack remains Next.js, TypeScript, Tailwind, Radix/shadcn components, FastAPI, Pandas, openpyxl, DuckDB, and SQLite. Ministral 3 8B runs through a dedicated local Ollama listener. TabPFN is an optional backend dependency: the original deterministic application remains usable without installing its model runtime.</p>
+<p>The new <a href="TABPFN_SETUP.md">setup guide</a> covers model access, licensing, installation, the historical input contract, and CPU or CUDA configuration. A separate evaluation workspace preserves the normal shop's records. Model weights, credentials, and private working data are excluded from version control.</p>
+<h2>How I Built It</h2>
+<p>I kept three jobs separate: deterministic code calculates present findings, TabPFN estimates a future outcome, and Ministral explains supplied facts. The language model does not invent the probability or decide whether a bill has been paid twice.</p>
+<p><strong>First, make the inputs inspectable.</strong> Every import retains its original bytes and SHA-256. Header aliases suggest a column mapping, but a person confirms fields, date convention, currency, and units. Invalid dates, required blanks, negative or non-finite quantities, incompatible accounting precision, and invalid snapshot identifiers are quarantined. Proposed corrections are separate records, not silent edits to the original.</p>
+<p>For the existing stock-cover check, validated sales are aggregated over up to 90 trailing calendar days. Cover is on-hand quantity divided by observed daily sales. A flag appears when that cover is shorter than supplier lead time. Missing feature-window sale dates count as zero, units must be compatible, and incoming orders are not silently treated as guaranteed receipts.</p>
+<p><strong>Next, audit what history actually exists.</strong> Ninety days of sales plus one current inventory snapshot is not a historical stockout dataset. Reusing today's stock or cumulative received quantity at past dates would create information that was not known then.</p>
+<p>I added a <code>stock_history</code> import type containing SKU, snapshot date, on-hand quantity, supplier, lead days, and unit. The fictional companion provides dated examples. In a real deployment, those values must genuinely have been known at the snapshot date. The current order table lacks receipt-event and historical availability timestamps, so supplier-performance flags and incoming receipt adjustments are excluded from training.</p>
+<p>The target is deliberately narrow: <strong>observed sales after the snapshot and through its supplier lead-time window exceed stock on hand, assuming no incoming receipt</strong>. It is a counterfactual demand-exceeds-stock label, not a verified physical stockout. Historical stockouts can censor sales, and actual replenishment can change the outcome.</p>
+<p>Features use only sales available at each snapshot: trailing daily rate, seven- and 28-day rates, recent-to-28-day ratio, volatility, stock, lead time, and cover estimates. Product IDs, supplier names, future sales, and fixture gold labels are excluded from the feature matrix. Later sales are accessed separately to label mature outcomes; each outcome-window date needs compatible observations, including explicit zero-sale rows.</p>
+<p><strong>Then evaluate later dates.</strong> The split uses 420 earlier training examples and 240 later test examples. The latest training outcome ends June 2; held-out snapshots begin June 6. Training examples whose outcome windows cross the cutoff are excluded. This fixture's spaced dates required zero exclusions, while regression tests exercise an overlapping boundary.</p>
+<p>The adapter pins <code>tabpfn==9.2.0</code>, explicitly selects <code>ModelVersion.V3_5</code>, and verifies the official checkpoint's SHA-256. It records the revision, package and PyTorch versions, device, seed, ensemble size, and actual inference duration. Disabled, missing, unaccepted, or failed model states remain visible. Another predictor never supplies a TabPFN-labelled score.</p>
+<p><img alt="Actual chronological evaluation against the existing cover rule and a seven-day demand baseline." src="../demo/assets/tabpfn/final/screenshots/04-evaluation.png" /></p>
+<p>All methods receive the same later test examples, with the model's review threshold fixed at 0.50:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Precision</th>
+<th style="text-align: right;">Recall</th>
+<th style="text-align: right;">F1</th>
+<th>TP / FP / FN / TN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TabPFN-3.5</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">94.5%</td>
+<td style="text-align: right;">97.2%</td>
+<td>103 / 0 / 6 / 131</td>
+</tr>
+<tr>
+<td>Existing stock-cover rule</td>
+<td style="text-align: right;">59.1%</td>
+<td style="text-align: right;">71.6%</td>
+<td style="text-align: right;">64.7%</td>
+<td>78 / 54 / 31 / 77</td>
+</tr>
+<tr>
+<td>Seven-day demand baseline</td>
+<td style="text-align: right;">76.3%</td>
+<td style="text-align: right;">67.9%</td>
+<td style="text-align: right;">71.8%</td>
+<td>74 / 23 / 35 / 108</td>
+</tr>
+</tbody>
+</table>
+<p>TabPFN's Brier score was 0.0264, ROC AUC 0.9900, and average precision 0.9907. It caught 30 positive held-out examples that the stock-cover rule missed. These are actual outputs from one synthetic temporal holdout. Repeated products and related demand patterns limit independence; neither calibrated business risk nor real-shop accuracy has been established.</p>
+<p>The fixture hashes, split boundaries, individual held-out scores, and confusion counts are retained in the evaluation JSON. I did not turn a deliberately favourable live illustration into an extra test result.</p>
+<p><strong>Finally, keep the decision reviewable.</strong> Each prediction links back to the stock snapshot and exact contributing sales rows. Ministral receives the model estimate, facts, assumptions, and evidence IDs, then returns a structured explanation and review step.</p>
+<p><img alt="A genuine local Ministral explanation grounded in the supplied prediction." src="../demo/assets/tabpfn/final/screenshots/06-ministral.png" /></p>
+<p>Source-ID and numeric-token checks reject unsupported references and numbers. Additional predictive checks reject altered percentages and certainty language. One recording attempt produced wording the uncertainty guard rejected; the app withheld that explanation and blocked the draft. I tightened the prompt's wording instead of weakening the guard. These checks are still conservative lexical checks, not a proof that prose is semantically correct.</p>
+<p>The existing Fix queue lets the owner edit, reject, or approve the request. Evidence and model configuration enter its fingerprint. Changed mappings or scan dates make predictive drafts stale; explanation, approval, and export endpoints recheck that boundary. Approval permits a manual export. Nothing is emailed, ordered, or paid automatically.</p>
+<p><img alt="An editable supplier-review draft before approval." src="../demo/assets/tabpfn/final/screenshots/07-editable-draft.png" /></p>
+<p>Verification includes 18 backend tests, three existing browser tests, a separate real-model recording, TypeScript checking, and a production build. Tests cover source lineage, imports, quarantine, chronological leakage, model failure, and stale approvals. Explicit test doubles exercise workflow code; only genuine inference supplies the saved model results and demonstration.</p>
+<h2>Why Does Open Innovation Matter?</h2>
+<p>Keeping shop files and inference on the same machine gives the owner a useful boundary: the sales ledger does not need to be uploaded to a hosted inference service to receive an operational review. Setup downloads require a connection; the inference paths are local.</p>
+<p>Open components also make the work inspectable. The feature code, baseline formulas, evaluation inputs, source references, and model identity can be reviewed independently of the explanation. Playwright captures the actual application, FFmpeg handles the finished film, and Kokoro supplies local narration. A screenshot and a plausible sentence are not the entire evidence package.</p>
+<p>The licenses are distinct. The application code is MIT-licensed. Ministral uses its own model terms. TabPFN-3.5 weights use Prior Labs' non-commercial, non-production license, accepted by the owner for this local hackathon demo. That does not grant other users acceptance or commercial rights; the setup guide links the terms and access instructions.</p>
+<p>Local execution also has costs. The tested machine has 64 GB RAM and an RTX 4090; TabPFN ran on CPU. I have not established ordinary-laptop performance. Working files are unencrypted, the API is intended for a trusted single-owner loopback deployment, and recurring scans, returns accounting, automatic currency conversion, and dated receipt modelling remain outside this version.</p>
+<h2>The Lazy Payoff</h2>
+<p>The original controlled fixture turns 5,522 valid rows into twelve source-linked review candidates. Looking Ahead adds an uncertain predictive review, a transparent historical comparison, and a supplier request the owner can edit instead of writing from scratch.</p>
+<p>That is the payoff demonstrated here. I have not measured a shop owner's saved minutes or prevented losses. A field study should compare timed manual and assisted review on independent data, with owners adjudicating the findings and actual receipts recorded.</p>
+<p>For now, the owner has fewer rows to search, the assumptions remain attached, and the next step is already a draft. Close the shop. Check the evidence. Keep the decision—and a little of the evening—for yourself.</p>
+<h2>Prize Categories</h2>
+<p><strong>Best Use of TabPFN.</strong> QuietOps uses genuine local TabPFN-3.5 classification inside a wider prediction-and-review agent, with historical as-of features, chronological evaluation, two baselines, uncertainty, source evidence, and a human approval boundary.</p>
+<p>The project also addresses the overall <strong>Slow and Steady</strong> theme through local open-weight AI that reduces repetitive operational review. No other partner category is claimed.</p></main></body></html>

@@ -4,6 +4,16 @@
 
 QuietOps is a working local application: Next.js + TypeScript + Tailwind + shadcn/Radix components, FastAPI, Pandas, DuckDB, SQLite, and **Ministral 3 8B** through Ollama. Deterministic code finds candidates; local AI explains the supplied facts and drafts a review step. A person edits and approves drafts before export. It does not send messages, place orders, or alter financial records.
 
+## Optional predictive review: Looking Ahead
+
+The existing application now includes optional **local TabPFN-3.5** classification, with a separate Looking Ahead dashboard, source evidence, uncertainty, chronological evaluation and the same editable human approval queue. [Install and accept the model license](docs/TABPFN_SETUP.md), then load the original fictional shop and its opt-in predictive history. No predictions are substituted when inference fails.
+
+Genuine inference on 240 later synthetic examples produced **100.0% precision, 94.5% recall and 97.2% F1**, versus **64.7% F1** for the existing cover rule and **71.8% F1** for a seven-day baseline. These are synthetic holdout results, not real-shop performance. [Full methodology and limitations](docs/TABPFN_EVALUATION.md) ? [Actual model outputs](docs/tabpfn-evaluation.json).
+
+[Watch the new narrated 1080p workflow](demo/assets/tabpfn/final/video/final_demo.mp4) ? [Demo walkthrough](docs/TABPFN_DEMO.md) ? [Updated post review](docs/DEV_SUBMISSION_TABPFN.md). The original published article and original narrated demonstration are preserved.
+
+![Actual Looking Ahead dashboard](demo/assets/tabpfn/02-looking-ahead.png)
+
 ## Finished local deliverables
 
 - [Narrated demo](demo/assets/video/final_demo.mp4): 118.12 seconds, 1920×1080, genuine Kokoro-82M George (`bm_george`) voice selected by the user, readable burned-in English captions, real browser/backend/model journey on explicitly fictional data.

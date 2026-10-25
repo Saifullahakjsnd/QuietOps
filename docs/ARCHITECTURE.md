@@ -38,3 +38,13 @@ Separate ports, virtual environment, data directory and child-process environmen
 ## Current limits
 
 Single owner, single inventory/order snapshot per workspace; additive sales/invoice imports must not overlap. No automatic currency/unit conversion, returns accounting, physical arrival tracking, forecast models, anomaly scanning or recurring jobs. One sheet per workbook. Stock cover assumes zero demand on missing dates and current inventory. Local records are unencrypted and the API has no authentication. The synthetic evaluation does not measure real-world precision or owner time saved.
+
+## Optional predictive review
+
+`stock_history` extends the existing confirmed mapping/quarantine path with dated SKU stock, supplier lead time and unit snapshots. `backend/predictive.py` creates as-of sales features and mature outcome labels, purges training labels crossing a chronological cutoff, and scores the existing stock-cover predicate and a recent-demand baseline on the same held-out rows.
+
+`backend/tabpfn_adapter.py` optionally loads the pinned official TabPFN-3.5 safetensors checkpoint, verifies its byte hash and records actual inference provenance. Disabled, unaccepted, missing and failed model states do not manufacture scores. The original engine and issue bucket remain separate from the predictions bucket. Looking Ahead shows probabilities, evidence, baseline comparison and uncertainty.
+
+Predictions use the existing local Ministral grounding checks and action queue, with a `prediction` action scope. Evidence/data/model fingerprints, mapping invalidation and scan-date checks block stale predictive explanations, approvals and exports. A four-minute Next.js proxy timeout allows the backend's local inference timeout to complete, including cold model startup.
+
+See [setup](TABPFN_SETUP.md), [evaluation](TABPFN_EVALUATION.md) and the [unpublished addendum](DEV_TABPFN_ADDENDUM.md). Current demo data lives in an independent gitignored workspace; original shop records and published assets remain preserved.

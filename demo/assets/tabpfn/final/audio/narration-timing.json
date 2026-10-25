@@ -1,0 +1,128 @@
+{
+  "voice": "bm_george",
+  "sample_rate": 24000,
+  "duration": 143.76,
+  "chunks": [
+    {
+      "id": "01-evening",
+      "start": 0.949,
+      "end": 10.556,
+      "screen": "The shop is closed. The spreadsheets are still open. QuietOps makes that search a short review queue, with evidence and a draft ready for your decision.",
+      "text": "The shop is closed. The spreadsheets are still open. QuietOps makes that search a short review queue, with evidence and a draft ready for your decision.",
+      "speech_start": 1.002,
+      "speech_end": 10.503,
+      "raw_duration": 9.972,
+      "tempo": 1.0489
+    },
+    {
+      "id": "02-deterministic",
+      "start": 10.556,
+      "end": 22.341,
+      "screen": "Start with the original fictional shop. Deterministic checks find stock-cover risks, late deliveries, and invoice candidates. These findings remain separate from the new predictive review.",
+      "text": "Start with the original fictional shop. Deterministic checks find stock-cover risks, late deliveries, and invoice candidates. These findings remain separate from the new predictive review.",
+      "speech_start": 10.609,
+      "speech_end": 22.288,
+      "raw_duration": 12.34,
+      "tempo": 1.0561
+    },
+    {
+      "id": "03-history",
+      "start": 22.341,
+      "end": 34.721,
+      "screen": "Predictions need history. The original files contain one stock snapshot. This optional example adds explicitly synthetic dated snapshots and earlier sales, preserving the originals.",
+      "text": "Predictions need history. The original files contain one stock snapshot. This optional example adds explicitly synthetic dated snapshots and earlier sales, preserving the originals.",
+      "speech_start": 22.399,
+      "speech_end": 34.663,
+      "raw_duration": 13.003,
+      "tempo": 1.0588
+    },
+    {
+      "id": "04-predict",
+      "start": 34.721,
+      "end": 47.299,
+      "screen": "Run real Tab P F N inference locally. It estimates whether sales during supplier lead time could exceed stock, assuming no receipt. Failed inference never gets a substitute score.",
+      "text": "Run real Tab P F N inference locally. It estimates whether sales during supplier lead time could exceed stock, assuming no receipt. Failed inference never gets a substitute score.",
+      "speech_start": 34.778,
+      "speech_end": 47.242,
+      "raw_duration": 13.29,
+      "tempo": 1.0651
+    },
+    {
+      "id": "05-disagreement",
+      "start": 47.299,
+      "end": 62.608,
+      "screen": "Rolled oats shows the disagreement. Both simple baselines show cover, but the model estimates about eighty-four percent risk. This recurring-demand illustration was selected after exploring model outputs; it is not an independent test.",
+      "text": "Rolled oats shows the disagreement. Both simple baselines show cover, but the model estimates about eighty-four percent risk. This recurring-demand illustration was selected after exploring model outputs; it is not an independent test.",
+      "speech_start": 47.351,
+      "speech_end": 62.556,
+      "raw_duration": 16.277,
+      "tempo": 1.0702
+    },
+    {
+      "id": "06-evaluation",
+      "start": 62.608,
+      "end": 76.889,
+      "screen": "The separate historical holdout uses earlier training and later test dates. On two hundred and forty synthetic examples, model F one reached ninety-seven percent, against sixty-five and seventy-two for the baselines.",
+      "text": "The separate historical holdout uses earlier training and later test dates. On two hundred and forty synthetic examples, model F one reached ninety-seven percent, against sixty-five and seventy-two for the baselines.",
+      "speech_start": 62.659,
+      "speech_end": 76.838,
+      "raw_duration": 15.125,
+      "tempo": 1.0665
+    },
+    {
+      "id": "07-evidence",
+      "start": 76.889,
+      "end": 89.926,
+      "screen": "Inspect the stock snapshot and both sales files. Originals stay downloadable. Estimates are uncalibrated, and sales can hide demand lost during stockouts. Real shop performance remains unproven.",
+      "text": "Inspect the stock snapshot and both sales files. Originals stay downloadable. Estimates are uncalibrated, and sales can hide demand lost during stockouts. Real shop performance remains unproven.",
+      "speech_start": 76.942,
+      "speech_end": 89.873,
+      "raw_duration": 13.715,
+      "tempo": 1.0602
+    },
+    {
+      "id": "08-ministral",
+      "start": 89.926,
+      "end": 104.533,
+      "screen": "Now ask local Ministral to explain the supplied prediction. Tab P F N provides the probability. Ministral explains the facts and suggests a review step, while guards check source references, numbers, and uncertain wording.",
+      "text": "Now ask local Ministral to explain the supplied prediction. Tab P F N provides the probability. Ministral explains the facts and suggests a review step, while guards check source references, numbers, and uncertain wording.",
+      "speech_start": 89.98,
+      "speech_end": 104.479,
+      "raw_duration": 15.466,
+      "tempo": 1.0661
+    },
+    {
+      "id": "09-edit",
+      "start": 104.533,
+      "end": 115.191,
+      "screen": "Create a supplier-review draft and edit the wording. Confirm the delivery plan and current stock before considering a purchase. The draft still needs a human decision.",
+      "text": "Create a supplier-review draft and edit the wording. Confirm the delivery plan and current stock before considering a purchase. The draft still needs a human decision.",
+      "speech_start": 104.585,
+      "speech_end": 115.139,
+      "raw_duration": 11.06,
+      "tempo": 1.0475
+    },
+    {
+      "id": "10-approve",
+      "start": 115.191,
+      "end": 128.836,
+      "screen": "Approve for manual export. QuietOps sends no message and places no order. Changed data or a new scan date makes predictive drafts stale, blocking approval and export until the evidence is reviewed again.",
+      "text": "Approve for manual export. QuietOps sends no message and places no order. Changed data or a new scan date makes predictive drafts stale, blocking approval and export until the evidence is reviewed again.",
+      "speech_start": 115.249,
+      "speech_end": 128.778,
+      "raw_duration": 14.421,
+      "tempo": 1.0646
+    },
+    {
+      "id": "11-close",
+      "start": 128.836,
+      "end": 142.039,
+      "screen": "Open models keep inference and shop files on your machine after setup. The measured results come from synthetic data, with no claim of saved minutes. Less searching, a clearer next step, and you stay in charge.",
+      "text": "Open models keep inference and shop files on your machine after setup. The measured results come from synthetic data, with no claim of saved minutes. Less searching, a clearer next step, and you stay in charge.",
+      "speech_start": 128.892,
+      "speech_end": 141.983,
+      "raw_duration": 13.93,
+      "tempo": 1.0631
+    }
+  ]
+}

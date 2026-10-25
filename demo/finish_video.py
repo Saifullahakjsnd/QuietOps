@@ -32,7 +32,8 @@ def subtitle_groups(text):
     for sentence in re.split(r'(?<=[.!?])\s+',text.strip()):
         group=[]
         for word in sentence.split():
-            if len(' '.join(group+[word]))>88 and group:
+            candidate=' '.join(group+[word])
+            if (len(candidate)>88 or len(textwrap.wrap(candidate,width=46,break_long_words=False))>2) and group:
                 result.append(' '.join(group));group=[]
             group.append(word)
         if group:result.append(' '.join(group))
@@ -41,7 +42,15 @@ def subtitle_groups(text):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--voice',required=True,help='Explicit user-selected voice. George is bm_george.')
+    parser.add_argument('--assets-root',help='Separate asset directory for a new edition; originals remain intact.')
     args=parser.parse_args()
+    global AUDIO, VIDEO
+    if args.assets_root:
+        edition = (ROOT / args.assets_root).resolve()
+        AUDIO = edition / 'audio'
+        VIDEO = edition / 'video'
+        AUDIO.mkdir(parents=True, exist_ok=True)
+        VIDEO.mkdir(parents=True, exist_ok=True)
     plan=json.loads((AUDIO/'narration-scenes.json').read_text(encoding='utf-8'))
     if args.voice!=plan['voice']:raise ValueError('Scene plan must name the user-selected voice.')
     if plan.get('video_sha256')!=hashlib.sha256((VIDEO/'demo_silent.mp4').read_bytes()).hexdigest():
@@ -72,7 +81,8 @@ def main():
         start=scene['start']+min(.20,max(0,(window-duration)/2));end=start+duration
         if end>scene['end']+.03:raise ValueError('Speech crosses scene boundary.')
         offset=round(start*RATE);master[offset:offset+len(speech)]=speech
-        groups=subtitle_groups(paragraph);weights=[len(group.split()) for group in groups];total=sum(weights);cursor=start
+        caption_text=paragraph.replace('Tab P F N','TabPFN').replace('F one','F1')
+        groups=subtitle_groups(caption_text);weights=[len(group.split()) for group in groups];total=sum(weights);cursor=start
         for group,weight in zip(groups,weights):
             cue_end=cursor+duration*weight/total
             cues.append({'start':cursor,'end':cue_end,'text':group,'scene':scene['id']});cursor=cue_end
@@ -88,14 +98,15 @@ def main():
     # Entire source UI is retained above an 81px caption strip; no controls hidden.
     # SRT's default ASS canvas is 384x288, so size 9 becomes about 34px
     # at 1080p. Two caption lines fit fully inside the reserved 81px strip.
-    vf="scale=1776:999,pad=1920:1080:72:0:color=0x15271f,subtitles=demo/assets/audio/subtitles.srt:force_style='FontName=Arial,FontSize=9,PrimaryColour=&H00FFFFFF,OutlineColour=&H0015271F,BorderStyle=1,Outline=0.6,Shadow=0,Alignment=2,MarginV=2'"
+    subtitle_path=srt.relative_to(ROOT).as_posix()
+    vf=f"scale=1776:999,pad=1920:1080:72:0:color=0x15271f,subtitles={subtitle_path}:force_style='FontName=Arial,FontSize=9,PrimaryColour=&H00FFFFFF,OutlineColour=&H0015271F,BorderStyle=1,Outline=0.6,Shadow=0,Alignment=2,MarginV=2'"
     final=VIDEO/'final_demo.mp4'
     run(['ffmpeg','-y','-v','error','-threads','2','-i',str(VIDEO/'demo_silent.mp4'),'-i',str(output_audio),
          '-filter_threads','2','-vf',vf,'-map','0:v:0','-map','1:a:0',
          '-c:v','libx264','-threads','2','-preset','medium','-crf','19','-pix_fmt','yuv420p','-c:a','aac','-b:a','192k',
          '-metadata:s:a:0','language=eng',
-         '-metadata','title=QuietOps — Evidence, a draft, and a quieter evening',
-         '-metadata','comment=Fictional shop data; real local Ministral inference; genuine Kokoro-82M bm_george narration.',
+         '-metadata','title=QuietOps — Evidence, predictions, and a quieter evening',
+         '-metadata','comment=Fictional shop data; genuine local model inference; genuine Kokoro-82M narration.',
          '-movflags','+faststart','-t',str(plan['duration']),str(final)])
     probe=json.loads(run(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(final)]).stdout)
     run(['ffmpeg','-v','error','-i',str(final),'-f','null','-'])
