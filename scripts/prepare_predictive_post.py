@@ -55,6 +55,8 @@ def main():
             raise ValueError('Supply an actual YouTube URL.')
         if not re.fullmatch(r'[A-Za-z0-9_-]{11}',video_id):
             raise ValueError('Invalid YouTube video ID.')
+        if video_id == 'NclbnG0_8d0':
+            raise ValueError('That is the original demo. Supply the new upload URL for the TabPFN walkthrough.')
         response=httpx.get('https://www.youtube.com/oembed',params={'url':args.youtube_url,'format':'json'},timeout=30)
         response.raise_for_status()
         video={**response.json(),'url':args.youtube_url,'video_id':video_id}

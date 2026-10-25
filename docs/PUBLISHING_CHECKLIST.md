@@ -37,7 +37,7 @@ The records above describe the original published edition. The new edition adds 
 - [x] User's previous George voice selection retained; genuine Kokoro-82M narration generated.
 - [x] New 143.76-second 1920x1080 recording includes real model calls, evidence, edited draft, approval and export.
 - [x] User explicitly approved the push to the existing public `Saifullahakjsnd/QuietOps` repository.
-- [ ] Push verified assets and code; verify hosted screenshot hashes.
+- [x] Pushed verified assets and code at `0fae4c95149991c28abf4c66c727880dd6c9db8d`; hosted screenshot hashes verified.
 - [ ] User uploads the new video to YouTube and supplies its actual URL.
 - [ ] Insert and verify the new YouTube embed; generate `DEV_SUBMISSION_FINAL.md` with no pending notices.
 - [ ] Owner reviews and updates the existing DEV post, then verifies the live category, images and embed.

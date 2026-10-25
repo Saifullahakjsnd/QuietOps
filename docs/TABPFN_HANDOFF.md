@@ -1,6 +1,6 @@
 # TabPFN upgrade handoff
 
-The updated app runs at **http://127.0.0.1:3002** with an independent fictional workspace at `data/tabpfn-final-film`. The original shop database, published DEV source and original screenshots/video were preserved. The upgrade and its new publication edition are prepared for the user-approved push to the existing public repository. The live DEV article is unchanged.
+The updated app runs at **http://127.0.0.1:3002** with an independent fictional workspace at `data/tabpfn-final-film`. The original shop database, published DEV source and original screenshots/video were preserved. The user-approved upgrade and narrated demonstration were pushed to the existing public repository at commit `0fae4c95149991c28abf4c66c727880dd6c9db8d`; the hosted MP4 and five post screenshots were verified against local hashes. The live DEV article is unchanged.
 
 Open **Looking Ahead** to inspect the actual model results. SKU-007 is a constructed recurring-demand example: TabPFN estimates 84.2% risk while both baselines show cover. Its genuine local Ministral explanation and an edited supplier-review draft approved for manual export are retained. The example was selected after model exploration and is explicitly labelled accordingly.
 

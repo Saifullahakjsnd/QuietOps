@@ -12,7 +12,7 @@ I built **QuietOps**, a local operations review agent with an evidence-backed fi
 
 The new **Looking Ahead** view adds a different question: could sales during a supplier's lead-time window exceed the stock available today? Genuine local **TabPFN-3.5** inference supplies that estimate. It can flag a case that the existing stock-cover rule leaves covered, while keeping the predictive estimate separate from the deterministic finding.
 
-![The real Looking Ahead view: a fictional rolled-oats example receives an 84.2% model estimate while both simple baselines show cover.](../demo/assets/tabpfn/final/screenshots/03-predictive-risk.png)
+![The real Looking Ahead view: a fictional rolled-oats example receives an 84.2% model estimate while both simple baselines show cover.](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/03-predictive-risk.png)
 
 That separation matters. A late order is a calculation from dates and outstanding quantity. A future demand risk is an uncertain model estimate. Putting both in the same red counter would make the interface simpler at the cost of hiding what the owner is being asked to trust.
 
@@ -24,7 +24,7 @@ The new 143.76-second, 1920?1080 recording follows the actual application, backe
 
 All shop data is explicitly fictional. The original fixture contains 60 products, 12 suppliers, 90 days of sales, 24 purchase-order lines, and 38 invoice rows. Its twelve deterministic review candidates remain reproducible. The predictive companion is optional and separately labelled; it adds earlier synthetic sales and dated stock snapshots without replacing the original files.
 
-![The original fictional shop dashboard and its deterministic review candidates.](../demo/assets/tabpfn/final/screenshots/01-original-dashboard.png)
+![The original fictional shop dashboard and its deterministic review candidates.](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/01-original-dashboard.png)
 
 The new demo's rolled-oats example has 224 units, about 11.24 days of trailing cover, and a five-day supplier lead time. Its recent seven-day cover also exceeds lead time. Both simple baselines show cover; TabPFN estimates **84.2%** risk that lead-window sales exceed stock, assuming no incoming receipt.
 
@@ -34,11 +34,11 @@ The new demo's rolled-oats example has 224 units, about 11.24 days of trailing c
 
 {% github https://github.com/Saifullahakjsnd/QuietOps %}
 
-The [QuietOps repository](https://github.com/Saifullahakjsnd/QuietOps) contains the application, fixture generators, tests, evaluation records, screenshots, and reproducible demo scripts. The updated local edition is prepared for the existing repository; its publication is a separate review step.
+The [QuietOps repository](https://github.com/Saifullahakjsnd/QuietOps) contains the application, fixture generators, tests, evaluation records, screenshots, and reproducible demo scripts. The updated implementation and demonstration assets are published in the linked repository.
 
 The existing stack remains Next.js, TypeScript, Tailwind, Radix/shadcn components, FastAPI, Pandas, openpyxl, DuckDB, and SQLite. Ministral 3 8B runs through a dedicated local Ollama listener. TabPFN is an optional backend dependency: the original deterministic application remains usable without installing its model runtime.
 
-The new [setup guide](TABPFN_SETUP.md) covers model access, licensing, installation, the historical input contract, and CPU or CUDA configuration. A separate evaluation workspace preserves the normal shop's records. Model weights, credentials, and private working data are excluded from version control.
+The new [setup guide](https://github.com/Saifullahakjsnd/QuietOps/blob/0fae4c95149991c28abf4c66c727880dd6c9db8d/docs/TABPFN_SETUP.md) covers model access, licensing, installation, the historical input contract, and CPU or CUDA configuration. A separate evaluation workspace preserves the normal shop's records. Model weights, credentials, and private working data are excluded from version control.
 
 ## How I Built It
 
@@ -60,7 +60,7 @@ Features use only sales available at each snapshot: trailing daily rate, seven- 
 
 The adapter pins `tabpfn==9.2.0`, explicitly selects `ModelVersion.V3_5`, and verifies the official checkpoint's SHA-256. It records the revision, package and PyTorch versions, device, seed, ensemble size, and actual inference duration. Disabled, missing, unaccepted, or failed model states remain visible. Another predictor never supplies a TabPFN-labelled score.
 
-![Actual chronological evaluation against the existing cover rule and a seven-day demand baseline.](../demo/assets/tabpfn/final/screenshots/04-evaluation.png)
+![Actual chronological evaluation against the existing cover rule and a seven-day demand baseline.](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/04-evaluation.png)
 
 All methods receive the same later test examples, with the model's review threshold fixed at 0.50:
 
@@ -76,13 +76,13 @@ The fixture hashes, split boundaries, individual held-out scores, and confusion 
 
 **Finally, keep the decision reviewable.** Each prediction links back to the stock snapshot and exact contributing sales rows. Ministral receives the model estimate, facts, assumptions, and evidence IDs, then returns a structured explanation and review step.
 
-![A genuine local Ministral explanation grounded in the supplied prediction.](../demo/assets/tabpfn/final/screenshots/06-ministral.png)
+![A genuine local Ministral explanation grounded in the supplied prediction.](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/06-ministral.png)
 
 Source-ID and numeric-token checks reject unsupported references and numbers. Additional predictive checks reject altered percentages and certainty language. One recording attempt produced wording the uncertainty guard rejected; the app withheld that explanation and blocked the draft. I tightened the prompt's wording instead of weakening the guard. These checks are still conservative lexical checks, not a proof that prose is semantically correct.
 
 The existing Fix queue lets the owner edit, reject, or approve the request. Evidence and model configuration enter its fingerprint. Changed mappings or scan dates make predictive drafts stale; explanation, approval, and export endpoints recheck that boundary. Approval permits a manual export. Nothing is emailed, ordered, or paid automatically.
 
-![An editable supplier-review draft before approval.](../demo/assets/tabpfn/final/screenshots/07-editable-draft.png)
+![An editable supplier-review draft before approval.](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/07-editable-draft.png)
 
 Verification includes 18 backend tests, three existing browser tests, a separate real-model recording, TypeScript checking, and a production build. Tests cover source lineage, imports, quarantine, chronological leakage, model failure, and stale approvals. Explicit test doubles exercise workflow code; only genuine inference supplies the saved model results and demonstration.
 

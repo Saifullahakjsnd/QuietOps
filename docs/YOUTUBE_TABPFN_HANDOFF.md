@@ -1,6 +1,6 @@
 # Updated video upload handoff
 
-The original YouTube video and published DEV article remain intact. This is a new narrated edition for the TabPFN upgrade.
+The original YouTube video and published DEV article remain intact. The code and new narrated edition are now pushed to the existing public repository. [Download the verified MP4](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/video/final_demo.mp4).
 
 ## Upload this file
 
@@ -33,7 +33,7 @@ Built with Next.js, FastAPI, Pandas, DuckDB, SQLite, TabPFN-3.5, and local Ollam
 Once the user supplies the actual new URL, verify its YouTube oEmbed response. After the approved GitHub push, run:
 
 ```powershell
-.venv\Scripts\python.exe -m scripts.prepare_predictive_post --assets-commit ACTUAL_PUSHED_COMMIT --youtube-url ACTUAL_NEW_YOUTUBE_URL
+.venv\Scripts\python.exe -m scripts.prepare_predictive_post --assets-commit 0fae4c95149991c28abf4c66c727880dd6c9db8d --youtube-url ACTUAL_NEW_YOUTUBE_URL
 ```
 
 That verifies the hosted screenshots against their local hashes, inserts the real DEV YouTube embed, and writes `docs/DEV_SUBMISSION_FINAL.md` plus publication metadata. The current `docs/DEV_SUBMISSION_TABPFN.md` is the editable review source. Publishing the existing DEV article's update remains a separate owner action.

@@ -91,5 +91,58 @@
     "youtube_embed_verified": true,
     "github_link_verified": true,
     "article_screenshots": 5
+  },
+  "tabpfn_upgrade": {
+    "repository_url": "https://github.com/Saifullahakjsnd/QuietOps",
+    "branch": "main",
+    "assets_commit": "0fae4c95149991c28abf4c66c727880dd6c9db8d",
+    "push_authorization": "Explicit yespush from the owner in the development conversation on 2026-10-25",
+    "new_video": {
+      "github_url": "https://github.com/Saifullahakjsnd/QuietOps/blob/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/video/final_demo.mp4",
+      "raw_url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/video/final_demo.mp4",
+      "http_status": 200,
+      "sha256": "5baa6633e9332b1d2ecac6f186324cde9a213c79e5814f01c3da6d758ded8dd0",
+      "sha256_match": true,
+      "duration_seconds": 143.76,
+      "width": 1920,
+      "height": 1080,
+      "voice": "bm_george",
+      "youtube_url": null,
+      "status": "User upload and new URL pending"
+    },
+    "post_review": "docs/DEV_SUBMISSION_REVIEW.md",
+    "live_dev_updated": false,
+    "verified_images": [
+      {
+        "file": "demo/assets/tabpfn/final/screenshots/03-predictive-risk.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/03-predictive-risk.png",
+        "sha256": "c9a53c0b5656a97b5594d27da02532ddad633f52134bb6eab7a661a64115df5a",
+        "http_status": 200
+      },
+      {
+        "file": "demo/assets/tabpfn/final/screenshots/01-original-dashboard.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/01-original-dashboard.png",
+        "sha256": "5970a41ce94133682039953788e3fca2cf17de3c5a854beaa747f8d44467bad2",
+        "http_status": 200
+      },
+      {
+        "file": "demo/assets/tabpfn/final/screenshots/04-evaluation.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/04-evaluation.png",
+        "sha256": "f59804c8ca0b3103140c7fda3d12498116d517481026792f92c387493aa00c49",
+        "http_status": 200
+      },
+      {
+        "file": "demo/assets/tabpfn/final/screenshots/06-ministral.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/06-ministral.png",
+        "sha256": "53c3f08d5f89c80fbba2e2b635ddfbfdf97754a93f5d5b1f704dae19b75c7d89",
+        "http_status": 200
+      },
+      {
+        "file": "demo/assets/tabpfn/final/screenshots/07-editable-draft.png",
+        "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/07-editable-draft.png",
+        "sha256": "7c1327c841612810d58df1f4c401cd03acce4dd7a2943d06502bafaf5a378b22",
+        "http_status": 200
+      }
+    ]
   }
 }

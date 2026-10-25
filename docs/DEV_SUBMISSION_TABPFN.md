@@ -1,4 +1,4 @@
-<!-- REVIEW EDITION: the existing published post is unchanged. Updated code/screenshots await the reviewed GitHub push. The new narrated video awaits the user's YouTube upload and verified URL. Resolve these publication dependencies before pasting this edition into DEV. -->
+<!-- REVIEW SOURCE: the existing live DEV post is unchanged. Updated code and screenshots are pushed and verified at 0fae4c95149991c28abf4c66c727880dd6c9db8d. The new narrated video awaits the user-supplied YouTube URL. DEV_SUBMISSION_REVIEW.md contains verified hosted screenshots; resolve the video notice before publishing. -->
 
 Title: QuietOps: Local AI, Predictive Stock Risk, and a Quieter Evening
 
@@ -40,7 +40,7 @@ The new demo's rolled-oats example has 224 units, about 11.24 days of trailing c
 
 {% github https://github.com/Saifullahakjsnd/QuietOps %}
 
-The [QuietOps repository](https://github.com/Saifullahakjsnd/QuietOps) contains the application, fixture generators, tests, evaluation records, screenshots, and reproducible demo scripts. The updated local edition is prepared for the existing repository; its publication is a separate review step.
+The [QuietOps repository](https://github.com/Saifullahakjsnd/QuietOps) contains the application, fixture generators, tests, evaluation records, screenshots, and reproducible demo scripts. The updated implementation and demonstration assets are published in the linked repository.
 
 The existing stack remains Next.js, TypeScript, Tailwind, Radix/shadcn components, FastAPI, Pandas, openpyxl, DuckDB, and SQLite. Ministral 3 8B runs through a dedicated local Ollama listener. TabPFN is an optional backend dependency: the original deterministic application remains usable without installing its model runtime.
 
