@@ -38,6 +38,6 @@ The records above describe the original published edition. The new edition adds 
 - [x] New 143.76-second 1920x1080 recording includes real model calls, evidence, edited draft, approval and export.
 - [x] User explicitly approved the push to the existing public `Saifullahakjsnd/QuietOps` repository.
 - [x] Pushed verified assets and code at `0fae4c95149991c28abf4c66c727880dd6c9db8d`; hosted screenshot hashes verified.
-- [ ] User uploads the new video to YouTube and supplies its actual URL.
-- [ ] Insert and verify the new YouTube embed; generate `DEV_SUBMISSION_FINAL.md` with no pending notices.
+- [x] Owner requested GitHub-hosted video instead of a new YouTube upload; this supersedes the earlier YouTube handoff for this edition.
+- [x] Generated `DEV_SUBMISSION_FINAL.md` with a verified GitHub-hosted muted excerpt and full narrated MP4 link; no pending notices. Browser playback and upstream Forem player behavior were checked.
 - [ ] Owner reviews and updates the existing DEV post, then verifies the live category, images and embed.

@@ -10,7 +10,7 @@ The existing application now includes optional **local TabPFN-3.5** classificati
 
 Genuine inference on 240 later synthetic examples produced **100.0% precision, 94.5% recall and 97.2% F1**, versus **64.7% F1** for the existing cover rule and **71.8% F1** for a seven-day baseline. These are synthetic holdout results, not real-shop performance. [Full methodology and limitations](docs/TABPFN_EVALUATION.md) ? [Actual model outputs](docs/tabpfn-evaluation.json).
 
-[Watch the new narrated 1080p workflow](demo/assets/tabpfn/final/video/final_demo.mp4) ? [Demo walkthrough](docs/TABPFN_DEMO.md) ? [Updated post review](docs/DEV_SUBMISSION_TABPFN.md). The original published article and original narrated demonstration are preserved.
+[Watch the new narrated 1080p workflow](demo/assets/tabpfn/final/video/final_demo.mp4) ? [Demo walkthrough](docs/TABPFN_DEMO.md) ? [Finalized post for review](docs/DEV_SUBMISSION_FINAL.md). The original published article and original narrated demonstration are preserved.
 
 ![Actual Looking Ahead dashboard](demo/assets/tabpfn/02-looking-ahead.png)
 

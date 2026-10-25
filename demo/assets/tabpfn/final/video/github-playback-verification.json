@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-10-25T08:24:33.627Z",
+  "full": {
+    "duration": 143.76,
+    "width": 1920,
+    "height": 1080,
+    "controls": true,
+    "muted": false,
+    "currentTime": 1.010793,
+    "error": null
+  },
+  "preview": {
+    "duration": 12,
+    "width": 1280,
+    "height": 720,
+    "controls": false,
+    "muted": true,
+    "loop": true,
+    "currentTime": 1.0026,
+    "error": null
+  },
+  "public_video_url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/video/final_demo.mp4",
+  "public_preview_url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/3ef2f835e4cbc8be82c29ddaef584a3271765007/demo/assets/tabpfn/final/video/post-preview.mp4",
+  "forems_behavior_source": "https://github.com/forem/forem/blob/main/app/javascript/utilities/gifVideo.js",
+  "scope": "Public GitHub playback verified in Microsoft Edge with the current upstream Forem GIF-video behavior applied locally; this is not a live DEV post publication.",
+  "browser_errors": []
+}

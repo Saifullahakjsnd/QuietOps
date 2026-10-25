@@ -1,3 +1,7 @@
+# Optional YouTube alternative (superseded for this edition)
+
+The owner chose GitHub-hosted video for the updated post. No YouTube upload is required. See [the current video publication guide](VIDEO_PUBLICATION.md). The instructions below remain only as an optional future alternative.
+
 # Updated video upload handoff
 
 The original YouTube video and published DEV article remain intact. The code and new narrated edition are now pushed to the existing public repository. [Download the verified MP4](https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/video/final_demo.mp4).

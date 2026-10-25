@@ -13,7 +13,7 @@ The new narrated final edition is [143.76 seconds, 1920?1080, with genuine Georg
 - [Actual historical evaluation JSON](tabpfn-evaluation.json) and [current prediction evidence](tabpfn-live-predictions.json)
 - [43-second captioned workflow video](../demo/assets/tabpfn/looking-ahead-demo.mp4), [screenshots](../demo/assets/tabpfn/02-looking-ahead.png), [comparison](../demo/assets/tabpfn/07-comparison.png), and [approved supplier-review export](../demo/assets/tabpfn/approved-supplier-review.md)
 - [Demo walkthrough](TABPFN_DEMO.md) and reproducible recorder via `npm run demo:predictive` in an empty isolated workspace
-- [Updated post review](DEV_SUBMISSION_TABPFN.md) and [upload handoff](YOUTUBE_TABPFN_HANDOFF.md), prepared locally for review; the published post was not updated
+- [Final post for review](DEV_SUBMISSION_FINAL.md) and [GitHub video publication guide](VIDEO_PUBLICATION.md), prepared locally for review; the published post was not updated
 - [Verification record](tabpfn-verification.json): 18 backend tests, three existing browser tests, the new real-model recording, TypeScript checking, production build, dependency check, full video decode and desktop/mobile inspection passed
 
 The historical comparison uses 420 training and 240 later test examples. TabPFN precision/recall/F1: **100.0% / 94.5% / 97.2%**. Cover-rule F1: **64.7%**; recent-demand F1: **71.8%**. These measured synthetic results do not establish real-shop accuracy, calibrated business risk, prevented losses or saved time.
@@ -25,3 +25,5 @@ The backend launcher inherited license acceptance for this local demo and the in
 The adapter pins and verifies TabPFN-3.5, exposes disabled/error states and never substitutes another model's probabilities. It materializes a regular safetensors file to avoid an upstream cache-symlink format-detection issue. The Next.js proxy now permits the backend's local inference timeout, including cold Ministral startup. Grounding failures remain blocked; the prompt requests explicitly uncertain wording.
 
 Predictive drafts become stale when mapped data or the scan date changes. Their explanation, approval and export endpoints recheck current input fingerprints. The deterministic inbox and original calculations remain separate.
+
+The owner chose to keep the new media on GitHub. The DEV body embeds a short muted preview and links the full narrated MP4. YouTube is optional; the live DEV update still awaits separate approval.

@@ -1,4 +1,4 @@
-<!-- REVIEW SOURCE: the existing live DEV post is unchanged. Updated code and screenshots are pushed and verified at 0fae4c95149991c28abf4c66c727880dd6c9db8d. The new narrated video awaits the user-supplied YouTube URL. DEV_SUBMISSION_REVIEW.md contains verified hosted screenshots; resolve the video notice before publishing. -->
+<!-- EDITABLE SOURCE: the existing live DEV post is unchanged. The owner chose GitHub-hosted video instead of a new YouTube upload. Use prepare_predictive_post with --github-video and verified asset/preview commits. DEV_SUBMISSION_FINAL.md is the generated, publication-ready body. -->
 
 Title: QuietOps: Local AI, Predictive Stock Risk, and a Quieter Evening
 
@@ -24,9 +24,9 @@ That separation matters. A late order is a calculation from dates and outstandin
 
 ## Demo
 
-**Updated narrated walkthrough:** the finished local video is [final_demo.mp4](../demo/assets/tabpfn/final/video/final_demo.mp4). Its new YouTube upload and verified embed are pending; this review notice must be replaced before publishing this edition.
+**Updated narrated walkthrough:** the publication builder inserts the verified GitHub-hosted inline preview and full narrated video link here.
 
-The new 143.76-second, 1920?1080 recording follows the actual application, backend, TabPFN inference, local Ministral explanation, editable supplier-review draft, approval, and export. The narration uses genuine local Kokoro-82M with George (`bm_george`), the voice selected for the original demonstration. Captions occupy a strip below the application so they do not cover its controls.
+The new 143.76-second, 1920 x 1080 recording follows the actual application, backend, TabPFN inference, local Ministral explanation, editable supplier-review draft, approval, and export. The narration uses genuine local Kokoro-82M with George (`bm_george`), the voice selected for the original demonstration. Captions occupy a strip below the application so they do not cover its controls.
 
 All shop data is explicitly fictional. The original fixture contains 60 products, 12 suppliers, 90 days of sales, 24 purchase-order lines, and 38 invoice rows. Its twelve deterministic review candidates remain reproducible. The predictive companion is optional and separately labelled; it adds earlier synthetic sales and dated stock snapshots without replacing the original files.
 

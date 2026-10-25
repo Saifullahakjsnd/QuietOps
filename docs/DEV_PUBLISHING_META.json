@@ -8,7 +8,7 @@
   ],
   "existing_article_id": 4909609,
   "existing_article_url": "https://dev.to/saif-uk/i-built-a-local-ai-to-turn-a-shops-evening-spreadsheet-hunt-into-a-fix-queue-5b5p",
-  "publication_ready": false,
+  "publication_ready": true,
   "live_article_updated": false,
   "assets_commit": "0fae4c95149991c28abf4c66c727880dd6c9db8d",
   "verified_images": [
@@ -43,6 +43,15 @@
       "http_status": 200
     }
   ],
-  "new_video": null,
-  "body_file": "docs/DEV_SUBMISSION_REVIEW.md"
+  "new_video": {
+    "hosting": "github",
+    "url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/video/final_demo.mp4",
+    "preview_url": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/3ef2f835e4cbc8be82c29ddaef584a3271765007/demo/assets/tabpfn/final/video/post-preview.mp4",
+    "poster": "https://raw.githubusercontent.com/Saifullahakjsnd/QuietOps/0fae4c95149991c28abf4c66c727880dd6c9db8d/demo/assets/tabpfn/final/screenshots/03-predictive-risk.png",
+    "sha256": "5baa6633e9332b1d2ecac6f186324cde9a213c79e5814f01c3da6d758ded8dd0",
+    "verified_hosted_bytes": true,
+    "inline_preview_muted": true,
+    "dev_player_behavior": "Forem treats raw HTML video as a muted loop and removes controls; full narration is available through the explicit MP4 link."
+  },
+  "body_file": "docs/DEV_SUBMISSION_FINAL.md"
 }
